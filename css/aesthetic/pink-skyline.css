@@ -1,0 +1,1117 @@
+/* 
+    Layout Made by Chris (#105465) for free use
+All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
+https://www.lioden.com/topic.php?id=304429491963
+*/
+/* 
+	CHEAT SHEET (ctrl + h to replace all)
+	main font: 'Noto Serif', 'Times New Roman', Times, serif
+	header font: 'Caveat', 'Times New Roman', Times, serif
+	font primary: 15050b
+	font secondary: 3e0e21
+	font tertiary: 681836
+
+	main bg: F6D9DD80
+
+	primary one (darkest): ecacb5
+	primary two: f1c1c7
+	primary three: f6d5da
+	primary four: faeaec
+	secondary one (darkest): ecacb5
+	secondary two: f1c1c7
+	secondary three: f6d5da
+	secondary four: faeaec
+	tertiary (caves n stuff): e3ceda
+
+	red alert bg: e3ceda
+	red alert links: 412535
+	green alert bg: f1c1c7
+	green alert links: 3e0e21
+	yellow alert bg: ecacb5
+	yellow alert links: 3e0e21
+
+	and now...the fun one
+	button one (darkest): b57d9d
+	button two: be8ea9
+	button three: c79eb5
+	button four: d0aec2
+	button five: dabece
+	button six: e3ceda
+	button text: 000000
+	red button one (darkest): 0d0a0f
+	red button two: 1b141f
+	red button three: 281f2e
+	red button four: 35293d
+	red button five: 42334d
+	red button six: 503d5c
+	red button seven: 5d476b
+	red button eight: 6a527a
+	red button text: ffffff
+
+	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
+*/
+
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Body */
+body {
+	font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+	background: #EEB5CB url('../../img/aesthetic/pink-skyline.jpg') fixed;
+	background-position-y: bottom;
+	background-position-x: center;
+	/* DON'T CHANGE BELOW */
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #15050b;
+}
+
+/* Headers */
+h1,
+h2,
+h3,
+.sidebar h3 {
+	color: #15050b;
+	font-family: 'Caveat', 'Times New Roman', Times, serif;
+}
+
+/* Other Text */
+p,
+b,
+#fraProfileContent {
+	color: #15050b;
+}
+
+small {
+	color: #15050b !important;
+}
+
+/* Links */
+a:link,
+a:visited,
+a:active {
+	color: #3e0e21;
+}
+
+a:hover,
+a:focus {
+	color: #15050b;
+}
+
+/* Topbar */
+.topbar a:link,
+.topbar a:visited,
+.topbar a:active {
+	color: #3e0e21;
+}
+
+.topbar a:hover,
+.topbar a:focus {
+	color: #15050b;
+}
+
+.topbar {
+	background: #ecacb5;
+	border: none;
+	/* border-top: none; */
+	/* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+	color: #15050b;
+	box-shadow: 0 0 10px #755768;
+}
+
+/* Navbar */
+.navbar {
+	background: #f1c1c7;
+	/* border-bottom: 1px solid #ebebeb; */
+	/* border-top-right-radius: 10px;
+	border-top-left-radius: 10px; */
+	font-family: 'Caveat', 'Times New Roman', Times, serif;
+}
+
+/* logo */
+.navbar-brand img {
+	/* content: url('LINK'); */
+	filter: hue-rotate(-60deg) saturate(30%) brightness(120%);
+}
+
+/* navbar defaults */
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	color: #3e0e21;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #3e0e21;
+	font-weight: bold;
+}
+
+/* mobile toggle box */
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+
+/* make different from navbar */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background: #f6d5da;
+}
+
+/* bars in navbar icon */
+.navbar-default .navbar-toggle .icon-bar {
+	background: #15050b;
+}
+
+/* collapsed navbar */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: #ecacb5;
+	box-shadow: none;
+}
+
+/* active and hovered links in navbar */
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus,
+.navbar .active a:link,
+.navbar .active a:visited,
+.navbar .active a:active,
+.navbar .active a:focus {
+	background: #f6d5da;
+	color: #15050b;
+	/* border-radius: 10px; */
+}
+
+/* main */
+.main {
+	background: #F6D9DD80;
+	border-radius: none;
+	border: none;
+	box-shadow: 0 0 10px #755768;
+}
+
+/* territory box */
+.col-md-9 {
+	background: none;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+	background: #f6d5da;
+	border: none;
+	box-shadow: 1px 1px 3px #755768;
+	/* border-radius: 10px; */
+}
+
+.breadcrumb::after {
+	content: "CSS by Chris (#105465)";
+	position: absolute;
+	right: 20%;
+	z-index: 100;
+	color: #15050b;
+}
+
+.breadcrumb-item.active,
+.breadcrumb-item::before {
+	color: #681836 !important;
+}
+
+/* Side Bar */
+/* side panel bg */
+.sidebar.col-md-3 {
+	background: none;
+}
+
+/* sidebar inner boxes */
+.col-md-3 .panel {
+	border: none;
+	/* border-radius: 10px; */
+	background: #f6d5da;
+	box-shadow: 1px 1px 3px #755768;
+	color: #15050b;
+}
+
+/* dotted line above chat on smaller screen sizes */
+.clear {
+	border-color: #15050b !important;
+}
+
+/* Progress Bars */
+/* background container */
+.progress {
+	background: #fff;
+	border-radius: 20px;
+	border: 1px solid #ecacb5;
+}
+
+/* default and impression */
+.progress-bar {
+	background: linear-gradient(#f6eff3, #e3ceda);
+}
+
+/* if you want all to match comment out the next three classes */
+/* exp, hunger, and energy */
+/* .progress-bar-success {
+	background: #ffc680;
+}
+.progress-bar-danger {
+	background: #ffba66;
+}
+.progress-bar-warning {
+	background: #ffaf4d;
+} */
+/* text inside the progress bars */
+.progress div {
+	color: #000;
+	font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+}
+
+/* alerts */
+/* all */
+.alert-danger,
+.alert-success,
+.alert-warning {
+	border: none;
+	/* border-radius: 10px; */
+	box-shadow: 1px 1px 3px #755768;
+}
+
+/* red notifications */
+.alert-danger {
+	color: #15050b;
+	background: #e3ceda;
+}
+
+.alert-danger>a,
+.alert-danger>a:link,
+.alert-danger>a:active,
+.alert-danger>a:visited {
+	color: #412535;
+}
+
+.alert-danger>a:hover,
+.alert-danger>a:focus,
+.alert-danger b {
+	color: #15050b;
+}
+
+/* green notifications */
+.alert-success {
+	color: #15050b;
+	background: #f1c1c7;
+}
+
+.alert-success>a,
+.alert-success>a:link,
+.alert-success>a:active,
+.alert-success>a:visited {
+	color: #3e0e21;
+}
+
+.alert-success>a:hover,
+.alert-success>a:focus,
+.alert-success b {
+	color: #15050b;
+}
+
+/* yellow notifications */
+.alert-warning {
+	color: #15050b;
+	background: #ecacb5;
+}
+
+.alert-warning>a,
+.alert-warning>a:link,
+.alert-warning>a:active,
+.alert-warning>a:visited {
+	color: #3e0e21;
+}
+
+.alert-warning>a:hover,
+.alert-warning>a:focus,
+.alert-warning b {
+	color: #15050b;
+}
+
+/* HTML boxes if applicable */
+
+
+/* comment box */
+#commentBox {
+	border: none !important;
+	border-radius: 5px !important;
+	height: 200px !important;
+	background: #faeaec;
+	box-shadow: 1px 1px 3px #755768;
+}
+
+.comment:nth-child(even) {
+	background: #f6d5da !important;
+}
+
+/* scrollbar */
+#commentBox::-webkit-scrollbar {
+	height: 0;
+	width: 8px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #fff;
+}
+
+/* scrollbar button */
+#commentBox::-webkit-scrollbar-thumb {
+	background: #f1c1c7;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#commentBox::-webkit-scrollbar-thumb:hover {
+	background: #ecacb5;
+}
+
+/* tables */
+/* table headers */
+.table .top,
+.table th {
+	background: #ecacb5;
+	color: #15050b;
+	font-family: 'Caveat', 'Times New Roman', Times, serif;
+	font-weight: bold;
+	/* border-top-right-radius: 10px;
+	border-top-left-radius: 10px; */
+}
+
+/* lion title and name */
+.xlarge.b {
+	font-weight: bold;
+}
+
+/* lion image */
+#lion_image>div {
+	/* transition: 1s; */
+	border-radius: 10px;
+	border: none;
+}
+
+/* a:hover > #lion_image > div, a:focus > #lion_image > div {
+	border-radius: 10px;
+} */
+/* table body */
+.table {
+	background: #faeaec;
+	border: none;
+	color: #15050b;
+	/* border-collapse: separate; */
+	/* border-radius: 10px; */
+	box-shadow: 1px 1px 3px #755768;
+}
+
+/* table links */
+.table .top a:link,
+.table .top a:active,
+.table .top a:visited,
+.table th a:link,
+.table th a:active,
+.table th a:visited {
+	color: #3e0e21;
+	font-weight: bold;
+	border-bottom: none;
+}
+
+.table .top a:hover,
+.table th a:hover,
+.table .top a:focus,
+.table th a:focus {
+	color: #15050b;
+	font-weight: bold;
+}
+
+/* left side of stats on king and status bars in caves */
+.table .left {
+	background: #f1c1c7;
+}
+
+/* left side of stats on king */
+.inner-table .left {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+/* right side of king stats */
+.inner-table .right {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #f6d5da;
+}
+
+/* every other lion in caves */
+.table .right_odd {
+	background: #f6d5da;
+}
+
+/* table footers */
+.table .innerHeader,
+.table .bottom,
+#player>tbody>tr {
+	background: #ecacb5;
+	color: #15050b;
+	/* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+}
+
+/* player table footer adjustments for rounded corners */
+#player .right_odd {
+	background: none;
+	/* border-bottom-right-radius: 10px; */
+}
+
+/* #player .right_odd:first-child {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 0;
+} */
+#player tr.right {
+	background: none;
+}
+
+/* quick link to mutated lions under king panel */
+.table .bottom a:link,
+.table .bottom a:visited,
+.table .bottom a:active {
+	color: #3e0e21;
+	text-decoration: none;
+}
+
+.table .bottom a:hover,
+.table .bottom a:focus {
+	color: #15050b;
+	text-decoration: underline;
+}
+
+/* hr in player table */
+#player hr {
+	border-color: transparent;
+	margin: 0;
+	margin-top: 1em;
+}
+
+/* little :|: spans in player table */
+#player .text-muted {
+	color: #15050b80;
+}
+
+/* days left until heat badge */
+.badge {
+	background: #e3ceda;
+	color: #15050b;
+}
+
+/* inputs for typing in text in territory description etc. */
+textarea,
+input,
+select,
+#fra_chatContainer #txtChatInput {
+	color: #000000;
+	background: #ffffff;
+	border: 1px solid #ecacb5;
+}
+
+input::placeholder {
+	color: #00000080;
+}
+
+/* Caves and Mounds Main */
+/* main overrides */
+.mound-grid,
+.cave-grid {
+	background: #e3ceda;
+	border: none;
+	/* border-radius: 10px; */
+	color: #3e0e21;
+	box-shadow: 1px 1px 3px #755768;
+}
+
+/* cave and mound link hover */
+.center>a:hover>.cave-grid,
+.center>a:focus>.cave-grid,
+.center>a:hover>.mound-grid,
+.center>a:focus>.mound-grid {
+	color: #15050b;
+}
+
+/* cave and mound customization */
+/* all caves */
+.cave-grid>img {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/solitude_01.png');
+	height: 120px;
+	object-fit: cover;
+	object-position: top;
+}
+
+/* pride tabs */
+img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'],
+img[src$='//static.lioden.com/images/layout/nestingbanner.png'],
+img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/DeadlandsBG.png');
+	height: 80px;
+	object-fit: cover;
+	object-position: top;
+	filter: saturate(30%);
+}
+
+/* unsorted lions */
+/* img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'] {
+	content: url('LINK');
+	object-position: top;
+} */
+/* pregnant lionesses */
+/* img[src$='//static.lioden.com/images/layout/nestingbanner.png'] {
+	content: url('LINK');
+	object-position: top;
+} */
+/* pride overview */
+/* img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
+	content: url('LINK');
+	object-position: top;
+} */
+/* all mounds */
+/* .mound-grid img {
+	content: url('LINK');
+	padding: 5px;
+} */
+/* all mounds but like a cave */
+.mound-grid {
+	padding: 0 0 5px 0;
+}
+
+.mound-grid img {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/forestswarm.png');
+	height: 100px;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+/* create mound image and empty cave slots */
+img[src$='//static.lioden.com/images/layout/addbeetlemound.png'],
+img[src$='//static.lioden.com/images/layout/caveunused.jpg'] {
+	filter: saturate(50%);
+}
+
+/* featured lion section */
+.featured-lion {
+	background: #ecacb5;
+	color: #15050b;
+	margin-bottom: 20px;
+	/* border-radius: 10px; */
+	box-shadow: 1px 1px 3px #755768;
+}
+
+/* .featured-lion img {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+} */
+/* featured lion background image */
+.featured-lion img[src$='//static.lioden.com/images/cave/default.png'] {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/heavens.png') !important;
+	/* filter: none; */
+}
+
+/* very important if you want it to not look ugly anymore lol don't change the padding here or the media queries at the bottom */
+.featured-lion .b {
+	padding-top: 8px;
+}
+
+.featured-lion a:hover,
+.featured-lion a:focus {
+	color: #15050b;
+}
+
+.featured-lion a:link,
+.featured-lion a:active,
+.featured-lion a:visited {
+	color: #3e0e21;
+}
+
+/* owned by text */
+h1.center>small,
+h1.center>small a:hover,
+h1.center>small a:focus {
+	color: #15050b !important;
+}
+
+h1.center>small a,
+h1.center>small a:link,
+h1.center>small a:visited,
+h1.center>small a:active {
+	color: #3e0e21 !important;
+}
+
+/* dropdown text */
+.table .bottom select {
+	color: #000;
+}
+
+/* Inner Mounds */
+/* menu bg */
+.sub_menu {
+	background: #ecacb5;
+	border: none;
+	/* border-radius: 10px; */
+	box-shadow: 1px 1px 3px #755768;
+}
+
+.sub_sub_menu {
+	display: none;
+}
+
+/* Feature Styling (like feed all play all etc.) */
+div.feature {
+	/* border-radius: 10px; */
+	border: none;
+	background: #faeaec;
+	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 1px 1px 3px #755768;
+}
+
+/* dropdown width (acts funny on smaller screens at the default 200px sometimes) */
+div.feature select {
+	width: 180px !important;
+}
+
+/* header */
+div.feature h3 {
+	color: #15050b;
+}
+
+.feature-footer {
+	background: #faeaec;
+}
+
+/* inner text */
+.feature .xsmall {
+	color: #15050b;
+}
+
+/* Dynasty Pills */
+/* dynasty main */
+div.left {
+	background: #e3ceda;
+	/* border-radius: 10px; */
+	border: none;
+	color: #15050b;
+	box-shadow: 1px 1px 3px #755768;
+}
+
+/* custom dynasty images */
+div.left img {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/romance_02.png');
+	object-fit: cover;
+	object-position: top;
+	padding: 0;
+	height: 60px;
+	max-width: 500px !important;
+	border-bottom-left-radius: inherit;
+	border-bottom-right-radius: inherit;
+}
+
+.dynastylist .left {
+	padding: 5px 0 0 0;
+}
+
+/* dynasty headers */
+.dynastylist h3 {
+	color: #3e0e21;
+	padding-top: 5px;
+}
+
+.dynastylist h3:hover,
+.dynastylist h3:focus {
+	color: #15050b;
+}
+
+/* links in the pills beneath dynasty stuff */
+a div.left {
+	color: #3e0e21;
+}
+
+a div.left:hover,
+a div.left:focus {
+	color: #15050b;
+}
+
+/* Branch */
+.item {
+	background: #f6d5da;
+	border: none;
+	border-radius: 5px;
+}
+
+.item-header {
+	background: #f1c1c7;
+	color: #15050b;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.item-footer {
+	background: #f1c1c7;
+	color: #15050b;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+/* Buttons */
+/* all */
+.select-control,
+button.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.select-control:hover,
+button.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.select-control.bad,
+button.button.bad,
+input[type="button"].bad,
+input[type="submit"].bad,
+input[type="reset"].bad,
+.select-control.bad:hover,
+button.button.bad:hover,
+input[type="button"].bad:hover,
+input[type="submit"].bad:hover,
+input[type="reset"].bad:hover {
+	border-radius: 3px;
+}
+
+/* regular button */
+.select-control,
+button.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+	background: #e3ceda;
+	background: linear-gradient(to bottom, #e3ceda 5%, #d0aec2 5%, #d0aec2 95%, #be8ea9 95%);
+	color: #000000;
+	border: 1px solid #be8ea9;
+	text-shadow: 1px 1px 0px #e3ceda;
+	font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+}
+
+/* regular button hover */
+.select-control:hover,
+button.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+	background: #dabece;
+	background: linear-gradient(to bottom, #dabece 5%, #c79eb5 5%, #c79eb5 95%, #b57d9d 95%);
+	color: #000000;
+	border: 1px solid #b57d9d;
+	text-shadow: 1px 1px 0px #dabece;
+}
+
+/* red button */
+.select-control.bad,
+button.button.bad,
+input[type="button"].bad,
+input[type="submit"].bad,
+input[type="reset"].bad {
+	background: #6a527a;
+	background: linear-gradient(to bottom, #6a527a 5%, #503d5c 5%, #503d5c 49%, #503d5c 95%, #35293d 95%);
+	color: #ffffff;
+	border: 1px solid #1b141f;
+	text-shadow: 1px 1px 0px #35293d;
+}
+
+/* red button hover */
+.select-control.bad:hover,
+button.button.bad:hover,
+input[type="button"].bad:hover,
+input[type="submit"].bad:hover,
+input[type="reset"].bad:hover {
+	background: #5d476b;
+	background: linear-gradient(to bottom, #5d476b 5%, #42334d 5%, #42334d 49%, #42334d 95%, #281f2e 95%);
+	color: #ffffff;
+	border: 1px solid #0d0a0f;
+	text-shadow: 1px 1px 0px #281f2e;
+}
+
+/* Event Flavor Text */
+/* has to go at the bottom since it likes to be mean to me otherwise trust me best left here lol */
+center>div.center.b,
+center>b>span {
+	color: #512f42 !important;
+}
+
+/* Footer */
+/* technically applies to all "white" text on the site but mainly applies to the footer text */
+.white {
+	color: #ffffff;
+	text-shadow: 0 0 5px #000;
+}
+
+/* bottom links container size to prevent weird stacking issues */
+ul.bottomlinks {
+	width: max-content !important;
+}
+
+/* bottoms links */
+.bottomlinks li a,
+.bottomlinks li a:link,
+.bottomlinks li a:active,
+.bottomlinks li a:visited,
+.footer a,
+.footer a:link,
+.footer a:active,
+.footer a:visited {
+	color: #f6d5e2;
+	border-bottom: none;
+}
+
+.bottomlinks li a:hover,
+.bottomlinks li a:focus,
+.footer a:hover,
+footer a:focus {
+	color: #ffffff;
+}
+
+/* CLAN STUFF */
+.page-description {
+	border: none;
+	background: #faeaec;
+	padding: 20px;
+	box-shadow: 1px 1px 3px #755768;
+}
+
+.page-description>div {
+	padding: 0;
+	margin: 0;
+}
+
+/*#region Chat */
+/* main container */
+#chatMessageContainer {
+	border: none;
+}
+
+/* chat buttons */
+#btnChatSettings,
+#btnLoadNewMessages,
+.s-chat-message_menu {
+	filter: grayscale() brightness(0%);
+}
+
+/* menu dropbox */
+.channelMenu>button,
+.channelMenu>div {
+	background: #ecacb5 !important;
+	border-color: transparent !important;
+	box-shadow: none !important;
+	color: #3e0e21 !important;
+	box-shadow: none !important;
+}
+
+/* message text */
+.s-chat-message {
+	color: #15050b;
+}
+
+/* even messages */
+.s-chat-message:nth-child(even) {
+	background: #faeaec;
+}
+
+/* odd messages */
+.s-chat-message:nth-child(odd) {
+	background: #f6d5da;
+}
+
+/* mention */
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention,
+.s-chat-message.hasContext {
+	background: #faeaec !important;
+	border-color: #ecacb5 !important;
+	color: #15050b !important;
+	padding-left: 10px;
+}
+
+.s-chat-message.hasContext .s-chat-message_timestamp,
+.s-chat-message_mention.s-chat-message_timestamp {
+	padding-left: 10px;
+}
+
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention a {
+	color: #3e0e21 !important;
+}
+
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention a:hover,
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention a:focus {
+	color: #15050b !important;
+}
+
+/* scrollbar */
+#chatMessageList::-webkit-scrollbar {
+	width: 8px;
+	background: #fff;
+}
+
+/* scrollbar button */
+#chatMessageList::-webkit-scrollbar-thumb {
+	background: #f1c1c7;
+	border-radius: 0;
+}
+
+#chatMessageList::-webkit-scrollbar-thumb:hover {
+	background: #ecacb5;
+}
+
+/* claim badge */
+.s-chat-message_claim {
+	background: #f1c1c7;
+	border-bottom: none;
+	color: #15050b;
+}
+
+/* claim popout box stuff */
+#modalClaimBG {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+/* main inner bit */
+#modalClaimList {
+	background: #faeaec;
+	color: #15050b;
+	border: none;
+}
+
+#modalClaimList a,
+#modalClaimList a:active,
+#modalClaimList a:visited,
+#modalClaimList a:link {
+	color: #3e0e21;
+}
+
+#modalClaimList a:hover,
+#modalClaimList a:focus {
+	color: #15050b;
+}
+
+/* header */
+#modalClaimList h3 {
+	background: #f1c1c7;
+	color: #15050b;
+}
+
+/* close button */
+#modalClaimList button.close {
+	color: #15050b;
+}
+
+/* pinned message */
+#chatMessagePinned,
+#chatMessagePinned.s-chat-message__pinned {
+	background: #ecacb5;
+	color: #15050b !important;
+	border: none !important;
+}
+
+.s-chat-sidebar #chatMessagePinned.s-chat-message__pinned {
+	text-indent: 4px;
+}
+
+/* timestamp */
+.s-chat-message_timestamp {
+	color: #15050b;
+}
+
+/* mod message text (best left at #000) */
+.s-chat-message__mod,
+.s-chat-message__mod .s-chat-message_content,
+.s-chat-message__mod .s-chat-message_timestamp {
+	color: #000;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher {
+	color: #15050b;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher:hover,
+#fra_chatContainer .channelMenu .channelSwitcher:focus {
+	background: #f1c1c7;
+	color: #15050b;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+	background: #f6d5da;
+	color: #15050b;
+}
+
+/* settings text (DO NOT CHANGE OR IT WILL BREAK) */
+#fra_chatContainer label {
+	color: #000;
+}
+
+/* char count */
+#lblCharacterCounter {
+	color: #15050b !important;
+}
+
+/* code of conduct & chat room link */
+a[href$='./code.php'],
+a[href$='./chat.php'] {
+	color: #15050b;
+}
+
+/*#endregion */
+
+/* Media Query Adjustments */
+@media (max-width: 993px) {
+	.dynastylist {
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		background-position-y: center;
+		background-position-x: center;
+		/* DON'T CHANGE BELOW */
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: auto !important;
+		min-width: 600px;
+	}
+
+	.main,
+	.topbar {
+		box-shadow: none !important;
+	}
+
+	#fraProfileContent.hidden-xs {
+		display: block !important;
+	}
+
+	.breadcrumb::after {
+		right: 22% !important;
+	}
+}
+
+@media (max-width: 684px) {
+	div.lionImage.featured-lion>div {
+		height: 475px !important;
+	}
+}
+
+@media (max-width: 620px) {
+	div.lionImage.featured-lion>div {
+		height: 450px !important;
+	}
+}
