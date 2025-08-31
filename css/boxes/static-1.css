@@ -1,0 +1,56 @@
+.bigBox {
+    background: #A3B4AE;
+    color: #000;
+    border: none;
+    overflow: scroll;
+    height: 320px;
+    width: 46%;
+    padding: 20px;
+    float: left;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.scrollBox {
+    background: #A3B4AE;
+    color: #000;
+    border: none;
+    overflow: scroll;
+    height: 150px;
+    width: 46%;
+    padding: 20px;
+    float: right;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.scrollSection {
+    margin: 0 auto;
+    width: 90%;
+    height: 350px;
+}
+
+.bigBox::-webkit-scrollbar,
+.scrollBox::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.bigBox h1,
+.bigBox h2,
+.bigBox h3,
+.scrollBox h1,
+.scrollBox h2,
+.scrollBox h3 {
+    margin: 0;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    #fraProfileContent.hidden-xs {
+        display: block !important;
+    }
+}

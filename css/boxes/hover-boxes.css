@@ -1,0 +1,75 @@
+.bigBox {
+    background: #A3B4AE;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    margin-bottom: 0;
+    height: 80px;
+    overflow: auto;
+    transition: 2s;
+}
+
+.bigBox:hover,
+.scrollBox:hover {
+    height: 300px;
+}
+
+.bigBox h1,
+.bigBox h2,
+.bigBox h3,
+.scrollBox h1,
+.scrollBox h2,
+.scrollBox h3 {
+    margin: 0;
+    color: inherit;
+}
+
+/* scrollbars */
+.bigBox::-webkit-scrollbar,
+.scrollBox::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* section holding small boxes */
+.scrollSection {
+    display: flex;
+    justify-content: center;
+}
+
+/* small box */
+.scrollBox {
+    background: #A3B4AE;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    height: 60px;
+    width: 450px;
+    margin: 20px;
+    margin-bottom: 0;
+    overflow: auto;
+    float: left;
+    transition: 2s;
+}
+
+@media (max-width: 768px) {
+    #fraProfileContent.hidden-xs {
+        display: block !important;
+    }
+
+    .bigBox {
+        height: 150px !important;
+    }
+
+    .scrollBox {
+        height: 150px !important;
+    }
+
+    .bigBox:hover,
+    .scrollBox:hover {
+        height: 150px !important;
+    }
+}
