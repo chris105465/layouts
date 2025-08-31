@@ -1,0 +1,738 @@
+/* 
+	Layout Made by Chris (#105465) for free use
+All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
+https://www.lioden.com/topic.php?id=304429491963
+*/
+
+/* Background Image and Font Family */
+
+/* import link for font below */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
+@media (min-width: 768px) {
+	body {
+		font-family: 'Nanum Myeongjo', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+		background: #32021F;
+		color: #000;
+	}
+}
+@media (max-width: 768px) {
+	body {
+		font-family: 'Nanum Myeongjo', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+		background: #32021F;
+		width: auto !important;
+		min-width: 600px;
+		color: #000;
+	}
+}
+
+/* Headers */
+
+h1, h2, h3 {
+	color: #000;
+	font-family: 'Nanum Myeongjo', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+.sidebar h3 {
+	color: #000;
+	font-family: 'Nanum Myeongjo', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Other Text */
+
+p {
+	color: #000;
+}
+b {
+	color: #000;
+}
+small {
+	color: #000 !important;
+}
+#fraProfileContent {
+	color: #000;
+}
+
+/* Links */
+
+a:link, a:visited, a:active {
+	color: #100a0c;
+}
+a:hover {
+	color: #000;
+}
+.breadcrumb a {
+	color: #ecdfe4;
+}
+.breadcrumb a:hover, .breadcrumb a:focus {
+	color: #fff;
+}
+
+/* Topbar */
+
+.topbar a:link, .topbar a:visited, .topbar a:active {
+	color: #ebe0e4;
+}
+.topbar a:hover {
+	color: #fff;
+}
+.topbar {
+	background: #5f3a48;
+	border: none;
+    border-radius: 0;
+	color: #fff;
+}
+
+/* Navbar */
+
+.navbar {
+	background: #6f4454;
+	border: none;
+	/* border-radius: none; */
+	font-family: 'Nanum Myeongjo', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+/* logo if applicable */
+.navbar-brand img {
+	/* content: url('LINK'); */
+	filter: hue-rotate(180deg) saturate(20%) brightness(120%);
+}
+/* navbar defaults */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #ebe0e4;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #ebe0e4;
+	font-weight: bold;
+}
+/* mobile toggle box */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+/* make different from navbar */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background: #7e4e60;
+}
+/* bars in navbar icon */
+.navbar-default .navbar-toggle .icon-bar {
+    background: #fff;
+}
+/* collapsed navbar */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #ebe0e4;
+}
+/* active link in navbar */
+.navbar .active a:link, .navbar .active a:visited, .navbar .active a:active, .navbar .active a:focus {
+	background: #7e4e60;
+	color: #fff;
+	/* border-radius: 10px; */
+}
+/* hovered link in navbar */
+.navbar-default .navbar-nav li a:hover {
+	background: #7e4e60;
+	color: #fff;
+	/* border-radius: 10px; */
+}
+/* active and hovered link in navbar */
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	background: #7e4e60;
+	color: #fff;
+	/* border-radius: 10px; */
+}
+
+/* Main and Divs */
+
+.main {
+	background: #968099;
+	border-radius: none;
+	border: none;
+	box-shadow: none;
+}
+@media (max-width: 768px) {
+	.breadcrumb::after {
+		right: 22%;
+	}
+}
+@media (max-width: 993px) {
+	.dynastylist {
+		margin-bottom: 15px;
+	}
+}
+
+/* territory box */
+.col-md-9 {
+	background: none;
+}
+
+/* Breadcrumb */
+
+.breadcrumb {
+	background: #7e4e60;
+	border: none;
+	/* border-radius: 10px; */
+}
+.breadcrumb::after {
+	content: "CSS by Chris (#105465)";
+	position: absolute;
+	right: 20%;
+	z-index: 100;
+	color: #fff;
+}
+.breadcrumb-item.active, .breadcrumb-item::before {
+	color: #e2d0d6 !important;
+}
+
+/* Alerts */
+
+/* red notifications */
+.alert-danger {
+	color: #392d2d;
+	background: #c6b8b8;
+	border: none;
+	/* border-radius: 20px; */
+}
+.alert-danger > a, .alert-danger > a:link, .alert-danger > a:active, .alert-danger > a:visited {
+	color: #473939;
+}
+.alert-danger > a:hover, .alert-danger > a:focus {
+	color: #392d2d;
+}
+/* green notifications */
+.alert-success {
+	color: #2d392d;
+	background: #b8c6b8;
+	border: none;
+	/* border-radius: 20px; */
+}
+.alert-success > a, .alert-success > a:link, .alert-success > a:active, .alert-success > a:visited {
+	color: #394739;
+}
+.alert-success > a:hover, .alert-success > a:focus {
+	color: #2d392d;
+}
+/* yellow notifications */
+.alert-warning {
+	color: #39362d;
+	background: #c6c3b8;
+	border: none;
+	/* border-radius: 20px; */
+}
+.alert-warning > a, .alert-warning > a:link, .alert-warning > a:active, .alert-warning > a:visited {
+	color: #474339;
+}
+.alert-warning > a:hover, .alert-warning > a:focus {
+	color: #39362d;
+}
+.alert-warning b {
+	color: #39362d;
+}
+
+/* HTML Boxes if applicable */
+
+/* comment box */
+#commentBox {
+	border: none !important;
+	border-radius: 5px !important;
+	height: 200px !important;
+	background: #d0dee2;
+}
+.comment:nth-child(even) {
+	background: #c0d3d8 !important;
+}
+/* scrollbar */
+#commentBox::-webkit-scrollbar{
+	height: 0;
+	width: 8px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #fff;
+}
+/* scrollbar button */
+#commentBox::-webkit-scrollbar-thumb {
+	background: #91b3ba;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#commentBox::-webkit-scrollbar-thumb:hover {
+	background: #a1bec4;
+}
+
+/* Tables */
+
+/* table headers */
+.table .top, .table th {
+	background: #b8bfc7;
+	color: #000;
+	font-family: 'Nanum Myeongjo', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
+}
+/* lion title and name */
+.xlarge.b {
+	font-weight: bold;
+}
+/* lion image if applicable */
+
+/* table body */
+.table {
+	background: #e2e5e9;
+	border: none;
+	color: #000;
+}
+/* table links */
+.table .top a:link, .table .top a:active, .table .top a:visited, .table th a:link, .table th a:active, .table th a:visited {
+	color: #100a0c;
+	font-weight: bold;
+}
+.table .top a:hover, .table th a:hover {
+	color: #000;
+	font-weight: bold;
+}
+/* left side of stats on king and status bars in caves */
+.table .left {
+	background: #c6ccd2;
+}
+/* left side of stats on king */
+.inner-table .left {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+/* right side of king stats */
+.inner-table .right {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #d4d9dd;
+}
+/* every other lion in caves */
+.table .right_odd {
+	background: #d4d9dd;
+}
+/* table footers */
+.table .innerHeader, .table .bottom, #player > tbody > tr {
+	background: #b8bfc7;
+	color: #000;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+}
+/* player table footer adjustments for rounded corners */
+#player .right_odd {
+    background: none;
+	/* border-bottom-right-radius: 10px; */
+}
+/* #player .right_odd:first-child {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 0;
+} */
+#player tr.right {
+    background: none;
+}
+/* quick link to mutated lions under king panel */
+.table .bottom a:link, .table .bottom a:visited, .table .bottom a:active {
+	color: #100a0c;
+	text-decoration: none;
+}
+.table .bottom a:hover, .table .bottom a:focus {
+	color: #000;
+	text-decoration: underline;
+}
+/* hr in player table */
+#player hr {
+	border-color: transparent;
+	margin: 0;
+	margin-top: 1em;
+}
+/* little :|: spans in player table */
+#player .text-muted {
+	color: #00000080;
+}
+/* days left until heat badge */
+.badge {
+	background: #82a8b0;
+	color: #000;
+}
+/* inputs for typing in text in territory description etc. */
+textarea {
+	color: #000;
+}
+input {
+	color: #000;
+}
+
+/* Caves and Mounds Main */
+
+/* main overrides */
+.mound-grid, .cave-grid {
+	background: #82a8b0;
+	border: none;
+	/* border-radius: 20px; */
+	color: #100a0c;
+}
+/* cave and mound link hover */
+.center > a:hover > .cave-grid, .center > a:focus > .cave-grid, .center > a:hover > .mound-grid, .center > a:focus > .mound-grid {
+	color: #000;
+}
+/* cave and mound customization if applicable */
+
+
+/* Feature Styling (like feed all play all etc.) */
+
+div.feature {
+	/* border-radius: 20px; */
+	border: none;
+	background: #82a8b0;
+	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/* dropdown width (acts funny on smaller screens at the default 200px sometimes) */
+div.feature select {
+	width: 180px !important;
+}
+/* header */
+div.feature h3 {
+	color: #000;
+}
+.feature-footer {
+	background: #82a8b0;
+}
+/* inner text */
+.feature .xsmall {
+	color: #000;
+}
+
+/* Dynasty Pills */
+
+/* dynasty main */
+div.left {
+	background: #82a8b0;
+	/* border-radius: 20px; */
+	border: 0;
+	color: #000;
+}
+/* dynasty images */
+div.left img {
+	padding: 10px;
+	padding-top: 0;
+}
+/* dynasty headers */
+.dynastylist h3 {
+	color: #100a0c;
+	padding-top: 5px;
+}
+.dynastylist h3:hover, .dynastylist h3:focus {
+	color: #000;
+}
+/* links in the pills beneath dynasty stuff */
+a div.left {
+	color: #100a0c;
+}
+a div.left:hover, a div.left:focus {
+	color: #000;
+}
+
+/* Side Bar */
+
+/* side panel bg */
+.sidebar.col-md-3 {
+	background: none;
+}
+/* sidebar inner boxes */
+.col-md-3 .panel {
+	border: none;
+	/* border-radius: 20px; */
+	background: #c5a0ae;
+	box-shadow: none;
+	color: #000;
+}
+/* dotted line above chat on smaller screen sizes */
+.clear {
+	border-color: #000 !important;
+}
+
+/* Progress Bars */
+
+/* background container */
+.progress {
+	background: #fff;
+	/* border-radius: 20px; */
+}
+/* default and impression */
+.progress-bar {
+	background: #b1c9ce;
+}
+/* text inside the progress bars */
+.progress div {
+	color: #000;
+}
+
+/* Chat Overrides */
+
+/* main container */
+#chatMessageContainer {
+	border: none;
+}
+/* message text */
+.s-chat-message {
+	color: #000;
+}
+/* even messages */
+.s-chat-message:nth-child(even) {
+	background: #d0dee2;
+}
+/* odd messages */
+.s-chat-message:nth-child(odd) {
+	background: #c0d3d8;
+}
+/* mention */
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention {
+	background: #e2e5e9 !important;
+	color: #000;
+}
+/* chat buttons */
+#btnChatSettings, #btnLoadNewMessages, .s-chat-message_menu {
+	filter: grayscale() brightness(0%);
+}
+/* scrollbar */
+#chatMessageList::-webkit-scrollbar {
+	width: 8px;
+	background: #fff;
+}
+/* scrollbar button */
+#chatMessageList::-webkit-scrollbar-thumb {
+	background: #91b3ba;
+    border-radius: 0;
+}
+#chatMessageList::-webkit-scrollbar-thumb:hover {
+	background: #a1bec4;
+}
+/* claim badge */
+.s-chat-message_claim {
+	background: #b1c9ce;
+	border-bottom: none;
+	color: #000;
+}
+/* claim popout box stuff */
+#modalClaimBG {
+    background: rgba(0, 0, 0, 0.5);
+}
+/* main inner bit */
+#modalClaimList {
+    background: #d0dee2;
+    color: #000;
+    border: none;
+}
+#modalClaimList a, #modalClaimList a:active, #modalClaimList a:visited, #modalClaimList a:link {
+    color: #100a0c;
+}
+#modalClaimList a:hover, #modalClaimList a:focus {
+    color: #000;
+}
+/* header */
+#modalClaimList h3 {
+    background: #b1c9ce;
+	color: #000;
+}
+/* empty pinned message */
+#chatMessagePinned {
+	background: #82a8b0;
+	color: #000 !important;
+	border: none !important;
+}
+/* pinned message */
+#chatMessagePinned.s-chat-message__pinned {
+	background: #82a8b0  url('//static.lioden.com/images/layout/sticky.png') no-repeat 10px 6px;
+	color: #000 !important;
+	border: none !important;
+}
+/* timestamp */
+.s-chat-message_timestamp {
+	color: #000;
+}
+/* mod message text (best left at #000) */
+.s-chat-message__mod, .s-chat-message__mod .s-chat-message_content, .s-chat-message__mod .s-chat-message_timestamp {
+	color: #000;
+}
+/* menu dropbox */
+#fra_chatContainer .channelMenu .channelSwitcher {
+	color: #000;
+}
+#fra_chatContainer .channelMenu .channelSwitcher:hover {
+	background: #b1c9ce;
+	color: #000;
+}
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+	background: #c0d3d8;
+	color: #000;
+}
+#fra_chatContainer label {
+	color: #000;
+}
+.channelMenu > button, .channelMenu > div {
+	background: #d0dee2 !important;
+	border-color: transparent !important;
+	box-shadow: none !important;
+	color: #000 !important;
+}
+/* char count */
+#lblCharacterCounter {
+	color: #000 !important;
+}
+/* code of conduct */
+a[href$='./code.php'] {
+	color: #000;
+}
+/* chat room link */
+a[href$='./chat.php'] {
+	color: #000;
+}
+
+/* Emote List */
+
+.emoteList {
+    background: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    border: 2px solid #000;
+}
+.emoteList:after {
+    border-bottom-color: #000;
+}
+.emoteList:before {
+    border-bottom-color: #000;
+}
+
+/* Branch */
+
+.item {
+	background: #d4d9dd;
+	border: none;
+	border-radius: 5px;
+}
+.item-header {
+	background: #c6ccd2;
+	color: #000;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.item-footer {
+	background: #c6ccd2;
+	color: #000;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+/* Inner Caves */
+
+/* featured lion section */
+.featured-lion {
+	background: #b8bfc7;
+	color: #000;
+	margin-bottom: 20px;
+}
+/* very important if you want it to not look ugly anymore lol don't change the padding here or the media queries */
+.featured-lion .b {
+	padding-top: 8px;
+}
+@media (max-width: 684px) {
+	div.lionImage.featured-lion > div {
+		height: 475px !important;
+	}
+}
+@media (max-width: 620px) {
+	div.lionImage.featured-lion > div {
+		height: 450px !important;
+	}
+}
+.featured-lion a:link, .featured-lion a:active, .featured-lion a:visited {
+	color: #100a0c;
+}
+.featured-lion a:hover, .featured-lion a:focus {
+	color: #000;
+}
+/* owned by text */
+h1.center > small {
+	color: #000 !important;
+}
+h1.center > small a, h1.center > small a:link, h1.center > small a:visited, h1.center > small a:active {
+	color: #100a0c !important;
+}
+h1.center > small a:hover, h1.center > small a:focus {
+	color: #000 !important;
+}
+/* dropdown */
+.table .bottom select {
+	color: #000;
+}
+
+/* Inner Mounds */
+
+/* menu bg */
+.sub_menu {
+	background: #b8bfc7;
+	/* border-radius: none; */
+}
+.sub_sub_menu {
+    display: none;
+}
+
+/* Buttons */
+
+/* regular button */
+.select-control, button.button, input[type="button"], input[type="submit"], input[type="reset"] {
+	background: #e0e9eb;
+	background: linear-gradient(to bottom, #e0e9eb 5%,#d0dee2 5%,#d0dee2 95%,#c0d3d8 95%);
+	color: #010101;
+	border: 1px solid #c0d3d8;
+	text-shadow: 1px 1px 0px #e0e9eb;
+	border-radius: 3px;
+}
+/* regular button hover */
+.select-control:hover, button.button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+	background: #b1c9ce;
+	background: linear-gradient(to bottom,  #b1c9ce 5%,#a1bec4 5%,#a1bec4 95%,#91b3ba 95%);
+	color: #010101;
+	border: 1px solid #91b3ba;
+	text-shadow: 1px 1px 0px #91b3ba;
+	border-radius: 3px;
+}
+
+/* Event Flavor Text */
+/* has to go at the bottom since it likes to be mean to me otherwise trust me best left here lol */
+
+center > div.center.b {
+	color: #00131A !important;
+	text-shadow: 1px 1px 0 #d0c6d2;
+	font-style: italic;
+}
+
+/* Footer */
+
+/* technically applies to all "white" text on the site but mainly applies to the footer text */
+.white {
+	color: #fff;
+}
+/* bottom links container size to prevent weird stacking issues */
+ul.bottomlinks {
+	width: max-content !important;
+}
+/* links */
+.bottomlinks li a, .bottomlinks li a:link, .bottomlinks li a:active, .bottomlinks li a:visited {
+	color: #ebe0e4;
+}
+.bottomlinks li a:hover, .bottomlinks li a:focus {
+	color: #fff;
+}
+/* links on smaller screen sizes */
+.footer a, .footer a:link, .footer a:active, .footer a:visited {
+	color: #ebe0e4;
+}
+.footer a:hover, footer a:focus {
+	color: #fff;
+}
+
+.page-description {
+    border: none;
+    background: #c5a0ae;
+    padding: 20px;
+}
+.page-description > div {
+    padding: 0;
+    margin: 0;
+}
