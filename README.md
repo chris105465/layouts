@@ -1,5 +1,5 @@
-# Free Lioden Layouts
-This repository was made for the purpose of storing all of my free stylesheets for use on Lioden. All layouts are subject to the rules laid out on [my thread on the site](https://www.lioden.com/topic.php?id=304429491963). Due to continuing issues with dropbox, I have decided to move my free work here and store all future layouts on GitHub as well.
+# Lioden Layouts
+This repository was made for the purpose of storing all of my stylesheets for use on Lioden. Anything in the main css folder is one of my free layouts. All free layouts are subject to the rules laid out on [my thread on the site](https://www.lioden.com/topic.php?id=304429491963). Due to continuing issues with dropbox, I have decided to move my work here and store all future layouts on GitHub as well.
 
-## Personal Folder Exception
-I have also included a personal folder for anything to do with my own layouts. The location of these may change in the future (such as a separate reository) and are not free for use, so they are not to be edited in the same way as my free layouts.
+## Personal and Comms Folder
+These folders are for my personal layouts and my commission work. I ask that the layouts in these folders not be edited by anyone but me or used by anyone except the commissioner.
