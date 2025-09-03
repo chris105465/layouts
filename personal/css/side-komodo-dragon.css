@@ -1141,6 +1141,7 @@ a[href$='./chat.php'] {
         overflow: auto;
         height: 100%;
         padding: 0;
+        padding-bottom: 1em;
     }
 
     .artbox-inner h3,
