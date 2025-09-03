@@ -104,7 +104,7 @@ a:focus {
 }
 
 .topbar {
-    background: var(--pc1);
+    background: var(--pc1) url('../img/black-scales.png');
     border: 1px solid var(--borderColor);
     border-top: none;
     color: var(--fc1);
@@ -113,7 +113,7 @@ a:focus {
 
 /* Navbar */
 .navbar {
-    background: var(--pc2);
+    background: var(--pc2) url('../img/black-scales.png');
     border-bottom: 1px solid var(--borderColor);
     font-family: var(--headFont);
 }
@@ -378,9 +378,14 @@ a:focus {
 #commentBox {
     border: 1px solid var(--borderColor) !important;
     border-radius: 5px !important;
-    height: 200px !important;
+    height: 34px !important;
     background: var(--pc4);
     box-shadow: 1px 1px 3px #000000;
+    transition: 1.5s;
+}
+
+#commentBox:hover {
+    height: 250px !important;
 }
 
 .comment:nth-child(even) {
@@ -407,11 +412,24 @@ a:focus {
     background: var(--pc1);
 }
 
+#commentBox::before {
+    content: "No roleplay, gimmick, or 'x was here' comments. Please respect my boundaries.";
+    background-color: var(--pc1);
+    background-image: url('../img/black-scales.png');
+    color: #fff;
+    font-style: italic;
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    display: block;
+    padding: 8px !important;
+}
+
 /* tables */
 /* table headers */
 .table .top,
 .table th {
-    background: var(--sc1);
+    background: var(--sc1) url('../img/black-scales.png');
     color: var(--fc1);
     font-family: var(--headFont);
     font-weight: bold;
@@ -483,7 +501,7 @@ a:focus {
 .table .innerHeader,
 .table .bottom,
 #player>tbody>tr {
-    background: var(--sc1);
+    background: var(--sc1) url('../img/black-scales.png');
     color: var(--fc1);
 }
 
@@ -560,7 +578,7 @@ input::placeholder {
 /* main overrides */
 .mound-grid,
 .cave-grid {
-    background: var(--tc);
+    background: var(--tc) url('../img/black-scales.png');
     border: 1px solid var(--borderColor);
     color: var(--fc2);
     box-shadow: 1px 1px 3px #000000;
@@ -634,7 +652,7 @@ img[src$='//static.lioden.com/images/layout/caveunused.jpg'] {
 
 /* featured lion section */
 .featured-lion {
-    background: var(--sc1);
+    background: var(--sc1) url('../img/black-scales.png');
     color: var(--fc1);
     margin-bottom: 20px;
     box-shadow: 0 0 0 1px var(--borderColor), 1px 1px 3px #000000;
@@ -685,7 +703,7 @@ h1.center>small a:active {
 /* Inner Mounds */
 /* menu bg */
 .sub_menu {
-    background: var(--sc1);
+    background: var(--sc1) url('../img/black-scales.png');
     border: 1px solid var(--borderColor);
     box-shadow: 1px 1px 3px #000000;
 }
@@ -726,7 +744,7 @@ div.feature h3 {
 /* Dynasty Pills */
 /* dynasty main */
 div.left {
-    background: var(--tc);
+    background: var(--tc) url('../img/black-scales.png');
     border: 1px solid var(--borderColor);
     color: var(--fc1);
     box-shadow: 1px 1px 3px #000000;
@@ -943,7 +961,7 @@ footer a:focus {
 /* menu dropbox */
 .channelMenu>button,
 .channelMenu>div {
-    background: var(--pc1) !important;
+    background: var(--pc1) url('../img/black-scales.png') !important;
     border-color: var(--borderColor) !important;
     color: var(--fc2) !important;
     box-shadow: none !important;
@@ -1048,7 +1066,8 @@ footer a:focus {
 /* pinned message */
 #chatMessagePinned,
 #chatMessagePinned.s-chat-message__pinned {
-    background: var(--pc1);
+    background: var(--pc1) url('../img/black-scales.png');
+    background-position: 0;
     color: var(--fc1) !important;
     border: none !important;
 }
@@ -1066,7 +1085,20 @@ footer a:focus {
 .s-chat-message__mod,
 .s-chat-message__mod .s-chat-message_content,
 .s-chat-message__mod .s-chat-message_timestamp {
-    color: #000;
+    color: var(--fc1);
+}
+
+.s-chat-message.s-chat-message__mod {
+    background: var(--tc) url('../img/black-scales.png') !important;
+    border: 2px solid var(--eventText) !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    padding-left: 6px;
+}
+
+.s-chat-message__mod .s-chat-message_timestamp {
+    color: var(--fc1) !important;
+    padding-left: 6px;
 }
 
 #fra_chatContainer .channelMenu .channelSwitcher {
@@ -1146,7 +1178,7 @@ a[href$='./chat.php'] {
 
     .artbox-inner h3,
     .linkbox-inner h3 {
-        background-color: var(--pc4);
+        background: var(--pc4) url('../img/black-scales.png');
         margin: 0;
         padding: 1em;
         border: solid var(--borderColor);
@@ -1186,8 +1218,13 @@ a[href$='./chat.php'] {
         display: block !important;
     }
 
-    .breadcrumb::after {
-        right: 22% !important;
+    #commentBox {
+        height: 200px !important;
+        transition: none;
+    }
+
+    #commentBox:hover {
+        height: 200px !important;
     }
 }
 
