@@ -212,7 +212,7 @@ a:focus {
 }
 
 .breadcrumb::after {
-    content: " /  Me Grimlock King";
+    content: " /  Me Grimlock King";
     position: relative;
     z-index: 100;
     color: var(--fc3);
