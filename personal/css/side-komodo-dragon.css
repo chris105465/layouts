@@ -273,7 +273,7 @@ a:focus {
 /* red notifications */
 .alert-danger {
     color: var(--fc1) !important;
-    background: var(--redAlert);
+    background: var(--redAlert) url('../img/black-scales.png');
 }
 
 .alert-danger>a,
@@ -332,7 +332,7 @@ a:focus {
 .about-box {
     background-color: var(--pc3);
     height: 150px;
-    border-radius: 5px;
+    border-radius: 4px;
     border: 1px solid var(--borderColor);
     overflow: auto;
     padding: 1.5em;
@@ -348,7 +348,7 @@ a:focus {
 .linkbox-outer {
     background: var(--pc3);
     height: 300px;
-    border-radius: 5px;
+    border-radius: 4px;
     border: 1px solid var(--borderColor);
     overflow: auto;
     padding: 1.5em;
