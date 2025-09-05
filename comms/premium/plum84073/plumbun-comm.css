@@ -1,0 +1,1207 @@
+/* 
+    Layout Made by Chris (#105465) for PLUM (#84073)
+    Please do not edit or copy any of this code without permission. If you have any questions regarding my work, please message me.
+*/
+/* 
+	CHEAT SHEET (ctrl + h to replace all)
+	main font: 'Lexend', Verdana, 'Geneva', Tahoma, sans-serif
+	header font: 'Unica One', Verdana, 'Geneva', Tahoma, sans-serif
+	font primary: ffffff
+	font secondary: eaf0db
+	font tertiary: d5e0b8
+
+	main bg: 39342d80
+
+	primary one (darkest): 2d3617
+	primary two: 3c471f
+	primary three: 4b5926
+	primary four: 5a6b2e
+	secondary one (darkest): 39342d
+	secondary two: 474138
+	secondary three: 564e43
+	secondary four: 645b4f
+	tertiary (caves n stuff): 2d3617
+
+	red alert bg: 471f1f
+	red alert links: efdcdc
+	green alert bg: 3e471f
+	green alert links: ebefdc
+	yellow alert bg: 473d1f
+	yellow alert links: e8e0ca
+
+	and now...the fun one
+	button one (darkest): afa79d
+	button two: bab3ab
+	button three: c6c0b9
+	button four: d1cdc7
+	button five: ddd9d5
+	button six: e8e6e3
+	button text: 000000
+	red button one (darkest): b7b07b
+	red button two: c0ba8c
+	red button three: c9c49c
+	red button four: d2cdad
+	red button five: dbd7bd
+	red button six: e4e1ce
+	red button seven: edebde
+	red button eight: f6f5ef
+	red button text: 000000
+
+	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
+*/
+
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Unica+One&display=swap');
+
+/* Body */
+body {
+	font-family: 'Lexend', Verdana, 'Geneva', Tahoma, sans-serif;
+	background: #38342e url('https://static.lioden.com/images/dynamic/backgrounds/ubhubhubhucr.png') fixed;
+	background-position-y: top;
+	background-position-x: center;
+	/* DON'T CHANGE BELOW */
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffffff;
+}
+
+/* Headers */
+h1,
+h2,
+h3,
+.sidebar h3 {
+	color: #ffffff;
+	font-family: 'Unica One', Verdana, 'Geneva', Tahoma, sans-serif;
+}
+
+/* Other Text */
+p,
+b,
+#fraProfileContent {
+	color: #ffffff;
+}
+
+small {
+	color: #ffffff !important;
+}
+
+/* Links */
+a:link,
+a:visited,
+a:active {
+	color: #eaf0db;
+}
+
+a:hover,
+a:focus {
+	color: #ffffff;
+}
+
+/* Topbar */
+.topbar a:link,
+.topbar a:visited,
+.topbar a:active {
+	color: #eaf0db;
+}
+
+.topbar a:hover,
+.topbar a:focus {
+	color: #ffffff;
+}
+
+.topbar {
+	background-color: #2d3617;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23ffffff' fill-opacity='0.03' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+	border: none;
+	/* border-top: none; */
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+	background-color: #3c471f;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23ffffff' fill-opacity='0.03' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+	/* border-bottom: 1px solid #ebebeb; */
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	font-family: 'Unica One', Verdana, 'Geneva', Tahoma, sans-serif;
+}
+
+/* logo if applicable */
+.navbar-brand img {
+	content: url('./lioden-plumbun.png');
+	/* filter: none; */
+}
+
+/* navbar defaults */
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	color: #eaf0db;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #eaf0db;
+	font-weight: bold;
+}
+
+/* mobile toggle box */
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+
+/* make different from navbar */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background: #4b5926;
+}
+
+/* bars in navbar icon */
+.navbar-default .navbar-toggle .icon-bar {
+	background: #ffffff;
+}
+
+/* collapsed navbar */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: #2d3617;
+	box-shadow: none;
+}
+
+/* active and hovered links in navbar */
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus,
+.navbar .active a:link,
+.navbar .active a:visited,
+.navbar .active a:active,
+.navbar .active a:focus {
+	background: #4b5926;
+	color: #ffffff;
+	/* border-radius: 10px; */
+}
+
+/* main */
+.main {
+	background: #39342d80;
+	border-radius: 10px;
+	border: none;
+	box-shadow: none;
+	box-shadow: none;
+}
+
+/* territory box */
+.col-md-9 {
+	background: none;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+	background: #4b5926;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px #1d1a16;
+}
+
+.breadcrumb-item.active,
+.breadcrumb-item::before {
+	color: #d5e0b8 !important;
+}
+
+/* Side Bar */
+/* side panel bg */
+.sidebar.col-md-3 {
+	background: none;
+}
+
+/* sidebar inner boxes */
+.col-md-3 .panel {
+	border: none;
+	border-radius: 10px;
+	background: #4b5926;
+	box-shadow: 1px 1px 3px #1d1a16;
+	color: #ffffff;
+}
+
+/* dotted line above chat on smaller screen sizes */
+.clear {
+	border-color: #ffffff !important;
+}
+
+/* Progress Bars */
+/* background container */
+.progress {
+	background: #fff;
+	border-radius: 20px;
+}
+
+/* default and impression */
+.progress-bar {
+	background: #afa79d;
+}
+
+/* text inside the progress bars */
+.progress div {
+	color: #000;
+	font-family: 'Lexend', Verdana, 'Geneva', Tahoma, sans-serif;
+}
+
+/* alerts */
+/* all */
+.alert-danger,
+.alert-success,
+.alert-warning {
+	border: none;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px #1d1a16;
+}
+
+/* red notifications */
+.alert-danger {
+	color: #ffffff;
+	background: #471f1f;
+}
+
+.alert-danger>a,
+.alert-danger>a:link,
+.alert-danger>a:active,
+.alert-danger>a:visited {
+	color: #efdcdc;
+}
+
+.alert-danger>a:hover,
+.alert-danger>a:focus,
+.alert-danger b {
+	color: #ffffff;
+}
+
+/* green notifications */
+.alert-success {
+	color: #ffffff;
+	background: #3e471f;
+}
+
+.alert-success>a,
+.alert-success>a:link,
+.alert-success>a:active,
+.alert-success>a:visited {
+	color: #ebefdc;
+}
+
+.alert-success>a:hover,
+.alert-success>a:focus,
+.alert-success b {
+	color: #ffffff;
+}
+
+/* yellow notifications */
+.alert-warning {
+	color: #ffffff;
+	background: #473d1f;
+}
+
+.alert-warning>a,
+.alert-warning>a:link,
+.alert-warning>a:active,
+.alert-warning>a:visited {
+	color: #e8e0ca;
+}
+
+.alert-warning>a:hover,
+.alert-warning>a:focus,
+.alert-warning b {
+	color: #ffffff;
+}
+
+/* HTML boxes if applicable */
+.plainBox {
+	background-color: #3c471f;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23ffffff' fill-opacity='0.03' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+	color: #ffffff;
+	border: none;
+	border-radius: 10px;
+	width: 88%;
+	margin: auto;
+	padding: 10px;
+	height: auto;
+	overflow: auto;
+	border: none;
+	box-shadow: 1px 1px 3px #1d1a16;
+}
+
+.bigBox {
+	background: #474138;
+	color: #ffffff;
+	overflow: scroll;
+	height: 320px;
+	width: 46%;
+	padding: 20px;
+	float: left;
+	margin: 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	text-align: left;
+	border: none;
+	box-shadow: 1px 1px 3px #1d1a16;
+}
+
+.smallBox {
+	background: #474138;
+	color: #ffffff;
+	overflow: scroll;
+	height: 220px;
+	width: 46%;
+	padding: 20px;
+	float: right;
+	margin: 10px;
+	border-radius: 10px;
+	text-align: left;
+	border: none;
+	box-shadow: 1px 1px 3px #1d1a16;
+}
+
+.static {
+	background: #474138;
+	color: #ffffff;
+	overflow: scroll;
+	float: right;
+	width: 46%;
+	margin: 10px;
+	padding: 20px;
+	height: 80px;
+	border-radius: 10px;
+	text-align: left;
+	border: none;
+	box-shadow: 1px 1px 3px #1d1a16;
+}
+
+.scrollSection {
+	margin: 0 auto;
+	width: 90%;
+	height: 350px;
+}
+
+.bigBox::-webkit-scrollbar,
+.smallBox::-webkit-scrollbar,
+.static::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+.bigBox h1,
+.bigBox h2,
+.bigBox h3,
+.smallBox h1,
+.smallBox h2,
+.smallBox h3 {
+	margin: 0;
+	color: #ffffff;
+}
+
+/* comment box */
+#commentBox {
+	border: none !important;
+	border-radius: 5px !important;
+	height: 200px !important;
+	background: #5a6b2e;
+	box-shadow: 1px 1px 3px #1d1a16;
+}
+
+.comment:nth-child(even) {
+	background: #4b5926 !important;
+}
+
+/* scrollbar */
+#commentBox::-webkit-scrollbar {
+	height: 0;
+	width: 8px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #fff;
+}
+
+/* scrollbar button */
+#commentBox::-webkit-scrollbar-thumb {
+	background: #3c471f;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#commentBox::-webkit-scrollbar-thumb:hover {
+	background: #2d3617;
+}
+
+/* tables */
+/* table headers */
+.table .top,
+.table th {
+	background-color: #39342d;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23ffffff' fill-opacity='0.03' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+	color: #ffffff;
+	font-family: 'Unica One', Verdana, 'Geneva', Tahoma, sans-serif;
+	font-weight: bold;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+/* lion title and name */
+.xlarge.b {
+	font-weight: bold;
+}
+
+/* lion image if applicable */
+#lion_image>div {
+	border-radius: 10px;
+	border: none;
+}
+
+/* table body */
+.table {
+	background: #645b4f;
+	border: none;
+	color: #ffffff;
+	border-collapse: separate;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px #1d1a16;
+}
+
+/* table links */
+.table .top a:link,
+.table .top a:active,
+.table .top a:visited,
+.table th a:link,
+.table th a:active,
+.table th a:visited {
+	color: #eaf0db;
+	font-weight: bold;
+}
+
+.table .top a:hover,
+.table th a:hover,
+.table .top a:focus,
+.table th a:focus {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* left side of stats on king and status bars in caves */
+.table .left {
+	background: #474138;
+}
+
+/* left side of stats on king */
+.inner-table .left {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+/* right side of king stats */
+.inner-table .right {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #564e43;
+}
+
+/* every other lion in caves */
+.table .right_odd {
+	background: none;
+}
+
+/* table footers */
+.table .innerHeader,
+.table .bottom,
+#player>tbody>tr {
+	background-color: #39342d;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23ffffff' fill-opacity='0.03' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+	color: #ffffff;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/* player table footer adjustments for rounded corners */
+#player .right_odd {
+	background: none;
+	border-bottom-right-radius: 10px;
+}
+
+#player .right_odd:first-child {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 0;
+}
+
+#player tr.right {
+	background: none;
+}
+
+/* quick link to mutated lions under king panel */
+.table .bottom a:link,
+.table .bottom a:visited,
+.table .bottom a:active {
+	color: #eaf0db;
+	text-decoration: none;
+}
+
+.table .bottom a:hover,
+.table .bottom a:focus {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+/* hr in player table */
+#player hr {
+	border-color: transparent;
+	margin: 0;
+	margin-top: 1em;
+}
+
+/* little :|: spans in player table */
+#player .text-muted {
+	color: #ffffff80;
+}
+
+/* days left until heat badge */
+.badge {
+	background: #474138;
+	color: #ffffff;
+	border: 1px solid #d2cdc6;
+}
+
+/* inputs for typing in text in territory description etc. */
+textarea,
+input,
+select,
+#fra_chatContainer #txtChatInput {
+	color: #000000;
+	background: #ffffff;
+	border: 1px solid #39342d;
+}
+
+input::placeholder {
+	color: #00000080;
+}
+
+.member-online {
+	position: relative;
+	background: #97b34d;
+	top: -3px;
+	left: -5px;
+}
+
+.member-offline {
+	position: relative;
+	background: #474138;
+	top: -3px;
+	left: -5px;
+}
+
+form .table,
+form .table th,
+form .table .bottom,
+.table.auto,
+.table.auto .top,
+.table.auto th,
+.table.auto .bottom {
+	border-radius: 0;
+}
+
+/* Caves and Mounds Main */
+/* main overrides */
+.mound-grid,
+.cave-grid {
+	background-color: #2d3617;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23ffffff' fill-opacity='0.03' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+	border: none;
+	border-radius: 10px;
+	color: #eaf0db;
+	box-shadow: 1px 1px 3px #1d1a16;
+}
+
+/* cave and mound link hover */
+.center>a:hover>.cave-grid,
+.center>a:focus>.cave-grid,
+.center>a:hover>.mound-grid,
+.center>a:focus>.mound-grid {
+	color: #ffffff;
+}
+
+/* cave and mound customization if applicable */
+/* all caves */
+.cave-grid>img {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/winterchallenge_goodkarma.png');
+	height: 120px;
+	object-fit: cover;
+	object-position: top;
+}
+
+/* pride tabs */
+img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'],
+img[src$='//static.lioden.com/images/layout/nestingbanner.png'],
+img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
+	content: url('./plumbun-unsorted.png');
+	height: 60px;
+	object-fit: cover;
+	object-position: top;
+}
+
+/* all mounds but like a cave */
+.mound-grid {
+	padding: 0 0 5px 0;
+}
+
+.mound-grid img {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/tropicalcasthing.png');
+	height: 100px;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+/* create mound image and empty cave slots */
+img[src$='//static.lioden.com/images/layout/addbeetlemound.png'],
+img[src$='//static.lioden.com/images/layout/caveunused.jpg'] {
+	filter: saturate(50%);
+}
+
+/* individual caves (discuss with them later) */
+/* queen's lair */
+/* a[href$='cave.php?id=397420'] > div > img[src] {
+	content: url('');
+	height: 120px;
+	object-fit: cover;
+	object-position: center;
+} */
+/* caverns */
+/* a[href$='cave.php?id=395703'] > div > img[src] {
+	content: url('');
+	height: 120px;
+	object-fit: cover;
+	object-position: center;
+} */
+/* fields */
+/* a[href$='cave.php?id=401546'] > div > img[src] {
+	content: url('');
+	height: 120px;
+	object-fit: cover;
+	object-position: center;
+} */
+
+/* featured lion section */
+.featured-lion {
+	background: #39342d;
+	color: #ffffff;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px #1d1a16;
+}
+
+.featured-lion img {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+/* featured lion background image */
+.featured-lion img[src$='//static.lioden.com/images/cave/default.png'] {
+	content: url('//static.lioden.com/images/dynamic/backgrounds/ubhubhubhucr.png') !important;
+	/* filter: none; */
+}
+
+/* very important if you want it to not look ugly anymore lol don't change the padding here or the media queries at the bottom */
+.featured-lion .b {
+	padding-top: 8px;
+}
+
+.featured-lion a:hover,
+.featured-lion a:focus {
+	color: #ffffff;
+}
+
+.featured-lion a:link,
+.featured-lion a:active,
+.featured-lion a:visited {
+	color: #eaf0db;
+}
+
+/* owned by text */
+h1.center>small,
+h1.center>small a:hover,
+h1.center>small a:focus {
+	color: #ffffff !important;
+}
+
+h1.center>small a,
+h1.center>small a:link,
+h1.center>small a:visited,
+h1.center>small a:active {
+	color: #eaf0db !important;
+}
+
+/* dropdown */
+.table .bottom select {
+	color: #000;
+}
+
+/* Inner Mounds */
+/* menu bg */
+.sub_menu {
+	background-color: #39342d;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23ffffff' fill-opacity='0.03' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+	border: none;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px #1d1a16;
+}
+
+/* highlighted item on menu */
+.sub_menu_item_selected {
+	background: #474138;
+	/* border-radius: 10px; */
+	color: #ffffff;
+}
+
+.sub_sub_menu {
+	display: none;
+}
+
+/* Feature Styling (like feed all play all etc.) */
+div.feature {
+	border-radius: 10px;
+	border: none;
+	background: #645b4f;
+	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 1px 1px 3px #1d1a16;
+}
+
+/* dropdown width (acts funny on smaller screens at the default 200px sometimes) */
+div.feature select {
+	width: 180px !important;
+}
+
+/* header */
+div.feature h3 {
+	color: #ffffff;
+}
+
+.feature-footer {
+	background: #645b4f;
+}
+
+/* inner text */
+.feature .xsmall {
+	color: #ffffff;
+}
+
+/* Dynasty Pills */
+/* dynasty main */
+div.left {
+	background-color: #2d3617;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23ffffff' fill-opacity='0.03' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+	border-radius: 10px;
+	border: none;
+	color: #ffffff;
+	box-shadow: 1px 1px 3px #1d1a16;
+}
+
+/* custom dynasty images */
+img[src$='//static.lioden.com/images/layout/ancestors.jpg'],
+img[src$='//static.lioden.com/images/layout/ancestorsfem.png'] {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/visionofancestors.png');
+}
+
+img[src$='//static.lioden.com/images/layout/achievements.jpg'],
+img[src$='//static.lioden.com/images/showcase/banner.png'] {
+	content: url('//static.lioden.com/images/dynamic/backgrounds/ankasaforest.png');
+}
+
+div.left img {
+	object-fit: cover;
+	object-position: top;
+	padding: 0;
+	height: 80px;
+	max-width: 500px !important;
+	border-bottom-left-radius: inherit;
+	border-bottom-right-radius: inherit;
+}
+
+.dynastylist .left {
+	padding: 5px 0 0 0;
+}
+
+/* dynasty headers */
+.dynastylist h3 {
+	color: #eaf0db;
+	padding-top: 5px;
+}
+
+.dynastylist h3:hover,
+.dynastylist h3:focus {
+	color: #ffffff;
+}
+
+/* links in the pills beneath dynasty stuff */
+a div.left {
+	color: #eaf0db;
+}
+
+a div.left:hover,
+a div.left:focus {
+	color: #ffffff;
+}
+
+/* Branch */
+.item {
+	background: #564e43;
+	border: none;
+	border-radius: 5px;
+}
+
+.item-header {
+	background: #474138;
+	color: #ffffff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.item-footer {
+	background: #474138;
+	color: #ffffff;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+/* Buttons */
+/* all */
+.select-control,
+button.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.select-control:hover,
+button.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.select-control.bad,
+button.button.bad,
+input[type="button"].bad,
+input[type="submit"].bad,
+input[type="reset"].bad,
+.select-control.bad:hover,
+button.button.bad:hover,
+input[type="button"].bad:hover,
+input[type="submit"].bad:hover,
+input[type="reset"].bad:hover {
+	border-radius: 5px;
+}
+
+/* regular button */
+.select-control,
+button.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+	background: #e8e6e3;
+	background: linear-gradient(to bottom, #e8e6e3 5%, #d1cdc7 5%, #d1cdc7 95%, #bab3ab 95%);
+	color: #000000;
+	border: 1px solid #bab3ab;
+	text-shadow: 1px 1px 0px #e8e6e3;
+	font-family: 'Lexend', Verdana, 'Geneva', Tahoma, sans-serif;
+}
+
+/* regular button hover */
+.select-control:hover,
+button.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+	background: #ddd9d5;
+	background: linear-gradient(to bottom, #ddd9d5 5%, #c6c0b9 5%, #c6c0b9 95%, #afa79d 95%);
+	color: #000000;
+	border: 1px solid #afa79d;
+	text-shadow: 1px 1px 0px #ddd9d5;
+}
+
+/* red button */
+.select-control.bad,
+button.button.bad,
+input[type="button"].bad,
+input[type="submit"].bad,
+input[type="reset"].bad {
+	background: #f6f5ef;
+	background: linear-gradient(to bottom, #f6f5ef 5%, #e4e1ce 5%, #e4e1ce 49%, #e4e1ce 95%, #d2cdad 95%);
+	color: #000000;
+	border: 1px solid #c0ba8c;
+	text-shadow: 1px 1px 0px #f6f5ef;
+}
+
+/* red button hover */
+.select-control.bad:hover,
+button.button.bad:hover,
+input[type="button"].bad:hover,
+input[type="submit"].bad:hover,
+input[type="reset"].bad:hover {
+	background: #edebde;
+	background: linear-gradient(to bottom, #edebde 5%, #dbd7bd 5%, #dbd7bd 49%, #dbd7bd 95%, #c9c49c 95%);
+	color: #000000;
+	border: 1px solid #b7b07b;
+	text-shadow: 1px 1px 0px #edebde;
+}
+
+/* Event Flavor Text */
+/* has to go at the bottom since it likes to be mean to me otherwise trust me best left here lol */
+center>div.center.b {
+	color: #ff3366 !important;
+	text-shadow: 0 0 5px #000;
+}
+
+/* Footer */
+/* technically applies to all "white" text on the site but mainly applies to the footer text */
+.white {
+	color: #ffffff;
+	text-shadow: 0 0 5px #000;
+}
+
+/* bottom links container size to prevent weird stacking issues */
+ul.bottomlinks {
+	width: max-content !important;
+}
+
+/* bottoms links */
+.bottomlinks li a,
+.bottomlinks li a:link,
+.bottomlinks li a:active,
+.bottomlinks li a:visited,
+.footer a,
+.footer a:link,
+.footer a:active,
+.footer a:visited {
+	color: #eaf0db;
+}
+
+.bottomlinks li a:hover,
+.bottomlinks li a:focus,
+.footer a:hover,
+footer a:focus {
+	color: #ffffff;
+}
+
+/*#region Chat */
+/* main container */
+#chatMessageContainer {
+	border: none;
+}
+
+/* chat buttons */
+#btnChatSettings,
+#btnLoadNewMessages,
+.s-chat-message_menu {
+	filter: grayscale() brightness(500%);
+}
+
+/* menu dropbox */
+.channelMenu>button,
+.channelMenu>div {
+	background: #2d3617 !important;
+	border-color: transparent !important;
+	box-shadow: none !important;
+	color: #eaf0db !important;
+	box-shadow: none !important;
+}
+
+/* message text */
+.s-chat-message {
+	color: #ffffff;
+}
+
+/* even messages */
+.s-chat-message:nth-child(even) {
+	background: #5a6b2e;
+}
+
+/* odd messages */
+.s-chat-message:nth-child(odd) {
+	background: #4b5926;
+}
+
+/* mention */
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention,
+.s-chat-message.hasContext {
+	background: #645b4f !important;
+	border-color: #39342d !important;
+	color: #ffffff !important;
+	padding-left: 10px;
+}
+
+.s-chat-message.hasContext .s-chat-message_timestamp,
+.s-chat-message_mention.s-chat-message_timestamp {
+	padding-left: 10px;
+}
+
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention a {
+	color: #eaf0db !important;
+}
+
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention a:hover,
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention a:focus {
+	color: #ffffff !important;
+}
+
+/* scrollbar */
+#chatMessageList::-webkit-scrollbar {
+	width: 8px;
+	background: #fff;
+}
+
+/* scrollbar button */
+#chatMessageList::-webkit-scrollbar-thumb {
+	background: #3c471f;
+	border-radius: 0;
+}
+
+#chatMessageList::-webkit-scrollbar-thumb:hover {
+	background: #2d3617;
+}
+
+/* claim badge */
+.s-chat-message_claim {
+	background: #3c471f;
+	border-bottom: none;
+	color: #ffffff;
+}
+
+/* claim popout box stuff */
+#modalClaimBG {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+/* main inner bit */
+#modalClaimList {
+	background: #5a6b2e;
+	color: #ffffff;
+	border: none;
+}
+
+#modalClaimList a,
+#modalClaimList a:active,
+#modalClaimList a:visited,
+#modalClaimList a:link {
+	color: #eaf0db;
+}
+
+#modalClaimList a:hover,
+#modalClaimList a:focus {
+	color: #ffffff;
+}
+
+/* header */
+#modalClaimList h3 {
+	background: #3c471f;
+	color: #ffffff;
+}
+
+/* close button */
+#modalClaimList button.close {
+	color: #ffffff;
+}
+
+/* pinned message */
+#chatMessagePinned,
+#chatMessagePinned.s-chat-message__pinned {
+	background-color: #2d3617;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23ffffff' fill-opacity='0.03' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+	background-repeat: repeat;
+	color: #ffffff !important;
+	border: none !important;
+}
+
+.s-chat-sidebar #chatMessagePinned.s-chat-message__pinned {
+	text-indent: 4px;
+}
+
+/* timestamp */
+.s-chat-message_timestamp {
+	color: #ffffff;
+}
+
+/* mod message text (best left at #000) */
+.s-chat-message__mod,
+.s-chat-message__mod .s-chat-message_content,
+.s-chat-message__mod .s-chat-message_timestamp {
+	color: #000;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher {
+	color: #ffffff;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher:hover,
+#fra_chatContainer .channelMenu .channelSwitcher:focus {
+	background: #3c471f;
+	color: #ffffff;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+	background: #4b5926;
+	color: #ffffff;
+}
+
+/* settings text (DO NOT CHANGE OR IT WILL BREAK) */
+#fra_chatContainer label {
+	color: #000;
+}
+
+/* char count */
+#lblCharacterCounter {
+	color: #ffffff !important;
+}
+
+/* code of conduct & chat room link */
+a[href$='./code.php'],
+a[href$='./chat.php'] {
+	color: #ffffff;
+}
+
+/*#endregion */
+
+/* Media Query Adjustments */
+@media (max-width: 993px) {
+	.dynastylist {
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		background-position-y: center;
+		background-position-x: center;
+		/* DON'T CHANGE BELOW */
+		width: auto !important;
+		min-width: 600px;
+	}
+
+	.main,
+	.topbar {
+		box-shadow: none !important;
+	}
+
+	#fraProfileContent.hidden-xs {
+		display: block !important;
+	}
+}
+
+@media (max-width: 684px) {
+	div.lionImage.featured-lion>div {
+		height: 475px !important;
+	}
+}
+
+@media (max-width: 620px) {
+	div.lionImage.featured-lion>div {
+		height: 450px !important;
+	}
+}
