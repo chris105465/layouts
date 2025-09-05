@@ -808,16 +808,6 @@ div.left {
 }
 
 /* custom dynasty images */
-img[src$='//static.lioden.com/images/layout/ancestors.jpg'],
-img[src$='//static.lioden.com/images/layout/ancestorsfem.png'] {
-	content: url('https://static.lioden.com/images/dynamic/backgrounds/visionofancestors.png');
-}
-
-img[src$='//static.lioden.com/images/layout/achievements.jpg'],
-img[src$='//static.lioden.com/images/showcase/banner.png'] {
-	content: url('//static.lioden.com/images/dynamic/backgrounds/ankasaforest.png');
-}
-
 div.left img {
 	object-fit: cover;
 	object-position: top;
@@ -826,6 +816,18 @@ div.left img {
 	max-width: 500px !important;
 	border-bottom-left-radius: inherit;
 	border-bottom-right-radius: inherit;
+}
+
+img[src$='//static.lioden.com/images/layout/den_ancestors.png'],
+img[src$='//static.lioden.com/images/layout/den_ancestorsfem.png'] {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/visionofancestors.png');
+	object-position: center 10% !important;
+}
+
+img[src$='//static.lioden.com/images/layout/den_achievements.png'],
+img[src$='//static.lioden.com/images/layout/den_showcase.png'],
+img[src$='//static.lioden.com/images/layout/den_beetlebook.png'] {
+	content: url('//static.lioden.com/images/dynamic/backgrounds/ankasaforest.png');
 }
 
 .dynastylist .left {
