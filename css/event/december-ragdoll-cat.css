@@ -52,7 +52,7 @@
 body {
     font-family: var(--mainFont);
     background: #f4f1f1 url('../../img/events/december-ragdoll-cat.jpg') fixed;
-    background-position-y: center;
+    background-position-y: top;
     background-position-x: center;
     /* DON'T CHANGE BELOW */
     background-repeat: no-repeat;
