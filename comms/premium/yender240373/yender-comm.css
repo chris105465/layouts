@@ -936,7 +936,8 @@ footer a:focus {
 /*#region Chat */
 /* main container */
 #chatMessageContainer {
-    border: 1px solid var(--borderColor);
+    border: 4px double var(--borderColor);
+    width: 260px;
 }
 
 /* chat buttons */
