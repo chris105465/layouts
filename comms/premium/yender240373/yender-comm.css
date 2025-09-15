@@ -937,6 +937,7 @@ footer a:focus {
 /* main container */
 #chatMessageContainer {
     border: 4px double var(--borderColor);
+    width: 99.9%;
 }
 
 /* chat buttons */
@@ -1109,18 +1110,6 @@ a[href$='./chat.php'] {
 /*#endregion */
 
 /* Media Query Adjustments */
-@media (min-width: 1200px) {
-    #chatMessageContainer {
-        width: 260px;
-    }
-}
-
-@media (min-width: 992px) {
-    #chatMessageContainer {
-        width: 210px;
-    }
-}
-
 @media (max-width: 993px) {
     .dynastylist {
         margin-bottom: 15px;
