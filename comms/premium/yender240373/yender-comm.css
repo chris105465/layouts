@@ -409,16 +409,16 @@ img[src*='icon-beetle-gold.png'] {
 #commentBox::-webkit-scrollbar {
     height: 0;
     width: 8px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     background: #fff;
 }
 
 /* scrollbar button */
 #commentBox::-webkit-scrollbar-thumb {
     background: var(--pc2);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 #commentBox::-webkit-scrollbar-thumb:hover {
