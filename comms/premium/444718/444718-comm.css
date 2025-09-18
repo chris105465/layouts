@@ -1140,6 +1140,19 @@ a[href$='./chat.php'] {
     .breadcrumb::after {
         right: 22% !important;
     }
+
+    .bigBox {
+        height: 150px !important;
+    }
+
+    .scrollBox {
+        height: 150px !important;
+    }
+
+    .bigBox:hover,
+    .scrollBox:hover {
+        height: 150px !important;
+    }
 }
 
 @media (max-width: 684px) {
