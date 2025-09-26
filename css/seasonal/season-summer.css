@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Nunito', Verdana, 'Geneva', Tahoma, sans-serif
-	header font: 'Nunito', Verdana, 'Geneva', Tahoma, sans-serif
-	font primary: 0c0f0b
-	font secondary: 181d16
-	font tertiary: 232c21
-
-	main bg: F1F4F080
-
-	primary one (darkest): 9d9d95
-	primary two: a9a9a2
-	primary three: b6b6af
-	primary four: c2c2bd
-	secondary one (darkest): 9d9d95
-	secondary two: a9a9a2
-	secondary three: b6b6af
-	secondary four: c2c2bd
-	tertiary (caves n stuff): c8ddea
-
-	red alert bg: b5d1e3
-	red alert links: 181d16
-	green alert bg: a9a9a2
-	green alert links: 181d16
-	yellow alert bg: 9d9d95
-	yellow alert links: 181d16
-
-	and now...the fun one
-	button one (darkest): 6ba4c7
-	button two: 7eafce
-	button three: 90bbd5
-	button four: a3c6dc
-	button five: b5d1e3
-	button six: c8ddea
-	button text: 000000
-	red button one (darkest): c7b66b
-	red button two: cebf7e
-	red button three: d5c890
-	red button four: dcd1a3
-	red button five: e3dbb5
-	red button six: eae4c8
-	red button seven: f1edda
-	red button eight: f8f6ed
-	red button text: 000000
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+	--fc1: #0c0f0b;
+	--pc4: #c2c2bd;
+	--borderColor: transparent;
+}
 
 /* Body */
 body {

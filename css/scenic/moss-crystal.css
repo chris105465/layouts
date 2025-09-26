@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'EB Garamond', 'Times New Roman', Times, serif
-	header font: 'Tillana', 'Times New Roman', Times, serif
-	font primary: ffffff
-	font secondary: faf2d1
-	font tertiary: f5e4a3
-
-	main bg: 17130380
-
-	primary one (darkest): 171303
-	primary two: 2e2605
-	primary three: 453908
-	primary four: 5c4b0a
-	secondary one (darkest): 171303
-	secondary two: 2e2605
-	secondary three: 453908
-	secondary four: 5c4b0a
-	tertiary (caves n stuff): 795A03
-
-	red alert bg: 41160b
-	red alert links: f0b7a8
-	green alert bg: 33570f
-	green alert links: ccf0a8
-	yellow alert bg: 573a0f
-	yellow alert links: f0d3a8
-
-	and now...the fun one
-	button one (darkest): 322501
-	button two: 4b3702
-	button three: 634a03
-	button four: 7c5c03
-	button five: 956e04
-	button six: ae8104
-	button text: ffffff
-	red button one (darkest): 030317
-	red button two: 06062d
-	red button three: 090944
-	red button four: 0c0c5a
-	red button five: 0f0f71
-	red button six: 121287
-	red button seven: 15159e
-	red button eight: 1717b5
-	red button text: ffffff
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Tillana:wght@400;700&display=swap');
+
+:root {
+	--fc1: #ffffff;
+	--pc4: #5c4b0a;
+	--borderColor: transparent;
+}
 
 /* Body */
 body {

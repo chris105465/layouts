@@ -7,6 +7,13 @@ https://www.lioden.com/topic.php?id=304429491963
 /* Background Image and Font Family */
 /* import link for font below */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Heebo:wght@400;700&display=swap');
+
+:root {
+	--fc1: #ffffff;
+	--pc4: #262626;
+	--borderColor: #cc0014;
+}
+
 @media (min-width: 768px) {
 	body {
 		font-family: 'Heebo', 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;

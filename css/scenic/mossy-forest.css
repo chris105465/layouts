@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Inter', Arial, Helvetica, sans-serif
-	header font: 'Inter', Arial, Helvetica, sans-serif
-	font primary: 000000
-	font secondary: 21240f
-	font tertiary: 323617
-
-	main bg: fdffd080
-
-	primary one (darkest): 858f3d
-	primary two: 96a145
-	primary three: a7b34d
-	primary four: afba5e
-	secondary one (darkest): 858f3d
-	secondary two: 96a145
-	secondary three: a7b34d
-	secondary four: afba5e
-	tertiary (caves n stuff): e5ec5f
-
-	red alert bg: e5ec5f
-	red alert links: 2c2e05
-	green alert bg: 96a145
-	green alert links: 21240f
-	yellow alert bg: 858f3d
-	yellow alert links: 21240f
-
-	and now...the fun one
-	button one (darkest): 161703
-	button two: 2c2e05
-	button three: 414408
-	button four: 575b0b
-	button five: 6d720d
-	button six: 838910
-	button text: ffffff
-	red button one (darkest): 090911
-	red button two: 121221
-	red button three: 1b1b32
-	red button four: 242442
-	red button five: 2d2d53
-	red button six: 363663
-	red button seven: 3e3e74
-	red button eight: 474785
-	red button text: ffffff
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+	--fc1: #000000;
+	--pc4: #afba5e;
+	--borderColor: #ffffff;
+}
 
 /* Body */
 body {

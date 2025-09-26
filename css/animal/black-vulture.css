@@ -7,6 +7,12 @@ https://www.lioden.com/topic.php?id=304429491963
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+:root {
+    --fc1: #ffffff;
+    --pc4: #3d3f43;
+    --borderColor: #000000;
+}
+
 /* Body */
 body {
     font-family: 'Mulish', Verdana, 'Geneva', Tahoma, sans-serif;

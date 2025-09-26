@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Poppins', Arial, Helvetica, sans-serif
-	header font: 'Lora', Georgia, 'Times New Roman', Times, serif
-	font primary: ffffff
-	font secondary: f2f2f2
-	font tertiary: e6e6e6
-
-	main bg: 000000b3
-
-	primary one (darkest): 000000
-	primary two: 0d0d0d
-	primary three: 1a1a1a
-	primary four: 262626
-	secondary one (darkest): 000000
-	secondary two: 0d0d0d
-	secondary three: 1a1a1a
-	secondary four: 262626
-	tertiary (caves n stuff): 333333
-
-	red alert bg: null
-	red alert links: f2f2f2
-	green alert bg: 104A00
-	green alert links: d7ffcc
-	yellow alert bg: 404A00
-	yellow alert links: f8ffcc
-
-	and now...the fun one
-	button one (darkest): 001a1a
-	button two: 003333
-	button three: 004d4d
-	button four: 006666
-	button five: 008080
-	button six: 009999
-	button text: ffffff
-	red button one (darkest): 110416
-	red button two: 22082b
-	red button three: 340b41
-	red button four: 450f57
-	red button five: 56136c
-	red button six: 671782
-	red button seven: 781b98
-	red button eight: 8a1fad
-	red button text: fef7fe
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	--fc1: #ffffff;
+	--pc4: #262626;
+	--borderColor: #000000;
+}
 
 /* Body */
 body {

@@ -7,6 +7,12 @@ https://www.lioden.com/topic.php?id=304429491963
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+:root {
+    --fc1: #ffffff;
+    --pc4: #423d42;
+    --borderColor: #ffffff;
+}
+
 /* Body */
 body {
     font-family: 'Nunito', Verdana, 'Geneva', Tahoma, sans-serif;

@@ -8,19 +8,27 @@ https://www.lioden.com/topic.php?id=304429491963
 
 /* import link for font below */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+	--fc1: #1a1100;
+	--pc4: #ffeecc;
+	--borderColor: transparent;
+}
+
 @media (min-width: 768px) {
 	body {
 		font-family: 'Roboto', Verdana, 'Geneva', Tahoma, sans-serif;
 		background: linear-gradient(#ffd480, #ffe6b3, #ffd480) fixed;
-        /* DON'T CHANGE BELOW */
+		/* DON'T CHANGE BELOW */
 		color: #1a1100;
 	}
 }
+
 @media (max-width: 768px) {
 	body {
 		font-family: 'Roboto', Verdana, 'Geneva', Tahoma, sans-serif;
 		background: linear-gradient(#ffd480, #ffe6b3, #ffd480) fixed;
-        /* DON'T CHANGE BELOW */
+		/* DON'T CHANGE BELOW */
 		width: auto !important;
 		min-width: 600px;
 		color: #1a1100;
@@ -29,10 +37,13 @@ https://www.lioden.com/topic.php?id=304429491963
 
 /* Headers */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	color: #1a1100;
 	font-family: 'Lora', 'Times New Roman', Times, serif;
 }
+
 .sidebar h3 {
 	color: #1a1100;
 	font-family: 'Lora', 'Times New Roman', Times, serif;
@@ -43,38 +54,50 @@ h1, h2, h3 {
 p {
 	color: #1a1100;
 }
+
 b {
 	color: #1a1100;
 }
+
 small {
 	color: #1a1100 !important;
 }
+
 #fraProfileContent {
 	color: #1a1100;
 }
 
 /* Links */
 
-a:link, a:visited, a:active {
+a:link,
+a:visited,
+a:active {
 	color: #332200;
 }
-a:hover, a:focus {
+
+a:hover,
+a:focus {
 	color: #1a1100;
 }
 
 /* Topbar */
 
-.topbar a:link, .topbar a:visited, .topbar a:active {
+.topbar a:link,
+.topbar a:visited,
+.topbar a:active {
 	color: #332200;
 }
-.topbar a:hover, .topbar a:focus {
+
+.topbar a:hover,
+.topbar a:focus {
 	color: #1a1100;
 }
+
 .topbar {
 	background: #ffbb33;
 	border: none;
 	/* border-top: none; */
-    /* border-bottom-left-radius: 10px;
+	/* border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; */
 	color: #1a1100;
 }
@@ -88,51 +111,68 @@ a:hover, a:focus {
 	border-top-left-radius: 10px; */
 	font-family: 'Lora', 'Times New Roman', Times, serif;
 }
+
 /* logo if applicable */
 .navbar-brand img {
 	/* content: url('LINK'); */
 	filter: hue-rotate(15deg) brightness(150%);
 }
+
 /* navbar defaults */
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
 	color: #332200;
 }
-.navbar-default .navbar-nav > li > a {
+
+.navbar-default .navbar-nav>li>a {
 	color: #332200;
 	font-weight: bold;
 }
+
 /* mobile toggle box */
 .navbar-default .navbar-toggle {
-    border-color: transparent;
+	border-color: transparent;
 }
+
 /* make different from navbar */
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background: #ffcc66;
+	background: #ffcc66;
 }
+
 /* bars in navbar icon */
 .navbar-default .navbar-toggle .icon-bar {
-    background: #1a1100;
+	background: #1a1100;
 }
+
 /* collapsed navbar */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-    border-color: #332200;
+	border-color: #332200;
 }
+
 /* active link in navbar */
-.navbar .active a:link, .navbar .active a:visited, .navbar .active a:active, .navbar .active a:focus {
+.navbar .active a:link,
+.navbar .active a:visited,
+.navbar .active a:active,
+.navbar .active a:focus {
 	background: #ffcc66;
 	color: #1a1100;
 	/* border-radius: 10px; */
 }
+
 /* hovered link in navbar */
-.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus {
 	background: #ffcc66;
 	color: #1a1100;
 	/* border-radius: 10px; */
 }
+
 /* active and hovered link in navbar */
-.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
 	background: #ffcc66;
 	color: #1a1100;
 	/* border-radius: 10px; */
@@ -142,16 +182,18 @@ a:hover, a:focus {
 
 .main {
 	background-color: #ffcf6c;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23e4b658' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23e4b658' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 	border-radius: none;
 	border: none;
 	box-shadow: none;
 }
+
 @media (max-width: 768px) {
 	.breadcrumb::after {
 		right: 22%;
 	}
 }
+
 @media (max-width: 993px) {
 	.dynastylist {
 		margin-bottom: 15px;
@@ -170,6 +212,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	border: none;
 	/* border-radius: 10px; */
 }
+
 .breadcrumb::after {
 	content: "CSS by Chris (#105465)";
 	position: absolute;
@@ -177,7 +220,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	z-index: 100;
 	color: #1a1100;
 }
-.breadcrumb-item.active, .breadcrumb-item::before {
+
+.breadcrumb-item.active,
+.breadcrumb-item::before {
 	color: #4d3300 !important;
 }
 
@@ -190,12 +235,20 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	border: none;
 	/* border-radius: 10px; */
 }
-.alert-danger > a, .alert-danger > a:link, .alert-danger > a:active, .alert-danger > a:visited {
+
+.alert-danger>a,
+.alert-danger>a:link,
+.alert-danger>a:active,
+.alert-danger>a:visited {
 	color: #660000;
 }
-.alert-danger > a:hover, .alert-danger > a:focus, .alert-danger b {
+
+.alert-danger>a:hover,
+.alert-danger>a:focus,
+.alert-danger b {
 	color: #4d0000;
 }
+
 /* green notifications */
 .alert-success {
 	color: #1a3300;
@@ -203,12 +256,20 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	border: none;
 	/* border-radius: 10px; */
 }
-.alert-success > a, .alert-success > a:link, .alert-success > a:active, .alert-success > a:visited {
+
+.alert-success>a,
+.alert-success>a:link,
+.alert-success>a:active,
+.alert-success>a:visited {
 	color: #336600;
 }
-.alert-success > a:hover, .alert-success > a:focus, .alert-success b {
+
+.alert-success>a:hover,
+.alert-success>a:focus,
+.alert-success b {
 	color: #264d00;
 }
+
 /* yellow notifications */
 .alert-warning {
 	color: #332200;
@@ -216,12 +277,20 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	border: none;
 	/* border-radius: 10px; */
 }
-.alert-warning > a, .alert-warning > a:link, .alert-warning > a:active, .alert-warning > a:visited {
+
+.alert-warning>a,
+.alert-warning>a:link,
+.alert-warning>a:active,
+.alert-warning>a:visited {
 	color: #664400;
 }
-.alert-warning > a:hover, .alert-warning > a:focus, .alert-warning b {
+
+.alert-warning>a:hover,
+.alert-warning>a:focus,
+.alert-warning b {
 	color: #4d3300;
 }
+
 /* HTML Boxes if applicable */
 
 
@@ -234,23 +303,27 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	height: 200px !important;
 	background: #ffeecc;
 }
+
 .comment:nth-child(even) {
 	background: #ffe6b3 !important;
 }
+
 /* scrollbar */
-#commentBox::-webkit-scrollbar{
+#commentBox::-webkit-scrollbar {
 	height: 0;
 	width: 8px;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	background: #fff;
 }
+
 /* scrollbar button */
 #commentBox::-webkit-scrollbar-thumb {
 	background: #ffbb33;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
+
 #commentBox::-webkit-scrollbar-thumb:hover {
 	background: #ffc34d;
 }
@@ -258,7 +331,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* Tables */
 
 /* table headers */
-.table .top, .table th {
+.table .top,
+.table th {
 	background: #ffd480;
 	color: #1a1100;
 	font-family: 'Lora', 'Times New Roman', Times, serif;
@@ -266,10 +340,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	/* border-top-right-radius: 10px; */
 	/* border-top-left-radius: 10px; */
 }
+
 /* lion title and name */
 .xlarge.b {
 	font-weight: bold;
 }
+
 /* lion image if applicable */
 
 /* table body */
@@ -280,87 +356,120 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	/* border-collapse: separate; */
 	/* border-radius: 10px; */
 }
+
 /* table links */
-.table .top a:link, .table .top a:active, .table .top a:visited, .table th a:link, .table th a:active, .table th a:visited {
+.table .top a:link,
+.table .top a:active,
+.table .top a:visited,
+.table th a:link,
+.table th a:active,
+.table th a:visited {
 	color: #332200;
 	font-weight: bold;
 }
-.table .top a:hover, .table th a:hover, .table .top a:focus, .table th a:focus {
+
+.table .top a:hover,
+.table th a:hover,
+.table .top a:focus,
+.table th a:focus {
 	color: #1a1100;
 	font-weight: bold;
 }
+
 /* left side of stats on king and status bars in caves */
 .table .left {
 	background: #ffdd99;
 }
+
 /* left side of stats on king */
 .inner-table .left {
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
+
 /* right side of king stats */
 .inner-table .right {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	background: #ffe6b3;
 }
+
 /* every other lion in caves */
 .table .right_odd {
 	background: #ffe6b3;
 }
+
 /* table footers */
-.table .innerHeader, .table .bottom, #player > tbody > tr {
+.table .innerHeader,
+.table .bottom,
+#player>tbody>tr {
 	background: #ffd480;
 	color: #1a1100;
-    /* border-bottom-left-radius: 10px;
+	/* border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; */
 }
+
 /* player table footer adjustments for rounded corners */
 #player .right_odd {
-    background: none;
+	background: none;
 	/* border-bottom-right-radius: 10px; */
 }
+
 /* #player .right_odd:first-child {
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 0;
 } */
 #player tr.right {
-    background: none;
+	background: none;
 }
+
 /* quick link to mutated lions under king panel */
-.table .bottom a:link, .table .bottom a:visited, .table .bottom a:active {
+.table .bottom a:link,
+.table .bottom a:visited,
+.table .bottom a:active {
 	color: #332200;
 	text-decoration: none;
 }
-.table .bottom a:hover, .table .bottom a:focus {
+
+.table .bottom a:hover,
+.table .bottom a:focus {
 	color: #1a1100;
 	text-decoration: underline;
 }
+
 /* hr in player table */
 #player hr {
 	border-color: transparent;
 	margin: 0;
 	margin-top: 1em;
 }
+
 /* little :|: spans in player table */
 #player .text-muted {
 	color: #1a110080;
 }
+
 /* days left until heat badge */
 .badge {
 	background: #ffc34d;
 	border: 1px solid #fff;
 	color: #1a1100;
 }
+
 /* inputs for typing in text in territory description etc. */
-textarea, input, select, #fra_chatContainer #txtChatInput {
+textarea,
+input,
+select,
+#fra_chatContainer #txtChatInput {
 	color: #1a1100;
 	background: #fff;
 	border: 1px solid #ffd480;
 }
+
 input::placeholder {
 	color: #1a110080;
 }
+
 #player .center.auto {
 	max-width: max-content !important;
 }
@@ -368,16 +477,22 @@ input::placeholder {
 /* Caves and Mounds Main */
 
 /* main overrides */
-.mound-grid, .cave-grid {
+.mound-grid,
+.cave-grid {
 	background: #ffbb33;
 	border: none;
 	/* border-radius: 10px; */
 	color: #332200;
 }
+
 /* cave and mound link hover */
-.center > a:hover > .cave-grid, .center > a:focus > .cave-grid, .center > a:hover > .mound-grid, .center > a:focus > .mound-grid {
+.center>a:hover>.cave-grid,
+.center>a:focus>.cave-grid,
+.center>a:hover>.mound-grid,
+.center>a:focus>.mound-grid {
 	color: #1a1100;
 }
+
 /* cave and mound customization if applicable */
 
 
@@ -391,17 +506,21 @@ div.feature {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
 /* dropdown width (acts funny on smaller screens at the default 200px sometimes) */
 div.feature select {
 	width: 180px !important;
 }
+
 /* header */
 div.feature h3 {
 	color: #1a1100;
 }
+
 .feature-footer {
 	background: #ffeecc;
 }
+
 /* inner text */
 .feature .xsmall {
 	color: #1a1100;
@@ -416,24 +535,31 @@ div.left {
 	border: none;
 	color: #1a1100;
 }
+
 /* dynasty images */
 div.left img {
 	padding: 10px;
 	padding-top: 0;
 }
+
 /* dynasty headers */
 .dynastylist h3 {
 	color: #332200;
 	padding-top: 5px;
 }
-.dynastylist h3:hover, .dynastylist h3:focus {
+
+.dynastylist h3:hover,
+.dynastylist h3:focus {
 	color: #1a1100;
 }
+
 /* links in the pills beneath dynasty stuff */
 a div.left {
 	color: #332200;
 }
-a div.left:hover, a div.left:focus {
+
+a div.left:hover,
+a div.left:focus {
 	color: #1a1100;
 }
 
@@ -443,6 +569,7 @@ a div.left:hover, a div.left:focus {
 .sidebar.col-md-3 {
 	background: none;
 }
+
 /* sidebar inner boxes */
 .col-md-3 .panel {
 	border: none;
@@ -451,6 +578,7 @@ a div.left:hover, a div.left:focus {
 	box-shadow: none;
 	color: #1a1100;
 }
+
 /* dotted line above chat on smaller screen sizes */
 .clear {
 	border-color: #1a1100 !important;
@@ -463,10 +591,12 @@ a div.left:hover, a div.left:focus {
 	background: #fff;
 	/* border-radius: 20px; */
 }
+
 /* default and impression */
 .progress-bar {
 	background: #ffc34d;
 }
+
 /* if you want all to match comment out the next three classes */
 /* exp, hunger, and energy */
 /* .progress-bar-success {
@@ -490,128 +620,169 @@ a div.left:hover, a div.left:focus {
 #chatMessageContainer {
 	border: none;
 }
+
 /* message text */
 .s-chat-message {
 	color: #1a1100;
 }
+
 /* even messages */
 .s-chat-message:nth-child(even) {
 	background: #ffeecc;
 }
+
 /* odd messages */
 .s-chat-message:nth-child(odd) {
 	background: #ffe6b3;
 }
+
 /* mention */
-#chatMessageList[data-pings="enabled"] .s-chat-message_mention, .s-chat-message.hasContext {
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention,
+.s-chat-message.hasContext {
 	background: #ffeecc !important;
 	border-color: #ffd480 !important;
 	color: #1a1100 !important;
 	padding-left: 10px;
 }
-.s-chat-message.hasContext .s-chat-message_timestamp, .s-chat-message_mention.s-chat-message_timestamp {
+
+.s-chat-message.hasContext .s-chat-message_timestamp,
+.s-chat-message_mention.s-chat-message_timestamp {
 	padding-left: 10px;
 }
+
 #chatMessageList[data-pings="enabled"] .s-chat-message_mention a {
 	color: #332200 !important;
 }
+
 /* chat buttons */
-#btnChatSettings, #btnLoadNewMessages, .s-chat-message_menu {
+#btnChatSettings,
+#btnLoadNewMessages,
+.s-chat-message_menu {
 	filter: grayscale() brightness(0%);
 }
+
 /* scrollbar */
 #chatMessageList::-webkit-scrollbar {
 	width: 8px;
 	background: #fff;
 }
+
 /* scrollbar button */
 #chatMessageList::-webkit-scrollbar-thumb {
 	background: #ffbb33;
-    border-radius: 0;
+	border-radius: 0;
 }
+
 #chatMessageList::-webkit-scrollbar-thumb:hover {
 	background: #ffc34d;
 }
+
 /* claim badge */
 .s-chat-message_claim {
 	background: #ffdd99;
 	border-bottom: none;
 	color: #1a1100;
 }
+
 /* claim popout box stuff */
 #modalClaimBG {
-    background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.5);
 }
+
 /* main inner bit */
 #modalClaimList {
-    background: #ffeecc;
-    color: #1a1100;
-    border: none;
+	background: #ffeecc;
+	color: #1a1100;
+	border: none;
 }
-#modalClaimList a, #modalClaimList a:active, #modalClaimList a:visited, #modalClaimList a:link {
-    color: #332200;
+
+#modalClaimList a,
+#modalClaimList a:active,
+#modalClaimList a:visited,
+#modalClaimList a:link {
+	color: #332200;
 }
-#modalClaimList a:hover, #modalClaimList a:focus {
-    color: #1a1100;
-}
-/* header */
-#modalClaimList h3 {
-    background: #ffdd99;
+
+#modalClaimList a:hover,
+#modalClaimList a:focus {
 	color: #1a1100;
 }
+
+/* header */
+#modalClaimList h3 {
+	background: #ffdd99;
+	color: #1a1100;
+}
+
 /* close button */
 #modalClaimList button.close {
 	color: #1a1100;
 }
+
 /* empty pinned message */
 #chatMessagePinned {
 	background: #ffd480;
 	color: #1a1100 !important;
 	border: none !important;
 }
+
 /* pinned message */
 #chatMessagePinned.s-chat-message__pinned {
-	background: #ffd480  url('//static.lioden.com/images/layout/sticky.png') no-repeat 10px 6px;
+	background: #ffd480 url('//static.lioden.com/images/layout/sticky.png') no-repeat 10px 6px;
 	color: #1a1100 !important;
 	border: none !important;
 }
+
 /* timestamp */
 .s-chat-message_timestamp {
 	color: #1a1100;
 }
+
 /* mod message text (best left at #000) */
-.s-chat-message__mod, .s-chat-message__mod .s-chat-message_content, .s-chat-message__mod .s-chat-message_timestamp {
+.s-chat-message__mod,
+.s-chat-message__mod .s-chat-message_content,
+.s-chat-message__mod .s-chat-message_timestamp {
 	color: #000;
 }
+
 /* menu dropbox */
 #fra_chatContainer .channelMenu .channelSwitcher {
 	color: #1a1100;
 }
-#fra_chatContainer .channelMenu .channelSwitcher:hover, #fra_chatContainer .channelMenu .channelSwitcher:focus {
+
+#fra_chatContainer .channelMenu .channelSwitcher:hover,
+#fra_chatContainer .channelMenu .channelSwitcher:focus {
 	background: #ffdd99;
 	color: #1a1100;
 }
+
 #fra_chatContainer .channelMenu .channelSwitcher.active {
 	background: #ffe6b3;
 	color: #1a1100;
 }
+
 #fra_chatContainer label {
 	color: #1a1100;
 }
-.channelMenu > button, .channelMenu > div {
+
+.channelMenu>button,
+.channelMenu>div {
 	background: #ffeecc !important;
 	border-color: transparent !important;
 	box-shadow: none !important;
 	color: #332200 !important;
 }
+
 /* char count */
 #lblCharacterCounter {
 	color: #1a1100 !important;
 }
+
 /* code of conduct */
 a[href$='./code.php'] {
 	color: #1a1100;
 }
+
 /* chat room link */
 a[href$='./chat.php'] {
 	color: #1a1100;
@@ -620,15 +791,17 @@ a[href$='./chat.php'] {
 /* Emote List */
 
 .emoteList {
-    background: #f2f2f2;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-    border: 2px solid #000;
+	background: #f2f2f2;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	border: 2px solid #000;
 }
+
 .emoteList:after {
-    border-bottom-color: #000;
+	border-bottom-color: #000;
 }
+
 .emoteList:before {
-    border-bottom-color: #000;
+	border-bottom-color: #000;
 }
 
 /* Branch */
@@ -638,12 +811,14 @@ a[href$='./chat.php'] {
 	border: none;
 	border-radius: 5px;
 }
+
 .item-header {
 	background: #ffdd99;
 	color: #1a1100;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
+
 .item-footer {
 	background: #ffdd99;
 	color: #1a1100;
@@ -660,6 +835,7 @@ a[href$='./chat.php'] {
 	margin-bottom: 20px;
 	/* border-radius: 10px; */
 }
+
 /* .featured-lion img {
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
@@ -668,32 +844,47 @@ a[href$='./chat.php'] {
 .featured-lion .b {
 	padding-top: 8px;
 }
+
 @media (max-width: 684px) {
-	div.lionImage.featured-lion > div {
+	div.lionImage.featured-lion>div {
 		height: 475px !important;
 	}
 }
+
 @media (max-width: 620px) {
-	div.lionImage.featured-lion > div {
+	div.lionImage.featured-lion>div {
 		height: 450px !important;
 	}
 }
-.featured-lion a:link, .featured-lion a:active, .featured-lion a:visited {
+
+.featured-lion a:link,
+.featured-lion a:active,
+.featured-lion a:visited {
 	color: #332200;
 }
-.featured-lion a:hover, .featured-lion a:focus {
+
+.featured-lion a:hover,
+.featured-lion a:focus {
 	color: #1a1100;
 }
+
 /* owned by text */
-h1.center > small {
+h1.center>small {
 	color: #1a1100 !important;
 }
-h1.center > small a, h1.center > small a:link, h1.center > small a:visited, h1.center > small a:active {
+
+h1.center>small a,
+h1.center>small a:link,
+h1.center>small a:visited,
+h1.center>small a:active {
 	color: #332200 !important;
 }
-h1.center > small a:hover, h1.center > small a:focus {
+
+h1.center>small a:hover,
+h1.center>small a:focus {
 	color: #1a1100 !important;
 }
+
 /* dropdown */
 .table .bottom select {
 	color: #000;
@@ -707,26 +898,36 @@ h1.center > small a:hover, h1.center > small a:focus {
 	border: none;
 	/* border-radius: 10px; */
 }
+
 .sub_sub_menu {
-    display: none;
+	display: none;
 }
 
 /* Buttons */
 
 /* regular button */
-.select-control, button.button, input[type="button"], input[type="submit"], input[type="reset"] {
+.select-control,
+button.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
 	background: #ffd480;
-	background: linear-gradient(to bottom, #ffd480 5%,#ffc34d 5%,#ffc34d 95%,#ffb31a 95%);
+	background: linear-gradient(to bottom, #ffd480 5%, #ffc34d 5%, #ffc34d 95%, #ffb31a 95%);
 	color: #010101;
 	border: 1px solid #ffb31a;
 	text-shadow: 1px 1px 0px #ffd480;
 	border-radius: 3px;
 	font-family: 'Roboto', Verdana, 'Geneva', Tahoma, sans-serif;
 }
+
 /* regular button hover */
-.select-control:hover, button.button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+.select-control:hover,
+button.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
 	background: #ffcc66;
-	background: linear-gradient(to bottom,  #ffcc66 5%,#ffbb33 5%,#ffbb33 95%,#ffaa00 95%);
+	background: linear-gradient(to bottom, #ffcc66 5%, #ffbb33 5%, #ffbb33 95%, #ffaa00 95%);
 	color: #010101;
 	border: 1px solid #ffaa00;
 	text-shadow: 1px 1px 0px #ffcc66;
@@ -746,31 +947,45 @@ h1.center > small a:hover, h1.center > small a:focus {
 .white {
 	color: #1a1100;
 }
+
 /* bottom links container size to prevent weird stacking issues */
 ul.bottomlinks {
 	width: max-content !important;
 }
+
 /* links */
-.bottomlinks li a, .bottomlinks li a:link, .bottomlinks li a:active, .bottomlinks li a:visited {
+.bottomlinks li a,
+.bottomlinks li a:link,
+.bottomlinks li a:active,
+.bottomlinks li a:visited {
 	color: #332200;
 }
-.bottomlinks li a:hover, .bottomlinks li a:focus {
+
+.bottomlinks li a:hover,
+.bottomlinks li a:focus {
 	color: #1a1100;
 }
+
 /* links on smaller screen sizes */
-.footer a, .footer a:link, .footer a:active, .footer a:visited {
+.footer a,
+.footer a:link,
+.footer a:active,
+.footer a:visited {
 	color: #332200;
 }
-.footer a:hover, footer a:focus {
+
+.footer a:hover,
+footer a:focus {
 	color: #1a1100;
 }
 
 .page-description {
-    border: none;
-    background: #ffeecc;
-    padding: 20px;
+	border: none;
+	background: #ffeecc;
+	padding: 20px;
 }
-.page-description > div {
-    padding: 0;
-    margin: 0;
+
+.page-description>div {
+	padding: 0;
+	margin: 0;
 }

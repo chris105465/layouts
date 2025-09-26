@@ -7,6 +7,12 @@ https://www.lioden.com/topic.php?id=304429491963
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+	--fc1: #000000;
+	--pc4: #f8b9c5;
+	--borderColor: transparent;
+}
+
 /* Body */
 body {
 	font-family: 'Raleway', Verdana, 'Geneva', Tahoma, sans-serif;

@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Source Serif 4', 'Times New Roman', Times, serif
-	header font: 'Kaushan Script', 'Times New Roman', Times, serif
-	font primary: 082d5e
-	font secondary: 0a3975
-	font tertiary: 0c448d
-
-	main bg: FEF7F780
-
-	primary one (darkest): a9a9ef
-	primary two: bebef3
-	primary three: d4d4f7
-	primary four: e9e9fb
-	secondary one (darkest): a9a9ef
-	secondary two: bebef3
-	secondary three: d4d4f7
-	secondary four: e9e9fb
-	tertiary (caves n stuff): a8dcf0
-
-	red alert bg: a8dcf0
-	red alert links: 07212c
-	green alert bg: bebef3
-	green alert links: 08082b
-	yellow alert bg: a9a9ef
-	yellow alert links: 08082b
-
-	and now...the fun one
-	button one (darkest): 7ccae9
-	button two: 92d3ed
-	button three: a8dcf0
-	button four: bee5f4
-	button five: d3edf8
-	button six: e9f6fb
-	button text: 0f4357
-	red button one (darkest): 110416
-	red button two: 22082b
-	red button three: 340b41
-	red button four: 450f57
-	red button five: 56136c
-	red button six: 671782
-	red button seven: 781b98
-	red button eight: 8a1fad
-	red button text: fef7fe
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+:root {
+	--fc1: #082d5e;
+	--pc4: #e9e9fb;
+	--borderColor: #ffffff;
+}
 
 /* Body */
 body {

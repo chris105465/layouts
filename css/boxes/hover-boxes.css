@@ -14,7 +14,8 @@
 }
 
 .bigBox:hover,
-.scrollBox:hover {
+.scrollBox:hover,
+.smallBox:hover {
     height: 300px;
 }
 
@@ -23,14 +24,18 @@
 .bigBox h3,
 .scrollBox h1,
 .scrollBox h2,
-.scrollBox h3 {
+.scrollBox h3,
+.smallBox h1,
+.smallBox h2,
+.smallBox h3 {
     margin: 0;
     color: inherit;
 }
 
 /* scrollbars */
 .bigBox::-webkit-scrollbar,
-.scrollBox::-webkit-scrollbar {
+.scrollBox::-webkit-scrollbar,
+.smallBox::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
@@ -42,7 +47,8 @@
 }
 
 /* small box */
-.scrollBox {
+.scrollBox,
+.smallBox {
     background: #A3B4AE;
     color: #000;
     border: none;
@@ -70,8 +76,13 @@
         height: 150px !important;
     }
 
+    .smallBox {
+        height: 150px !important;
+    }
+
     .bigBox:hover,
-    .scrollBox:hover {
+    .scrollBox:hover,
+    .smallBox:hover {
         height: 150px !important;
     }
 }

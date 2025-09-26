@@ -16,7 +16,8 @@
     text-align: left;
 }
 
-.scrollBox {
+.scrollBox,
+.smallBox {
     background: #A3B4AE;
     color: #000;
     overflow: scroll;
@@ -42,12 +43,14 @@
         width: 56%;
     }
 
-    .scrollBox {
+    .scrollBox,
+    .smallBox {
         width: 36%;
     }
 }
 
-.plainBox {
+.plainBox,
+.bottomBox {
     background: #A3B4AE;
     color: #000;
     border-radius: 10px;
@@ -61,7 +64,9 @@
 
 .bigBox::-webkit-scrollbar,
 .scrollBox::-webkit-scrollbar,
-.plainBox::-webkit-scrollbar {
+.smallBox::-webkit-scrollbar,
+.plainBox::-webkit-scrollbar,
+.bottomBox::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
@@ -74,7 +79,13 @@
 .scrollBox h3,
 .plainBox h1,
 .plainBox h2,
-.plainBox h3 {
+.plainBox h3,
+.smallBox h1,
+.smallBox h2,
+.smallBox h3,
+.bottomBox h1,
+.bottomBox h2,
+.bottomBox h3 {
     margin: 0;
     color: inherit;
 }

@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Noto Serif', 'Times New Roman', Times, serif
-	header font: 'Caveat', 'Times New Roman', Times, serif
-	font primary: 15050b
-	font secondary: 3e0e21
-	font tertiary: 681836
-
-	main bg: F6D9DD80
-
-	primary one (darkest): ecacb5
-	primary two: f1c1c7
-	primary three: f6d5da
-	primary four: faeaec
-	secondary one (darkest): ecacb5
-	secondary two: f1c1c7
-	secondary three: f6d5da
-	secondary four: faeaec
-	tertiary (caves n stuff): e3ceda
-
-	red alert bg: e3ceda
-	red alert links: 412535
-	green alert bg: f1c1c7
-	green alert links: 3e0e21
-	yellow alert bg: ecacb5
-	yellow alert links: 3e0e21
-
-	and now...the fun one
-	button one (darkest): b57d9d
-	button two: be8ea9
-	button three: c79eb5
-	button four: d0aec2
-	button five: dabece
-	button six: e3ceda
-	button text: 000000
-	red button one (darkest): 0d0a0f
-	red button two: 1b141f
-	red button three: 281f2e
-	red button four: 35293d
-	red button five: 42334d
-	red button six: 503d5c
-	red button seven: 5d476b
-	red button eight: 6a527a
-	red button text: ffffff
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--fc1: #15050b;
+	--pc4: #faeaec;
+	--borderColor: transparent;
+}
 
 /* Body */
 body {

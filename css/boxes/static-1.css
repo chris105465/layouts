@@ -15,7 +15,8 @@
     text-align: left;
 }
 
-.scrollBox {
+.scrollBox,
+.smallBox {
     background: #A3B4AE;
     color: #000;
     border: none;
@@ -36,7 +37,8 @@
 }
 
 .bigBox::-webkit-scrollbar,
-.scrollBox::-webkit-scrollbar {
+.scrollBox::-webkit-scrollbar,
+.smallBox::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
@@ -46,7 +48,10 @@
 .bigBox h3,
 .scrollBox h1,
 .scrollBox h2,
-.scrollBox h3 {
+.scrollBox h3,
+.smallBox h1,
+.smallBox h2,
+.smallBox h3 {
     margin: 0;
     color: inherit;
 }

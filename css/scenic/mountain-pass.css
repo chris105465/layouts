@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Source Sans 3', Verdana, 'Geneva', Tahoma, sans-serif
-	header font: 'Tinos', 'Times New Roman', Times, serif
-	font primary: 000000
-	font secondary: 1a1a1a
-	font tertiary: 262626
-
-	main bg: ebe5e080
-
-	primary one (darkest): af9583
-	primary two: b9a292
-	primary three: c3b0a2
-	primary four: cdbdb1
-	secondary one (darkest): af9583
-	secondary two: b9a292
-	secondary three: c3b0a2
-	secondary four: cdbdb1
-	tertiary (caves n stuff): bdd3db
-
-	red alert bg: adc8d2
-	red alert links: 121d21
-	green alert bg: af9583
-	green alert links: 1f1914
-	yellow alert bg: b9a292
-	yellow alert links: 1f1914
-
-	and now...the fun one
-	button one (darkest): 8cb2c0
-	button two: 9cbdc9
-	button three: adc8d2
-	button four: bdd3db
-	button five: cedee4
-	button six: dee9ed
-	button text: 000000
-	red button one (darkest): 091009
-	red button two: 122112
-	red button three: 1c311c
-	red button four: 254125
-	red button five: 2e522e
-	red button six: 376237
-	red button seven: 407240
-	red button eight: 498349
-	red button text: ffffff
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+	--fc1: #000000;
+	--pc4: #cdbdb1;
+	--borderColor: #ffffff;
+}
 
 /* Body */
 body {

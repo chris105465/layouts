@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'DM Sans', Verdana, 'Geneva', Tahoma, sans-serif
-	header font: 'Bodoni Moda', Georgia, 'Times New Roman', Times, serif
-	font primary: ffffff
-	font secondary: e2e4e9
-	font tertiary: c4c8d4
-
-	main bg: 0b0c0f80
-
-	primary one (darkest): 0b0c0f
-	primary two: 16181d
-	primary three: 21232c
-	primary four: 2b2f3b
-	secondary one (darkest): 0b0c0f
-	secondary two: 16181d
-	secondary three: 21232c
-	secondary four: 2b2f3b
-	tertiary (caves n stuff): 3b2d2b
-
-	red alert bg: 493836
-	red alert links: ded4d3
-	green alert bg: 2b2f3b
-	green alert links: d3d6de
-	yellow alert bg: 16181d
-	yellow alert links: d3d6de
-
-	and now...the fun one
-	button one (darkest): b29999
-	button two: bda8a8
-	button three: c8b6b6
-	button four: d3c5c5
-	button five: ded3d3
-	button six: e9e2e2
-	button text: 000000
-	red button one (darkest): 160604
-	red button two: 2b0b08
-	red button three: 41110b
-	red button four: 57160f
-	red button five: 6c1c13
-	red button six: 822217
-	red button seven: 98271b
-	red button eight: ad2d1f
-	red button text: ffffff
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+	--fc1: #ffffff;
+	--pc4: #2b2f3b;
+	--borderColor: #e9e2e2;
+}
 
 /* Body */
 body {

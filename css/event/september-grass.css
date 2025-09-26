@@ -7,6 +7,12 @@ https://www.lioden.com/topic.php?id=304429491963
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Slab:wght@100..900&display=swap');
 
+:root {
+    --fc1: #ffffff;
+    --pc4: #623c1e;
+    --borderColor: #FAA437;
+}
+
 /* Body */
 body {
     font-family: 'DM Sans', Verdana, 'Geneva', Tahoma, sans-serif;

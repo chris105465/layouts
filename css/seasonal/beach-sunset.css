@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Jost', Verdana, 'Geneva', Tahoma, sans-serif
-	header font: 'Signika', Verdana, 'Geneva', Tahoma, sans-serif
-	font primary: ffffff
-	font secondary: dfdcef
-	font tertiary: bfb9df
-
-	main bg: 13102380
-
-	primary one (darkest): 131023
-	primary two: 1d1835
-	primary three: 262046
-	primary four: 302858
-	secondary one (darkest): 131023
-	secondary two: 1d1835
-	secondary three: 262046
-	secondary four: 302858
-	tertiary (caves n stuff): 4a2659
-
-	red alert bg: 6e2b5b
-	red alert links: f1daea
-	green alert bg: 4a2659
-	green alert links: eadbf0
-	yellow alert bg: 302858
-	yellow alert links: dfdcef
-
-	and now...the fun one
-	button one (darkest): 37152e
-	button two: 491d3d
-	button three: 5c244c
-	button four: 6e2b5b
-	button five: 81326a
-	button six: 933979
-	button text: ffffff
-	red button one (darkest): 3d0f1b
-	red button two: 521424
-	red button three: 66192d
-	red button four: 7a1f36
-	red button five: 8f243e
-	red button six: a32947
-	red button seven: b82e50
-	red button eight: cc3359
-	red button text: ffffff
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap');
+
+:root {
+	--fc1: #ffffff;
+	--pc4: #302858;
+	--borderColor: #0a0812;
+}
 
 /* Body */
 body {

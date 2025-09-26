@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: "Lora", Georgia, 'Times New Roman', Times, serif
-	header font: "Lora", Georgia, 'Times New Roman', Times, serif
-	font primary: ffffff
-	font secondary: f2f2f2
-	font tertiary: e6e6e6
-
-	main bg: 46403980
-
-	primary one (darkest): 464039
-	primary two: 544d45
-	primary three: 625a50
-	primary four: 70675c
-	secondary one (darkest): 464039
-	secondary two: 544d45
-	secondary three: 625a50
-	secondary four: 70675c
-	tertiary (caves n stuff): 886444
-
-	red alert bg: 886444
-	red alert links: f6f2ee
-	green alert bg: 544d45
-	green alert links: e8e6e3
-	yellow alert bg: 464039
-	yellow alert links: e8e6e3
-
-	and now...the fun one
-	button one (darkest): 443122
-	button two: 553d2b
-	button three: 664933
-	button four: 77553c
-	button five: 886244
-	button six: 996e4d
-	button text: ffffff
-	red button one (darkest): 090d11
-	red button two: 111a22
-	red button three: 1a2633
-	red button four: 223344
-	red button five: 2b4055
-	red button six: 334d66
-	red button seven: 3c5977
-	red button eight: 446688
-	red button text: ffffff
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+	--fc1: #ffffff;
+	--pc4: #70675c;
+	--borderColor: transparent;
+}
 
 /* Body */
 body {

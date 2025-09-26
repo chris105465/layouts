@@ -7,6 +7,12 @@ https://www.lioden.com/topic.php?id=304429491963
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+:root {
+    --fc1: #ffffff;
+    --pc4: #262626;
+    --borderColor: #40ff00;
+}
+
 /* Body */
 body {
     font-family: 'Inter', Verdana, 'Geneva', Tahoma, sans-serif;

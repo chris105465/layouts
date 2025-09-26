@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Carlito', Verdana, 'Geneva', Tahoma, sans-serif
-	header font: 'Newsreader', 'Times New Roman', Times, serif
-	font primary: 000000
-	font secondary: 16171d
-	font tertiary: 2c2e3a
-
-	main bg: ffffff80
-
-	primary one (darkest): d0d3e1
-	primary two: e0e2eb
-	primary three: eff0f5
-	primary four: ffffff
-	secondary one (darkest): d0d3e1
-	secondary two: e0e2eb
-	secondary three: eff0f5
-	secondary four: ffffff
-	tertiary (caves n stuff): c9cfe8
-
-	red alert bg: eaeefa
-	red alert links: 16171d
-	green alert bg: ffffff
-	green alert links: 16171d
-	yellow alert bg: e0e2eb
-	yellow alert links: 16171d
-
-	and now...the fun one
-	button one (darkest): 0a1129
-	button two: 0f1a3e
-	button three: 142252
-	button four: 192b67
-	button five: 1e347b
-	button six: 233c90
-	button text: ffffff
-	red button one (darkest): 091009
-	red button two: 122112
-	red button three: 1b311b
-	red button four: 244224
-	red button five: 2d522d
-	red button six: 366336
-	red button seven: 3f733f
-	red button eight: 488448
-	red button text: ffffff
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+:root {
+	--fc1: #000000;
+	--pc4: #ffffff;
+	--borderColor: transparent;
+}
 
 /* Body */
 body {

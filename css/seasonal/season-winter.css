@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Mulish', Verdana, 'Geneva', Tahoma, sans-serif
-	header font: 'Kaushan Script', Verdana, 'Geneva', Tahoma, sans-serif
-	font primary: ffffff
-	font secondary: e0e7eb
-	font tertiary: c2ced6
-
-	main bg: 0a0d0fb3
-
-	primary one (darkest): 0a0d0f
-	primary two: 141b1f
-	primary three: 1f282e
-	primary four: 29353d
-	secondary one (darkest): 0a0d0f
-	secondary two: 141b1f
-	secondary three: 1f282e
-	secondary four: 29353d
-	tertiary (caves n stuff): 3d485c
-
-	red alert bg: 29303d
-	red alert links: e1e4ea
-	green alert bg: 141b1f
-	green alert links: e0e7eb
-	yellow alert bg: 0a0d0f
-	yellow alert links: e0e7eb
-
-	and now...the fun one
-	button one (darkest): 1f242e
-	button two: 29303d
-	button three: 343c4c
-	button four: 3e485b
-	button five: 48546a
-	button six: 536079
-	button text: fefef7
-	red button one (darkest): 0a0f0c
-	red button two: 151e17
-	red button three: 1f2e23
-	red button four: 293d2e
-	red button five: 344c3a
-	red button six: 3e5b45
-	red button seven: 486a51
-	red button eight: 53795c
-	red button text: ffffff
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+	--fc1: #ffffff;
+	--pc4: #29353d;
+	--borderColor: #ffffff;
+}
 
 /* Body */
 body {

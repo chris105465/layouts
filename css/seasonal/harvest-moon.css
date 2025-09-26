@@ -54,6 +54,12 @@ https://www.lioden.com/topic.php?id=304429491963
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+	--fc1: #ffffff;
+	--pc4: #1e2a48;
+	--borderColor: #000000;
+}
+
 /* Body */
 body {
 	font-family: 'Libre Franklin', Verdana, 'Geneva', Tahoma, sans-serif;

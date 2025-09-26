@@ -3,56 +3,15 @@
         All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
         https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Nunito', Verdana, 'Geneva', Tahoma, sans-serif
-	header font: 'Charm', 'Times New Roman', Times, serif
-	font primary: 260d0f
-	font secondary: 4c1a1e
-	font tertiary: 72272d
-
-	main bg: f7eeee80
-
-	primary one (darkest): dfbcb9
-	primary two: e7cdcb
-	primary three: efdedc
-	primary four: f7eeee
-	secondary one (darkest): dfbcb9
-	secondary two: e7cdcb
-	secondary three: efdedc
-	secondary four: f7eeee
-	tertiary (caves n stuff): efdedc
-
-	red alert bg: ffa299
-	red alert links: 660900
-	green alert bg: e7cdcb
-	green alert links: 4c1a1e
-	yellow alert bg: dfbcb9
-	yellow alert links: 4c1a1e
-
-	and now...the fun one
-	button one (darkest): 341a18
-	button two: 462320
-	button three: 572b28
-	button four: 693430
-	button five: 7a3d38
-	button six: 8c4540
-	button text: ffffff
-	red button one (darkest): 1a0200
-	red button two: 330300
-	red button three: 4d0500
-	red button four: 660700
-	red button five: 800900
-	red button six: 990a00
-	red button seven: b30c00
-	red button eight: cc0e00
-	red button text: ffffff
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+	--fc1: #260d0f;
+	--pc4: #f7eeee;
+	--borderColor: #ffffff;
+}
 
 /* Body */
 body {

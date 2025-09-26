@@ -3,56 +3,15 @@
         All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
         https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Aleo', 'Times New Roman', Times, serif
-	header font: 'Merienda', 'Times New Roman', Times, serif
-	font primary: 000000
-	font secondary: 1a1a1a
-	font tertiary: 333333
-
-	main bg: ffffffcc
-
-	primary one (darkest): d9d9d9
-	primary two: e6e6e6
-	primary three: f2f2f2
-	primary four: ffffff
-	secondary one (darkest): d9d9d9
-	secondary two: e6e6e6
-	secondary three: f2f2f2
-	secondary four: ffffff
-	tertiary (caves n stuff): fcbe03
-
-	red alert bg: fdd868
-	red alert links: 322601
-	green alert bg: e6e6e6
-	green alert links: 1a1a1a
-	yellow alert bg: d9d9d9
-	yellow alert links: 1a1a1a
-
-	and now...the fun one
-	button one (darkest): fcbe03
-	button two: fdc41c
-	button three: fdcb35
-	button four: fdd14e
-	button five: fdd868
-	button six: fede81
-	button text: 000000
-	red button one (darkest): 000000
-	red button two: 0d0d0d
-	red button three: 1a1a1a
-	red button four: 262626
-	red button five: 333333
-	red button six: 404040
-	red button seven: 4d4d4d
-	red button eight: 595959
-	red button text: ffffff
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&display=swap');
+
+:root {
+	--fc1: #000000;
+	--pc4: #ffffff;
+	--borderColor: #000000;
+}
 
 /* Body */
 body {

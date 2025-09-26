@@ -7,6 +7,12 @@ https://www.lioden.com/topic.php?id=304429491963
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+:root {
+    --fc1: #ffffff;
+    --pc4: #63364f;
+    --borderColor: #cee4e4;
+}
+
 /* Body */
 body {
     font-family: 'Rubik', Verdana, 'Geneva', Tahoma, sans-serif;

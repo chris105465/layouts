@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Source Sans 3', Arial, Helvetica, sans-serif
-	header font: 'Dancing Script', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif
-	font primary: 000000
-	font secondary: 1c161d
-	font tertiary: 372d39
-
-	main bg: f5eff380
-
-	primary one (darkest): cfb0c4
-	primary two: d8c0d0
-	primary three: e2d0dc
-	primary four: ecdfe8
-	secondary one (darkest): cfb0c4
-	secondary two: d8c0d0
-	secondary three: e2d0dc
-	secondary four: ecdfe8
-	tertiary (caves n stuff): f6d5db
-
-	red alert bg: f6d5db
-	red alert links: 2a090f
-	green alert bg: d8c0d0
-	green alert links: 1c161d
-	yellow alert bg: cfb0c4
-	yellow alert links: 1c161d
-
-	and now...the fun one
-	button one (darkest): e77e92
-	button two: eb94a4
-	button three: efa9b6
-	button four: f3bfc8
-	button five: f7d4db
-	button six: fbeaed
-	button text: 000000
-	red button one (darkest): 64ceb5
-	red button two: 77d4bf
-	red button three: 8bdac8
-	red button four: 9ee0d1
-	red button five: b1e7da
-	red button six: c5ede3
-	red button seven: d8f3ed
-	red button eight: ecf9f6
-	red button text: 000000
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+	--fc1: #000000;
+	--pc4: #ecdfe8;
+	--borderColor: #ffffff;
+}
 
 /* Body */
 body {

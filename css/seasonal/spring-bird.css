@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Kantumruy Pro', Verdana, 'Geneva', Tahoma, sans-serif
-	header font: 'Poltawski Nowy', Georgia, 'Times New Roman', Times, serif
-	font primary: 000000
-	font secondary: 1f141b
-	font tertiary: 3d2935
-
-	main bg: f5f0f380
-
-	primary one (darkest): e0b8d0
-	primary two: e8cadc
-	primary three: efdce7
-	primary four: f7edf3
-	secondary one (darkest): e0b8d0
-	secondary two: e8cadc
-	secondary three: efdce7
-	secondary four: f7edf3
-	tertiary (caves n stuff): ced9e4
-
-	red alert bg: ced9e4
-	red alert links: 1b2731
-	green alert bg: f7edf3
-	green alert links: 351729
-	yellow alert bg: eff2f6
-	yellow alert links: 1b2731
-
-	and now...the fun one
-	button one (darkest): 9bb8ca
-	button two: abc4d3
-	button three: bcd0dc
-	button four: cddce5
-	button five: dee7ed
-	button six: eef3f6
-	button text: 000000
-	red button one (darkest): 040f16
-	red button two: 081e2b
-	red button three: 0c2c41
-	red button four: 103b56
-	red button five: 144a6c
-	red button six: 185981
-	red button seven: 1c6897
-	red button eight: 2076ac
-	red button text: ffffff
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+	--fc1: #000000;
+	--pc4: #f7edf3;
+	--borderColor: #d8a6c4;
+}
 
 /* Body */
 body {

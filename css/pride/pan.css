@@ -7,6 +7,12 @@ https://www.lioden.com/topic.php?id=304429491963
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
+:root {
+	--fc1: #000000;
+	--pc4: #e8b5b0;
+	--borderColor: transparent;
+}
+
 /* Body */
 body {
 	font-family: 'Karla', Verdana, 'Geneva', Tahoma, sans-serif;

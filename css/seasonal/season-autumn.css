@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Zilla Slab', 'Times New Roman', Times, serif
-	header font: 'Indie Flower', Verdana, 'Geneva', Tahoma, sans-serif
-	font primary: 000000
-	font secondary: 2b1a08
-	font tertiary: 57330f
-
-	main bg: e8b37d80
-
-	primary one (darkest): c37322
-	primary two: d98026
-	primary three: dd8c3c
-	primary four: e09952
-	secondary one (darkest): c37322
-	secondary two: d98026
-	secondary three: dd8c3c
-	secondary four: e09952
-	tertiary (caves n stuff): dd643c
-
-	red alert bg: dd643c
-	red alert links: 2b1108
-	green alert bg: d98026
-	green alert links: 2b1a08
-	yellow alert bg: c37322
-	yellow alert links: 2b1a08
-
-	and now...the fun one
-	button one (darkest): 2b1108
-	button two: 41190c
-	button three: 562110
-	button four: 562110
-	button five: 813218
-	button six: 973a1c
-	button text: ffffff
-	red button one (darkest): 041604
-	red button two: 082b08
-	red button three: 0c410c
-	red button four: 105610
-	red button five: 146c14
-	red button six: 188118
-	red button seven: 1c971c
-	red button eight: 20ac20
-	red button text: ffffff
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+	--fc1: #000000;
+	--pc4: #e09952;
+	--borderColor: transparent;
+}
 
 /* Body */
 body {

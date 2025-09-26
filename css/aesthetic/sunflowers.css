@@ -1,57 +1,56 @@
 /*
-    Layout Made by Chris (#105465) for free use
-    All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
-    https://www.lioden.com/topic.php?id=304429491963
+    Layout Made by Chris (#105465)
+    Please do not edit or copy any of this code without permission. If you have any questions regarding my work, please message me.
     */
 
 /* font import */
-@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /*variables*/
 :root {
-    --fc1: #ffffff;
-    --fc2: #e3e8e8;
-    --fc3: #c7d1d0;
-    --eventText: #80ff00;
-    --mainFont: 'Roboto', Verdana, 'Geneva', Tahoma, sans-serif;
-    --headFont: 'Andada Pro', 'Times New Roman', Times, serif;
-    --bgColor: #171c1ccc;
-    --pc1: #222a2a;
-    --pc2: #2d3939;
-    --pc3: #394747;
-    --pc4: #445555;
-    --sc1: #222a2a;
-    --sc2: #2d3939;
-    --sc3: #394747;
-    --sc4: #445555;
-    --tc: #94421e;
-    --borderColor: #e1dad0;
-    --redAlert: #634f4f;
-    --redLink: #e8e3e3;
-    --greenAlert: #445544;
-    --greenLink: #e3e8e3;
-    --yellowAlert: #555144;
-    --yellowLink: #e8e7e3;
-    --button1: #3f1c0d;
-    --button2: #552611;
-    --button3: #6a2f16;
-    --button4: #7f381a;
-    --button5: #94421e;
-    --button6: #a94b23;
+    --fc1: #000000;
+    --fc2: #322001;
+    --fc3: #654001;
+    --eventText: #0000b3;
+    --mainFont: 'Open Sans', Verdana, 'Geneva', Tahoma, sans-serif;
+    --headFont: 'Bitter', 'Times New Roman', Times, serif;
+    --bgColor: #fed081cc;
+    --pc1: #fdaa1c;
+    --pc2: #fdb435;
+    --pc3: #fdbd4e;
+    --pc4: #fdc668;
+    --sc1: #fdaa1c;
+    --sc2: #fdb435;
+    --sc3: #fdbd4e;
+    --sc4: #fdc668;
+    --tc: #84b979;
+    --borderColor: #160e04;
+    --redAlert: #fd8181;
+    --redLink: #320101;
+    --greenAlert: #8dfd68;
+    --greenLink: #0d3201;
+    --yellowAlert: #fdfd68;
+    --yellowLink: #323201;
+    --button1: #1e321a;
+    --button2: #284323;
+    --button3: #32542b;
+    --button4: #3c6534;
+    --button5: #46763d;
+    --button6: #508745;
     --buttonText: #ffffff;
-    --redButton1: #3f0d0d;
-    --redButton2: #551111;
-    --redButton3: #6a1616;
-    --redButton4: #7f1a1a;
-    --redButton5: #941e1e;
-    --redButton6: #a92323;
+    --redButton1: #361717;
+    --redButton2: #471f1f;
+    --redButton3: #592626;
+    --redButton4: #6b2e2e;
+    --redButton5: #7d3636;
+    --redButton6: #8f3d3d;
     --redButtonText: #ffffff;
 }
 
 /* Body */
 body {
     font-family: var(--mainFont);
-    background: #171c1c url('../../img/food/squash.jpg') fixed;
+    background: #fed081 url('../../img/aesthetic/sunflowers.jpg') fixed;
     background-position-y: center;
     background-position-x: center;
     /* DON'T CHANGE BELOW */
@@ -108,20 +107,23 @@ a:focus {
     background: var(--pc1);
     border: 1px solid var(--borderColor);
     border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     color: var(--fc1);
-    box-shadow: none;
 }
 
 /* Navbar */
 .navbar {
     background: var(--pc2);
     border-bottom: 1px solid var(--borderColor);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     font-family: var(--headFont);
 }
 
 /* logo */
 .navbar-brand img {
-    filter: hue-rotate(-10deg) contrast(120%) saturate(70%);
+    filter: hue-rotate(90deg) saturate(50%) contrast(120%);
 }
 
 /* navbar defaults */
@@ -136,7 +138,6 @@ a:focus {
 .navbar-default .navbar-nav>li>a {
     color: var(--fc2);
     font-weight: bold;
-    text-transform: capitalize;
 }
 
 /* mobile toggle box */
@@ -178,7 +179,7 @@ a:focus {
 /* main */
 .main {
     background: var(--bgColor);
-    border-radius: 0;
+    border-radius: 10px;
     border: 1px solid var(--borderColor);
     box-shadow: none;
 }
@@ -192,7 +193,7 @@ a:focus {
 .breadcrumb {
     background: var(--pc3);
     border: 1px solid var(--borderColor);
-    box-shadow: 1px 1px 3px #000000;
+    border-radius: 10px;
 }
 
 .breadcrumb::after {
@@ -217,8 +218,9 @@ a:focus {
 /* sidebar inner boxes */
 .col-md-3 .panel {
     border: 1px solid var(--borderColor);
+    border-radius: 10px;
     background: var(--pc3);
-    box-shadow: 1px 1px 3px #000000;
+    box-shadow: none;
     color: var(--fc1);
 }
 
@@ -230,14 +232,14 @@ a:focus {
 /* Progress Bars */
 /* background container */
 .progress {
-    background: var(--pc2);
-    /* border-radius: 20px; */
-    border: 1px solid var(--pc1);
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #fff;
 }
 
 /* default and impression */
 .progress-bar {
-    background: linear-gradient(var(--tc), var(--button3));
+    background: var(--tc);
 }
 
 /* if you want all to match comment out the next three classes */
@@ -256,7 +258,7 @@ a:focus {
     } */
 /* text inside the progress bars */
 .progress div {
-    color: #fff;
+    color: #000;
     font-family: var(--mainFont);
 }
 
@@ -269,7 +271,7 @@ a:focus {
     color: var(--fc1);
     background: var(--greenAlert);
     border: 1px solid var(--borderColor) !important;
-    box-shadow: 1px 1px 3px #000000;
+    border-radius: 10px;
 }
 
 /* red notifications */
@@ -338,7 +340,6 @@ a:focus {
     border-radius: 5px !important;
     height: 200px !important;
     background: var(--pc4);
-    box-shadow: 1px 1px 3px #000000;
 }
 
 .comment:nth-child(even) {
@@ -391,7 +392,6 @@ a:focus {
     background: var(--sc4);
     border: 1px solid var(--borderColor);
     color: var(--fc1);
-    box-shadow: 1px 1px 3px #000000;
 }
 
 /* table links */
@@ -477,7 +477,7 @@ a:focus {
 
 /* little :|: spans in player table */
 #player .text-muted {
-    color: #ffffff80;
+    color: #00000080;
 }
 
 /* days left until heat badge */
@@ -506,7 +506,6 @@ input::placeholder {
     border: 1px solid var(--borderColor);
     background: var(--pc4);
     padding: 20px;
-    box-shadow: 1px 1px 3px #000000;
 }
 
 .page-description>div {
@@ -520,8 +519,8 @@ input::placeholder {
 .cave-grid {
     background: var(--tc);
     border: 1px solid var(--borderColor);
+    border-radius: 10px;
     color: var(--fc2);
-    box-shadow: 1px 1px 3px #000000;
 }
 
 /* cave and mound link hover */
@@ -535,20 +534,20 @@ input::placeholder {
 /* cave and mound customization */
 /* all caves */
 .cave-grid>img {
-    content: url('https://static.lioden.com/images/dynamic/backgrounds/DeccanForest.png');
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/floweringfynbos.png');
     height: 120px;
     object-fit: cover;
-    object-position: top;
+    object-position: center 20%;
 }
 
 /* pride tabs */
 img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'],
 img[src$='//static.lioden.com/images/layout/nestingbanner.png'],
 img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
-    content: url('https://static.lioden.com/images/dynamic/backgrounds/zaxveld.png');
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/capefloralkingdom.png');
     height: 80px;
     object-fit: cover;
-    object-position: top;
+    object-position: center 40%;
 }
 
 /* unsorted lions */
@@ -595,13 +594,19 @@ img[src$='//static.lioden.com/images/layout/caveunused.jpg'] {
     background: var(--sc1);
     color: var(--fc1);
     margin-bottom: 20px;
-    box-shadow: 0 0 0 1px var(--borderColor), 1px 1px 3px #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px var(--borderColor);
 
+}
+
+.featured-lion img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 /* featured lion background image */
 .featured-lion img[src$='//static.lioden.com/images/cave/default.png'] {
-    content: url('https://static.lioden.com/images/dynamic/backgrounds/DeccanForest.png') !important;
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/floweringfynbos.png') !important;
     /* filter: none; */
 }
 
@@ -645,7 +650,7 @@ h1.center>small a:active {
 .sub_menu {
     background: var(--sc1);
     border: 1px solid var(--borderColor);
-    box-shadow: 1px 1px 3px #000000;
+    border-radius: 10px;
 }
 
 .sub_sub_menu {
@@ -654,12 +659,12 @@ h1.center>small a:active {
 
 /* Feature Styling (like feed all play all etc.) */
 div.feature {
+    border-radius: 10px;
     border: 1px solid var(--borderColor);
     background: var(--sc4);
     padding: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    box-shadow: 1px 1px 3px #000000;
 }
 
 /* dropdown width (acts funny on smaller screens at the default 200px sometimes) */
@@ -685,16 +690,16 @@ div.feature h3 {
 /* dynasty main */
 div.left {
     background: var(--tc);
+    border-radius: 10px;
     border: 1px solid var(--borderColor);
     color: var(--fc1);
-    box-shadow: 1px 1px 3px #000000;
 }
 
 /* custom dynasty images */
 div.left img {
-    content: url('https://static.lioden.com/images/dynamic/backgrounds/ShadeOfTreesBG.png');
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/defaultbg.png');
     object-fit: cover;
-    object-position: center 10%;
+    object-position: top;
     padding: 0;
     height: 60px;
     max-width: 500px !important;
@@ -770,7 +775,7 @@ button.button.bad:hover,
 input[type="button"].bad:hover,
 input[type="submit"].bad:hover,
 input[type="reset"].bad:hover {
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 /* regular button */
@@ -842,7 +847,7 @@ center>b>span {
 /* Footer */
 .footer {
     background: var(--bgColor);
-    border-radius: 0;
+    border-radius: 10px;
     border: 1px solid var(--borderColor);
     box-shadow: none;
     padding-top: 1em;
@@ -851,7 +856,6 @@ center>b>span {
 /* technically applies to all "white" text on the site but mainly applies to the footer text */
 .white {
     color: var(--fc1);
-    text-shadow: 0 0 5px #000;
 }
 
 /* bottom links container size to prevent weird stacking issues */
@@ -889,7 +893,7 @@ footer a:focus {
 #btnChatSettings,
 #btnLoadNewMessages,
 .s-chat-message_menu {
-    filter: grayscale() brightness(500%);
+    filter: grayscale() brightness(0%);
 }
 
 /* menu dropbox */

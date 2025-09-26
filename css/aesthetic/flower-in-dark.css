@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Frank Ruhl Libre', 'Times New Roman', Times, serif
-	header font: 'Frank Ruhl Libre', 'Times New Roman', Times, serif
-	font primary: fefefe
-	font secondary: f7f7f7
-	font tertiary: e7e7e7
-
-	main bg: 00000080
-
-	primary one (darkest): 420a14
-	primary two: 580e1a
-	primary three: 6e1121
-	primary four: 841527
-	secondary one (darkest): 420a14
-	secondary two: 580e1a
-	secondary three: 6e1121
-	secondary four: 841527
-	tertiary (caves n stuff): 580e0e
-
-	red alert bg: 580e0e
-	red alert links: f8d3d3
-	green alert bg: 580e1a
-	green alert links: f8d3da
-	yellow alert bg: 420a14
-	yellow alert links: f8d3da
-
-	and now...the fun one
-	button one (darkest): 160303
-	button two: 2c0707
-	button three: 430a0a
-	button four: 590d0d
-	button five: 6f1111
-	button six: 851414
-	button text: ffffff
-	red button one (darkest): 031608
-	red button two: 072c10
-	red button three: 0a4318
-	red button four: 0d5920
-	red button five: 116f28
-	red button six: 148530
-	red button seven: 179b38
-	red button eight: 1bb140
-	red button text: ffffff
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+
+:root {
+	--fc1: #fefefe;
+	--pc4: #6e1121;
+	--borderColor: #841527;
+}
 
 /* Body */
 body {

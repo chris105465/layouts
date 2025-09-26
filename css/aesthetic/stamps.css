@@ -3,56 +3,15 @@
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
-/* 
-	CHEAT SHEET (ctrl + h to replace all)
-	main font: 'Roboto', Verdana, 'Geneva', Tahoma, sans-serif
-	header font: 'Playfair Display', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif
-	font primary: 000000
-	font secondary: 211f12
-	font tertiary: 37341f
-
-	main bg: edebdee6
-
-	primary one (darkest): 82b089
-	primary two: 91ba97
-	primary three: a1c4a6
-	primary four: b1ceb5
-	secondary one (darkest): 95c0d0
-	secondary two: a6cbd8
-	secondary three: b8d5e0
-	secondary four: cae0e8
-	tertiary (caves n stuff): ecc6c9
-
-	red alert bg: ecc6c9
-	red alert links: 260d0f
-	green alert bg: cae0e8
-	green alert links: 101e23
-	yellow alert bg: ccbddb
-	yellow alert links: 1a1221
-
-	and now...the fun one
-	button one (darkest): d98c93
-	button two: df9fa5
-	button three: e6b3b7
-	button four: ecc6c9
-	button five: f2d9db
-	button six: f9eced
-	button text: 000000
-	red button one (darkest): 0d0910
-	red button two: 1a1221
-	red button three: 261b31
-	red button four: 332442
-	red button five: 402d52
-	red button six: 4d3663
-	red button seven: 593f73
-	red button eight: 664884
-	red button text: ffffff
-
-	progress bar is too situational for cheat sheets lol sorry you'll have to ctrl + f on that one
-*/
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+	--fc1: #000000;
+	--pc4: #b1ceb5;
+	--borderColor: #332442;
+}
 
 /* Body */
 body {

@@ -7,6 +7,12 @@ https://www.lioden.com/topic.php?id=304429491963
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --fc1: #ffffff;
+    --pc4: #660003;
+    --borderColor: #000000;
+}
+
 /* Body */
 body {
     font-family: 'Noto Sans', Verdana, 'Geneva', Tahoma, sans-serif;
