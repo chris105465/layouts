@@ -1179,12 +1179,12 @@ a[href$='./chat.php'] {
         height: 150px !important;
     }
 
-    .scrollBox {
+    .smallBox {
         height: 150px !important;
     }
 
     .bigBox:hover,
-    .scrollBox:hover {
+    .smallBox:hover {
         height: 150px !important;
     }
 }
