@@ -893,6 +893,23 @@ div.feature h3 {
     color: var(--fc1);
 }
 
+/* attack table tweaks */
+#attack form select,
+#attack form input {
+    display: none;
+}
+
+#attack form:before {
+    content: "This lion has been attacked recently.\a";
+    font-weight: bold;
+}
+
+#attack form:after {
+    content: "They can be attacked again in 37 minutes.";
+    display: block;
+    margin-top: 1.5em;
+}
+
 /* Dynasty Pills */
 /* dynasty main */
 div.left {
