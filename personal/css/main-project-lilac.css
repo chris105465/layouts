@@ -480,26 +480,6 @@ a:focus {
     background: var(--pc3) !important;
 }
 
-/* scrollbar */
-#commentBox::-webkit-scrollbar {
-    height: 0;
-    width: 8px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background: #fff;
-}
-
-/* scrollbar button */
-#commentBox::-webkit-scrollbar-thumb {
-    background: var(--pc2);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-#commentBox::-webkit-scrollbar-thumb:hover {
-    background: var(--pc1);
-}
-
 #commentBox::before {
     content: "No roleplay, gimmick, or 'x was here' comments. Please respect my boundaries.";
     background-color: var(--pc1);
@@ -1180,22 +1160,6 @@ footer a:focus {
 #chatMessageList[data-pings="enabled"] .s-chat-message_mention a:hover,
 #chatMessageList[data-pings="enabled"] .s-chat-message_mention a:focus {
     color: var(--fc1) !important;
-}
-
-/* scrollbar */
-#chatMessageList::-webkit-scrollbar {
-    width: 8px;
-    background: #fff;
-}
-
-/* scrollbar button */
-#chatMessageList::-webkit-scrollbar-thumb {
-    background: var(--pc2);
-    border-radius: 0;
-}
-
-#chatMessageList::-webkit-scrollbar-thumb:hover {
-    background: var(--pc1);
 }
 
 /* claim badge */
