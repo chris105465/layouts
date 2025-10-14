@@ -1,0 +1,30 @@
+/* 
+    Code written by LD user Chris (#105465) and it is not allowed to be copied or used in any commissions or free css whatsoever
+*/
+
+a[href*='unsorted.php']>.cave-grid::before {
+    content: 'Unsorted';
+    position: absolute;
+    top: 0.3em;
+    left: 1.5em;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+a[href*='lionoverview.php']>.cave-grid::before {
+    content: 'Pride Overview';
+    position: absolute;
+    top: 0.3em;
+    right: 1.5em;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+#fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+    content: 'Nesting';
+    position: absolute;
+    top: 0.3em;
+    left: 1.5em;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
