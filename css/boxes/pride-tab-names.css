@@ -32,7 +32,6 @@
     a[href*='lionoverview.php']>.cave-grid::before {
         content: 'Pride Overview';
         text-align: right;
-
     }
 
     #fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
