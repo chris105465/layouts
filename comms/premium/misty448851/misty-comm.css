@@ -113,6 +113,14 @@ a:focus {
     box-shadow: 0 0 10px #523a2db3;
 }
 
+img[src*="icon-beetle-silver.png"] {
+    filter: hue-rotate(-165deg);
+}
+
+img[src*="icon-beetle-gold.png"] {
+    filter: saturate(80%);
+}
+
 /* Navbar */
 .navbar {
     background: linear-gradient(var(--pc2), var(--pc3));
