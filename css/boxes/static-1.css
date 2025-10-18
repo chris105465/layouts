@@ -1,32 +1,31 @@
-/* boxes made by Chris (#105465) and are NOT to be used in any commissions but mine. my code my rules. */
+/* boxes made by Chris (#105465) and are NOT to be used in any commissions but mine. my code my rules. they are also not to be packaged with any commissions or free css. these same rules are listed on my free css site. */
 
 .bigBox {
     background: #A3B4AE;
     color: #000;
     border: none;
-    overflow: scroll;
+    overflow: auto;
     height: 320px;
     width: 46%;
     padding: 20px;
     float: left;
     margin: 10px;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 3px;
     text-align: left;
 }
 
-.scrollBox,
 .smallBox {
     background: #A3B4AE;
     color: #000;
     border: none;
-    overflow: scroll;
+    overflow: auto;
     height: 150px;
     width: 46%;
     padding: 20px;
     float: right;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 3px;
     text-align: left;
 }
 
@@ -34,21 +33,12 @@
     margin: 0 auto;
     width: 90%;
     height: 350px;
-}
-
-.bigBox::-webkit-scrollbar,
-.scrollBox::-webkit-scrollbar,
-.smallBox::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+    padding: 0 !important;
 }
 
 .bigBox h1,
 .bigBox h2,
 .bigBox h3,
-.scrollBox h1,
-.scrollBox h2,
-.scrollBox h3,
 .smallBox h1,
 .smallBox h2,
 .smallBox h3 {

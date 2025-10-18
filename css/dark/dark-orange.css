@@ -313,7 +313,14 @@ a:focus {
 }
 
 /* HTML Boxes if applicable */
-
+.bigBox,
+.smallBox,
+.bottomBox {
+    background-color: var(--pc4) !important;
+    border: 1px solid var(--borderColor) !important;
+    color: var(--fc1) !important;
+    border-radius: 10px !important;
+}
 
 /* comment box */
 #commentBox {
@@ -331,25 +338,7 @@ a:focus {
     border-bottom: 1px solid var(--borderColor);
 }
 
-/* scrollbar */
-#commentBox::-webkit-scrollbar {
-    height: 0;
-    width: 8px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background: #fff;
-}
 
-/* scrollbar button */
-#commentBox::-webkit-scrollbar-thumb {
-    background: var(--pc2);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-#commentBox::-webkit-scrollbar-thumb:hover {
-    background: var(--pc1);
-}
 
 /* tables */
 /* table headers */
@@ -845,21 +834,7 @@ footer a:focus {
     color: var(--fc1) !important;
 }
 
-/* scrollbar */
-#chatMessageList::-webkit-scrollbar {
-    width: 8px;
-    background: #fff;
-}
 
-/* scrollbar button */
-#chatMessageList::-webkit-scrollbar-thumb {
-    background: var(--pc2);
-    border-radius: 0;
-}
-
-#chatMessageList::-webkit-scrollbar-thumb:hover {
-    background: var(--pc1);
-}
 
 /* claim badge */
 .s-chat-message_claim {

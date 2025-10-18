@@ -15,7 +15,7 @@ https://www.lioden.com/topic.php?id=304429491963
     --eventText: #ff2200;
     --mainFont: 'Jost', Verdana, 'Geneva', Tahoma, sans-serif;
     --headFont: 'Besley', 'Times New Roman', Times, serif;
-    --bgColor: #00000080;
+    --bgColor: #000000b3;
     --pc1: #120908;
     --pc2: #231210;
     --pc3: #351b18;
@@ -335,7 +335,14 @@ a:focus {
 }
 
 /* HTML Boxes if applicable */
-
+.bigBox,
+.smallBox,
+.bottomBox {
+    background-color: var(--pc3) !important;
+    border: 1px solid var(--borderColor) !important;
+    color: var(--fc1) !important;
+    border-radius: 10px !important;
+}
 
 /* comment box */
 #commentBox {
@@ -349,25 +356,7 @@ a:focus {
     background: var(--pc3) !important;
 }
 
-/* scrollbar */
-#commentBox::-webkit-scrollbar {
-    height: 0;
-    width: 8px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background: #fff;
-}
 
-/* scrollbar button */
-#commentBox::-webkit-scrollbar-thumb {
-    background: var(--pc2);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-#commentBox::-webkit-scrollbar-thumb:hover {
-    background: var(--pc1);
-}
 
 /* tables */
 /* table headers */
@@ -573,6 +562,119 @@ img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
     content: url('LINK');
     padding: 5px;
     } */
+/* pride tab text overlay code by Chris (#105465) (credit must remain intact for any use of this code and I do not permit it to be used for comms or free css without direct permission.) */
+
+/* mobile section */
+
+@media (max-width: 768px) {
+
+    a[href*='unsorted.php']>.cave-grid::before,
+    #fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+    a[href*='lionoverview.php']>.cave-grid::before {
+        position: absolute;
+        top: 0.6rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+        z-index: 1;
+        display: block;
+        max-width: 260px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+        text-shadow: 1px 1px #0000001a, 1px -1px #0000001a, -1px 1px #0000001a, -1px -1px #0000001a, 0 1px #0000001a, 0 -1px #0000001a, -1px 0 #0000001a, 1px 0 #0000001a, 0 0 3px #000000;
+    }
+
+    a[href*='unsorted.php']>.cave-grid::before {
+        content: 'Unsorted';
+        text-align: left;
+    }
+
+    a[href*='lionoverview.php']>.cave-grid::before {
+        content: 'Pride Overview';
+        text-align: right;
+    }
+
+    #fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+        content: 'Nesting';
+        text-align: left;
+    }
+}
+
+
+
+@media (max-width: 629px) {
+    a[href*='lionoverview.php']>.cave-grid::before {
+        padding-right: 1.7rem;
+    }
+}
+
+/* tablet and desktop section */
+
+@media (min-width: 769px) {
+
+    a[href*='unsorted.php']>.cave-grid::before,
+    #fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+    a[href*='lionoverview.php']>.cave-grid::before {
+        position: absolute;
+        top: 0.6rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+        z-index: 1;
+        text-shadow: 1px 1px #0000001a, 1px -1px #0000001a, -1px 1px #0000001a, -1px -1px #0000001a, 0 1px #0000001a, 0 -1px #0000001a, -1px 0 #0000001a, 1px 0 #0000001a, 0 0 3px #000000;
+    }
+
+    a[href*='unsorted.php']>.cave-grid::before {
+        content: 'Unsorted';
+        left: 6rem;
+    }
+
+    a[href*='lionoverview.php']>.cave-grid::before {
+        content: 'Pride Overview';
+        right: 6rem;
+    }
+
+    #fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+        content: 'Nesting';
+        left: 6rem;
+    }
+}
+
+
+
+@media (min-width: 993px) {
+
+    a[href*='unsorted.php']>.cave-grid::before,
+    #fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+    a[href*='lionoverview.php']>.cave-grid::before {
+        font-size: 1.6rem;
+    }
+
+    a[href*='unsorted.php']>.cave-grid::before {
+        left: 2.6rem;
+    }
+
+    a[href*='lionoverview.php']>.cave-grid::before {
+        right: 2.6rem;
+    }
+
+    #fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+        left: 2.6rem;
+    }
+}
+
+@media (min-width: 1201px) {
+
+    a[href*='unsorted.php']>.cave-grid::before,
+    #fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+    a[href*='lionoverview.php']>.cave-grid::before {
+        font-size: 2rem;
+    }
+}
+
 /* all mounds but like a cave */
 .mound-grid {
     padding: 0 0 5px 0;
@@ -939,21 +1041,7 @@ footer a:focus {
     color: var(--fc1) !important;
 }
 
-/* scrollbar */
-#chatMessageList::-webkit-scrollbar {
-    width: 8px;
-    background: #fff;
-}
 
-/* scrollbar button */
-#chatMessageList::-webkit-scrollbar-thumb {
-    background: var(--pc2);
-    border-radius: 0;
-}
-
-#chatMessageList::-webkit-scrollbar-thumb:hover {
-    background: var(--pc1);
-}
 
 /* claim badge */
 .s-chat-message_claim {
