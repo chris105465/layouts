@@ -337,6 +337,7 @@ a:focus {
     border: 1px solid var(--borderColor) !important;
     color: var(--fc1) !important;
     border-radius: 10px !important;
+    box-shadow: 1px 1px 3px #808080;
 }
 
 /* comment box */
