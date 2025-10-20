@@ -955,6 +955,11 @@ center>b>span {
     padding-top: 1em;
 }
 
+img[src*='hand_text.svg'] {
+    opacity: 1 !important;
+    filter: brightness(0%);
+}
+
 /* technically applies to all "white" text on the site but mainly applies to the footer text */
 .white {
     color: var(--fc1);
