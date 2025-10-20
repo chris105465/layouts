@@ -3,7 +3,6 @@
 .bigBox {
     background: #A3B4AE;
     color: #000;
-    border: none;
     overflow: auto;
     height: 320px;
     width: 46%;
@@ -18,7 +17,6 @@
 .smallBox {
     background: #A3B4AE;
     color: #000;
-    border: none;
     overflow: auto;
     height: 150px;
     width: 46%;

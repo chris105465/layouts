@@ -3,7 +3,6 @@
 .bigBox {
     background: #A3B4AE;
     color: #000;
-    border: none;
     border-radius: 3px;
     padding: 30px;
     margin: 20px;
@@ -41,7 +40,6 @@
 .smallBox {
     background: #A3B4AE;
     color: #000;
-    border: none;
     border-radius: 3px;
     padding: 20px;
     height: 60px;
