@@ -329,7 +329,7 @@ a:focus {
 .smallBox,
 .bottomBox {
     background-color: var(--pc3) !important;
-    border: 1px solid var(--borderColor) !important;
+    border: 1px solid var(--borderColor);
     color: var(--fc1) !important;
     border-radius: 3px !important;
 }
