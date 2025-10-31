@@ -493,6 +493,13 @@ a:focus {
     padding: 8px !important;
 }
 
+/* comment blank img replace */
+
+.comment img[src=""],
+.comment img[src*="discordapp"] {
+    content: url('https://static.lioden.com/images/layout/default-tag.png');
+}
+
 /* tables */
 /* table headers */
 .table .top,
