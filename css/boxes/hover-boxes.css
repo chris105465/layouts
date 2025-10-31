@@ -46,7 +46,7 @@
     width: 450px;
     margin: 20px;
     margin-bottom: 0;
-    overflow: auto;
+    overflow: hidden;
     float: left;
     transition: 2s;
 }
