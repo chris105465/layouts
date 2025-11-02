@@ -56,12 +56,10 @@
         display: block !important;
     }
 
-    .bigBox {
-        height: 150px !important;
-    }
-
+    .bigBox,
     .smallBox {
         height: 150px !important;
+        overflow: auto;
     }
 
     .bigBox:hover,
