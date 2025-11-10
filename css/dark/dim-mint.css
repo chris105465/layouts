@@ -319,7 +319,7 @@ a:focus {
     background-color: var(--pc4) !important;
     border: 1px solid var(--borderColor) !important;
     color: var(--fc1) !important;
-    border-radius: 10px !important;
+    border-radius: 3px !important;
 }
 
 /* comment box */
@@ -740,6 +740,19 @@ center>b>span {
 }
 
 /* Footer */
+.footer {
+    background: var(--bgColor);
+    border-radius: 0;
+    border: 1px solid var(--borderColor);
+    box-shadow: none;
+    padding-top: 1em;
+}
+
+img[src*='hand_text.svg'] {
+    opacity: 1 !important;
+    filter: brightness(1000%);
+}
+
 /* technically applies to all "white" text on the site but mainly applies to the footer text */
 .white {
     color: var(--fc1);
