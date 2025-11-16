@@ -357,11 +357,12 @@ a:focus {
     bottom: 0;
     height: 50px;
     width: 250px;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     transition: 2s;
     z-index: 100;
     overflow: scroll;
+    box-shadow: 0 0 10px #000000;
 }
 
 .profileTab:hover,
