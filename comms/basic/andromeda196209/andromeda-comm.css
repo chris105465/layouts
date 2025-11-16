@@ -1,5 +1,5 @@
 /*
-    Layout Made by Chris (#105465)
+    Layout Made by Chris (#105465) for andromeda(#196209)
     Please do not edit or copy any of this code without permission. If you have any questions regarding my work, please message me.
     */
 
@@ -376,7 +376,7 @@ a:focus {
 
 /* lion image */
 #lion_image>div {
-    border-radius: 10px;
+    border-radius: 50%;
     border: 1px solid var(--borderColor);
 }
 
@@ -714,7 +714,7 @@ img[src$='//static.lioden.com/images/layout/addbeetlemound.png'] {
 /* featured lion background image */
 .featured-lion img[src$='//static.lioden.com/images/cave/default.png'] {
     content: url('https://static.lioden.com/images/dynamic/backgrounds/caballusnight.png') !important;
-    /* filter: none; */
+    filter: contrast(120%);
 }
 
 /* very important if you want it to not look ugly anymore lol don't change the padding here or the media queries at the bottom */
