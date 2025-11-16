@@ -346,6 +346,49 @@ a:focus {
     box-shadow: 1px 1px 3px #000000;
 }
 
+.profileTab {
+    background: var(--pc3);
+    color: var(--fc1);
+    border: 1px solid var(--borderColor);
+    border-bottom: none;
+    padding: 15px;
+    position: fixed;
+    left: 5px;
+    bottom: 0;
+    height: 50px;
+    width: 250px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    transition: 2s;
+    z-index: 100;
+    overflow: scroll;
+}
+
+.profileTab:hover,
+.profileTab:focus {
+    height: 300px;
+}
+
+.profileTab h1,
+.profileTab h2,
+.profileTab h3 {
+    margin: 0;
+    color: var(--fc1);
+}
+
+.profileTab::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.page-doll {
+    width: 300px;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    z-index: 1;
+}
+
 /* comment box */
 #commentBox {
     border: 1px solid var(--borderColor) !important;
@@ -1163,6 +1206,10 @@ a[href$='./chat.php'] {
     .dynastylist {
         margin-bottom: 15px;
     }
+
+    .page-doll {
+        width: 200px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1187,6 +1234,10 @@ a[href$='./chat.php'] {
 
     .breadcrumb::after {
         right: 22% !important;
+    }
+
+    .page-doll {
+        width: 150px;
     }
 }
 
