@@ -551,15 +551,15 @@ input::placeholder {
     object-position: top;
 }
 
-#fraOrganizationBlock>div:nth-child(4) div>img {
+#fraCaveList>div:nth-child(1) div>img {
     content: url('https://static.lioden.com/images/dynamic/backgrounds/Hammam_Meskhoutine.png');
 }
 
-#fraOrganizationBlock>div:nth-child(5) div>img {
+#fraCaveList>div:nth-child(2) div>img {
     content: url('https://static.lioden.com/images/dynamic/backgrounds/simienmountains.png');
 }
 
-#fraOrganizationBlock>div:nth-child(6) div>img {
+#fraCaveList>div:nth-child(3) div>img {
     content: url('https://static.lioden.com/images/dynamic/backgrounds/Maletsunyane_Falls.png');
 }
 
