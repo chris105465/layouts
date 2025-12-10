@@ -500,6 +500,18 @@ a:focus {
     content: url('https://static.lioden.com/images/layout/default-tag.png');
 }
 
+/* december comment tweaks */
+#postComment,
+#comment {
+    display: none;
+}
+
+#makeComment::before {
+    content: 'Too many event comments. Privileges revoked.';
+    display: block;
+    margin-top: 8px;
+}
+
 /* tables */
 /* table headers */
 .table .top,
@@ -880,8 +892,8 @@ div.feature h3 {
     color: var(--fc1);
 }
 
-/* attack table tweaks */
-#attack form select,
+/* october attack table tweaks */
+/* #attack form select,
 #attack form input {
     display: none;
 }
@@ -895,7 +907,7 @@ div.feature h3 {
     content: "They can be attacked again in 37 minutes.";
     display: block;
     margin-top: 1.5em;
-}
+} */
 
 /* Dynasty Pills */
 /* dynasty main */
