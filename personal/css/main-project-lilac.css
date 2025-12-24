@@ -1026,7 +1026,7 @@ input[type="reset"] {
 }
 
 /* regular button hover */
-a.button,
+a.button:hover,
 .select-control:hover,
 button.button:hover,
 input[type="button"]:hover,
