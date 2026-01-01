@@ -7,22 +7,57 @@ https://www.lioden.com/topic.php?id=304429491963
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/*variables*/
 :root {
 	--fc1: #000000;
+	--fc2: #1f1914;
+	--fc3: #3e3128;
+	--eventText: #802000;
+	--mainFont: 'Source Sans 3', Verdana, 'Geneva', Tahoma, sans-serif;
+	--headFont: 'Tinos', 'Times New Roman', Times, serif;
+	--bgColor: #ebe5e0cc;
+	--pc1: #af9583;
+	--pc2: #b9a292;
+	--pc3: #c3b0a2;
 	--pc4: #cdbdb1;
+	--sc1: #af9583;
+	--sc2: #b9a292;
+	--sc3: #c3b0a2;
+	--sc4: #cdbdb1;
+	--tc: #bdd3db;
 	--borderColor: #ffffff;
+	--redAlert: #d7c1c1;
+	--redLink: #1f1414;
+	--greenAlert: #b1cdbf;
+	--greenLink: #141f1a;
+	--yellowAlert: #cdc6b1;
+	--yellowLink: #1f1c14;
+	--button1: #7ba7b7;
+	--button2: #8cb2c0;
+	--button3: #9cbdc9;
+	--button4: #adc8d2;
+	--button5: #bdd3db;
+	--button6: #cedee4;
+	--buttonText: #000000;
+	--redButton1: #211212;
+	--redButton2: #311b1b;
+	--redButton3: #422424;
+	--redButton4: #522d2d;
+	--redButton5: #633636;
+	--redButton6: #733f3f;
+	--redButtonText: #ffffff;
 }
 
 /* Body */
 body {
-	font-family: 'Source Sans 3', Verdana, 'Geneva', Tahoma, sans-serif;
-	background: #544B3F url('../../img/scenic/tre-croci-pass.jpg') fixed;
+	font-family: var(--mainFont);
+	background: #ebe5e0 url('../../img/scenic/tre-croci-pass.jpg') fixed;
 	background-position-y: top;
 	background-position-x: center;
 	/* DON'T CHANGE BELOW */
 	background-repeat: no-repeat;
 	background-size: cover;
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* Headers */
@@ -30,67 +65,62 @@ h1,
 h2,
 h3,
 .sidebar h3 {
-	color: #000000;
-	font-family: 'Tinos', 'Times New Roman', Times, serif;
+	color: var(--fc1);
+	font-family: var(--headFont);
 }
 
 /* Other Text */
 p,
 b,
 #fraProfileContent {
-	color: #000000;
+	color: var(--fc1);
 }
 
 small {
-	color: #000000 !important;
+	color: var(--fc1) !important;
 }
 
 /* Links */
 a:link,
 a:visited,
 a:active {
-	color: #1a1a1a;
+	color: var(--fc2);
 }
 
 a:hover,
 a:focus {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* Topbar */
 .topbar a:link,
 .topbar a:visited,
 .topbar a:active {
-	color: #1a1a1a;
+	color: var(--fc2);
 }
 
 .topbar a:hover,
 .topbar a:focus {
-	color: #000000;
+	color: var(--fc1);
 }
 
 .topbar {
-	background: #af9583;
-	border: 1px solid #fff;
+	background: var(--pc1);
+	border: 1px solid var(--borderColor);
 	border-top: none;
-	/* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* Navbar */
 .navbar {
-	background: #b9a292;
-	border-bottom: 1px solid #fff;
-	/* border-top-right-radius: 10px;
-	border-top-left-radius: 10px; */
-	font-family: 'Tinos', 'Times New Roman', Times, serif;
+	background: var(--pc2);
+	border-bottom: 1px solid var(--borderColor);
+	font-family: var(--headFont);
 }
 
 /* logo */
 .navbar-brand img {
-	/* content: url('LINK'); */
-	filter: hue-rotate(180deg) saturate(20%) contrast(150%) brightness(120%);
+	filter: hue-rotate(180deg) saturate(20%) contrast(120%) brightness(120%);
 }
 
 /* navbar defaults */
@@ -99,11 +129,11 @@ a:focus {
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-	color: #1a1a1a;
+	color: var(--fc2);
 }
 
 .navbar-default .navbar-nav>li>a {
-	color: #1a1a1a;
+	color: var(--fc2);
 	font-weight: bold;
 }
 
@@ -115,18 +145,18 @@ a:focus {
 /* make different from navbar */
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-	background: #c3b0a2;
+	background: var(--pc3);
 }
 
 /* bars in navbar icon */
 .navbar-default .navbar-toggle .icon-bar {
-	background: #000000;
+	background: var(--fc1);
 }
 
 /* collapsed navbar */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-	border-color: #af9583;
+	border-color: var(--pc1);
 	box-shadow: none;
 }
 
@@ -139,16 +169,15 @@ a:focus {
 .navbar .active a:visited,
 .navbar .active a:active,
 .navbar .active a:focus {
-	background: #c3b0a2;
-	color: #000000;
-	/* border-radius: 10px; */
+	background: var(--pc3);
+	color: var(--fc1);
 }
 
 /* main */
 .main {
-	background: #ebe5e0bf;
-	border-radius: none;
-	border: 1px solid #fff;
+	background: var(--bgColor);
+	border-radius: 0;
+	border: 1px solid var(--borderColor);
 	box-shadow: none;
 }
 
@@ -159,9 +188,8 @@ a:focus {
 
 /* Breadcrumb */
 .breadcrumb {
-	background: #c3b0a2;
-	border: 1px solid #fff;
-	/* border-radius: 10px; */
+	background: var(--pc3);
+	border: 1px solid var(--borderColor);
 }
 
 .breadcrumb::after {
@@ -169,12 +197,12 @@ a:focus {
 	position: absolute;
 	right: 20%;
 	z-index: 100;
-	color: #000000;
+	color: var(--fc1);
 }
 
 .breadcrumb-item.active,
 .breadcrumb-item::before {
-	color: #262626 !important;
+	color: var(--fc3) !important;
 }
 
 /* Side Bar */
@@ -185,16 +213,15 @@ a:focus {
 
 /* sidebar inner boxes */
 .col-md-3 .panel {
-	border: 1px solid #fff;
-	/* border-radius: 10px; */
-	background: #c3b0a2;
+	border: 1px solid var(--borderColor);
+	background: var(--pc3);
 	box-shadow: none;
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* dotted line above chat on smaller screen sizes */
 .clear {
-	border-color: #000000 !important;
+	border-color: var(--fc1) !important;
 }
 
 /* Progress Bars */
@@ -202,142 +229,132 @@ a:focus {
 .progress {
 	background: #fff;
 	border-radius: 20px;
-	border: 1px solid #af9583;
+	border: 1px solid var(--borderColor);
 }
 
 /* default and impression */
 .progress-bar {
-	background: linear-gradient(#cedee4, #adc8d2);
+	background: linear-gradient(var(--button6), var(--button4));
 }
 
 /* if you want all to match comment out the next three classes */
-/* exp, hunger, and energy */
+/* exp, hunger, energy, and thirst respectively */
 /* .progress-bar-success {
-	background: #ffc680;
-}
-.progress-bar-danger {
-	background: #ffba66;
-}
-.progress-bar-warning {
-	background: #ffaf4d;
-} */
+    background: #ffc680;
+    }
+    .progress-bar-danger {
+    background: #ffba66;
+    }
+    .progress-bar-warning {
+    background: #ffaf4d;
+    }
+    .progress-bar-info {
+    background: #ffaf4d;
+    } */
 /* text inside the progress bars */
 .progress div {
 	color: #000;
-	font-family: 'Source Sans 3', Verdana, 'Geneva', Tahoma, sans-serif;
+	font-family: var(--mainFont);
 }
 
 /* alerts */
 /* all */
 .alert-danger,
 .alert-success,
-.alert-warning {
-	border: 1px solid #fff;
-	/* border-radius: 10px; */
+.alert-warning,
+.alert {
+	color: var(--fc1);
+	background: var(--greenAlert);
+	border: 1px solid var(--borderColor) !important;
 }
 
 /* red notifications */
 .alert-danger {
-	color: #000000;
-	background: #adc8d2;
+	color: var(--fc1) !important;
+	background: var(--redAlert);
 }
 
 .alert-danger>a,
 .alert-danger>a:link,
 .alert-danger>a:active,
 .alert-danger>a:visited {
-	color: #121d21;
+	color: var(--redLink);
 }
 
 .alert-danger>a:hover,
 .alert-danger>a:focus,
 .alert-danger b {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* green notifications */
 .alert-success {
-	color: #000000;
-	background: #af9583;
+	color: var(--fc1);
+	background: var(--greenAlert);
 }
 
 .alert-success>a,
 .alert-success>a:link,
 .alert-success>a:active,
 .alert-success>a:visited {
-	color: #1f1914;
+	color: var(--greenLink);
 }
 
 .alert-success>a:hover,
 .alert-success>a:focus,
 .alert-success b {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* yellow notifications */
 .alert-warning {
-	color: #000000;
-	background: #b9a292;
+	color: var(--fc1);
+	background: var(--yellowAlert);
 }
 
 .alert-warning>a,
 .alert-warning>a:link,
 .alert-warning>a:active,
 .alert-warning>a:visited {
-	color: #1f1914;
+	color: var(--yellowLink);
 }
 
 .alert-warning>a:hover,
 .alert-warning>a:focus,
 .alert-warning b {
-	color: #000000;
+	color: var(--fc1);
 }
 
-/* HTML boxes if applicable */
-
+/* HTML Boxes if applicable */
+.bigBox,
+.smallBox,
+.bottomBox {
+	background-color: var(--pc3) !important;
+	border: 1px solid var(--borderColor);
+	color: var(--fc1) !important;
+	border-radius: 3px !important;
+}
 
 /* comment box */
 #commentBox {
-	border: 1px solid #fff !important;
+	border: 1px solid var(--borderColor) !important;
 	border-radius: 5px !important;
 	height: 200px !important;
-	background: #cdbdb1;
+	background: var(--pc4);
 }
 
 .comment:nth-child(even) {
-	background: #c3b0a2 !important;
-}
-
-/* scrollbar */
-#commentBox::-webkit-scrollbar {
-	height: 0;
-	width: 8px;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	background: #fff;
-}
-
-/* scrollbar button */
-#commentBox::-webkit-scrollbar-thumb {
-	background: #b9a292;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-}
-
-#commentBox::-webkit-scrollbar-thumb:hover {
-	background: #af9583;
+	background: var(--pc3) !important;
 }
 
 /* tables */
 /* table headers */
 .table .top,
 .table th {
-	background: #af9583;
-	color: #000000;
-	font-family: 'Tinos', 'Times New Roman', Times, serif;
+	background: var(--sc1);
+	color: var(--fc1);
+	font-family: var(--headFont);
 	font-weight: bold;
-	/* border-top-right-radius: 10px;
-	border-top-left-radius: 10px; */
 }
 
 /* lion title and name */
@@ -347,21 +364,15 @@ a:focus {
 
 /* lion image */
 #lion_image>div {
-	/* transition: 1s; */
 	border-radius: 10px;
-	border: none;
+	border: 1px solid var(--borderColor);
 }
 
-/* a:hover > #lion_image > div, a:focus > #lion_image > div {
-	border-radius: 10px;
-} */
 /* table body */
 .table {
-	background: #cdbdb1;
-	border: 1px solid #fff;
-	color: #000000;
-	/* border-collapse: separate; */
-	/* border-radius: 10px; */
+	background: var(--sc4);
+	border: 1px solid var(--borderColor);
+	color: var(--fc1);
 }
 
 /* table links */
@@ -371,7 +382,7 @@ a:focus {
 .table th a:link,
 .table th a:active,
 .table th a:visited {
-	color: #1a1a1a;
+	color: var(--fc2);
 	font-weight: bold;
 	border-bottom: none;
 }
@@ -380,13 +391,13 @@ a:focus {
 .table th a:hover,
 .table .top a:focus,
 .table th a:focus {
-	color: #000000;
+	color: var(--fc1);
 	font-weight: bold;
 }
 
 /* left side of stats on king and status bars in caves */
 .table .left {
-	background: #b9a292;
+	background: var(--sc2);
 }
 
 /* left side of stats on king */
@@ -399,34 +410,27 @@ a:focus {
 .inner-table .right {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-	background: #c3b0a2;
+	background: var(--sc3);
 }
 
 /* every other lion in caves */
 .table .right_odd {
-	background: #c3b0a2;
+	background: var(--sc3);
 }
 
 /* table footers */
 .table .innerHeader,
 .table .bottom,
 #player>tbody>tr {
-	background: #af9583;
-	color: #000000;
-	/* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
+	background: var(--sc1);
+	color: var(--fc1);
 }
 
 /* player table footer adjustments for rounded corners */
 #player .right_odd {
 	background: none;
-	/* border-bottom-right-radius: 10px; */
 }
 
-/* #player .right_odd:first-child {
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 0;
-} */
 #player tr.right {
 	background: none;
 }
@@ -435,13 +439,13 @@ a:focus {
 .table .bottom a:link,
 .table .bottom a:visited,
 .table .bottom a:active {
-	color: #1a1a1a;
+	color: var(--fc2);
 	text-decoration: none;
 }
 
 .table .bottom a:hover,
 .table .bottom a:focus {
-	color: #000000;
+	color: var(--fc1);
 	text-decoration: underline;
 }
 
@@ -459,9 +463,9 @@ a:focus {
 
 /* days left until heat badge */
 .badge {
-	background: #bdd3db;
-	color: #000000;
-	border: 1px solid #fff;
+	background: var(--tc);
+	color: var(--fc1);
+	border: 1px solid var(--borderColor);
 }
 
 /* inputs for typing in text in territory description etc. */
@@ -471,7 +475,7 @@ select,
 #fra_chatContainer #txtChatInput {
 	color: #000000;
 	background: #ffffff;
-	border: 1px solid #af9583;
+	border: 1px solid var(--sc1);
 }
 
 input::placeholder {
@@ -480,24 +484,23 @@ input::placeholder {
 
 /* CLAN STUFF */
 .page-description {
-	border: 1px solid #fff;
-	background: #cdbdb1;
+	border: 1px solid var(--borderColor);
+	background: var(--pc4);
 	padding: 20px;
 }
 
 .page-description>div {
-	padding: 0;
-	margin: 0;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 /* Caves and Mounds Main */
 /* main overrides */
 .mound-grid,
 .cave-grid {
-	background: #bdd3db;
-	border: 1px solid #fff;
-	/* border-radius: 10px; */
-	color: #1a1a1a;
+	background: var(--tc);
+	border: 1px solid var(--borderColor);
+	color: var(--fc2);
 }
 
 /* cave and mound link hover */
@@ -505,7 +508,7 @@ input::placeholder {
 .center>a:focus>.cave-grid,
 .center>a:hover>.mound-grid,
 .center>a:focus>.mound-grid {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* cave and mound customization */
@@ -529,24 +532,130 @@ img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
 
 /* unsorted lions */
 /* img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'] {
-	content: url('LINK');
-	object-position: top;
-} */
+    content: url('LINK');
+    object-position: top;
+    } */
 /* pregnant lionesses */
 /* img[src$='//static.lioden.com/images/layout/nestingbanner.png'] {
-	content: url('LINK');
-	object-position: top;
-} */
+    content: url('LINK');
+    object-position: top;
+    } */
 /* pride overview */
 /* img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
-	content: url('LINK');
-	object-position: top;
-} */
+    content: url('LINK');
+    object-position: top;
+    } */
 /* all mounds */
 /* .mound-grid img {
-	content: url('LINK');
-	padding: 5px;
-} */
+    content: url('LINK');
+    padding: 5px;
+    } */
+/* pride tab text overlay code by Chris (#105465) (credit must remain intact for any use of this code and I do not permit it to be used for comms or free css without explicit permission from me.) */
+/* mobile section */
+@media (max-width: 768px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		position: absolute;
+		top: 0.6rem;
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: bold;
+		z-index: 1;
+		display: block;
+		max-width: 260px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 1rem;
+		text-shadow: 1px 1px #0000001a, 1px -1px #0000001a, -1px 1px #0000001a, -1px -1px #0000001a, 0 1px #0000001a, 0 -1px #0000001a, -1px 0 #0000001a, 1px 0 #0000001a, 0 0 3px #000000;
+	}
+
+	a[href*='unsorted.php']>.cave-grid::before {
+		content: 'Unsorted';
+		text-align: left;
+	}
+
+	a[href*='lionoverview.php']>.cave-grid::before {
+		content: 'Pride Overview';
+		text-align: right;
+	}
+
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+		content: 'Nesting';
+		text-align: left;
+	}
+}
+
+@media (max-width: 629px) {
+	a[href*='lionoverview.php']>.cave-grid::before {
+		padding-right: 1.7rem;
+	}
+}
+
+/* tablet and desktop section */
+@media (min-width: 769px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		position: absolute;
+		top: 0.6rem;
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: bold;
+		z-index: 1;
+		text-shadow: 1px 1px #0000001a, 1px -1px #0000001a, -1px 1px #0000001a, -1px -1px #0000001a, 0 1px #0000001a, 0 -1px #0000001a, -1px 0 #0000001a, 1px 0 #0000001a, 0 0 3px #000000;
+	}
+
+	a[href*='unsorted.php']>.cave-grid::before {
+		content: 'Unsorted';
+		left: 6rem;
+	}
+
+	a[href*='lionoverview.php']>.cave-grid::before {
+		content: 'Pride Overview';
+		right: 6rem;
+	}
+
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+		content: 'Nesting';
+		left: 6rem;
+	}
+}
+
+@media (min-width: 993px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		font-size: 1.6rem;
+	}
+
+	a[href*='unsorted.php']>.cave-grid::before {
+		left: 2.6rem;
+	}
+
+	a[href*='lionoverview.php']>.cave-grid::before {
+		right: 2.6rem;
+	}
+
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+		left: 2.6rem;
+	}
+}
+
+@media (min-width: 1201px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		font-size: 2rem;
+	}
+}
+
 /* all mounds but like a cave */
 .mound-grid {
 	padding: 0 0 5px 0;
@@ -568,17 +677,13 @@ img[src$='//static.lioden.com/images/layout/caveunused.jpg'] {
 
 /* featured lion section */
 .featured-lion {
-	background: #af9583;
-	color: #000000;
+	background: var(--sc1);
+	color: var(--fc1);
 	margin-bottom: 20px;
-	/* border-radius: 10px; */
-	box-shadow: 0 0 0 1px #fff;
+	box-shadow: 0 0 0 1px var(--borderColor);
+
 }
 
-/* .featured-lion img {
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
-} */
 /* featured lion background image */
 .featured-lion img[src$='//static.lioden.com/images/cave/default.png'] {
 	content: url('https://static.lioden.com/images/dynamic/backgrounds/RE_bioko_island.png') !important;
@@ -592,27 +697,27 @@ img[src$='//static.lioden.com/images/layout/caveunused.jpg'] {
 
 .featured-lion a:hover,
 .featured-lion a:focus {
-	color: #000000;
+	color: var(--fc1);
 }
 
 .featured-lion a:link,
 .featured-lion a:active,
 .featured-lion a:visited {
-	color: #1a1a1a;
+	color: var(--fc2);
 }
 
 /* owned by text */
 h1.center>small,
 h1.center>small a:hover,
 h1.center>small a:focus {
-	color: #000000 !important;
+	color: var(--fc1) !important;
 }
 
 h1.center>small a,
 h1.center>small a:link,
 h1.center>small a:visited,
 h1.center>small a:active {
-	color: #1a1a1a !important;
+	color: var(--fc2) !important;
 }
 
 /* dropdown text */
@@ -623,9 +728,8 @@ h1.center>small a:active {
 /* Inner Mounds */
 /* menu bg */
 .sub_menu {
-	background: #af9583;
-	border: 1px solid #fff;
-	/* border-radius: 10px; */
+	background: var(--sc1);
+	border: 1px solid var(--borderColor);
 }
 
 .sub_sub_menu {
@@ -634,9 +738,8 @@ h1.center>small a:active {
 
 /* Feature Styling (like feed all play all etc.) */
 div.feature {
-	/* border-radius: 10px; */
-	border: 1px solid #fff;
-	background: #cdbdb1;
+	border: 1px solid var(--borderColor);
+	background: var(--sc4);
 	padding: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -649,25 +752,24 @@ div.feature select {
 
 /* header */
 div.feature h3 {
-	color: #000000;
+	color: var(--fc1);
 }
 
 .feature-footer {
-	background: #cdbdb1;
+	background: var(--sc4);
 }
 
 /* inner text */
 .feature .xsmall {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* Dynasty Pills */
 /* dynasty main */
 div.left {
-	background: #bdd3db;
-	/* border-radius: 10px; */
-	border: 1px solid #fff;
-	color: #000000;
+	background: var(--tc);
+	border: 1px solid var(--borderColor);
+	color: var(--fc1);
 }
 
 /* custom dynasty images */
@@ -676,7 +778,7 @@ div.left img {
 	object-fit: cover;
 	object-position: top;
 	padding: 0;
-	height: 80px;
+	height: 60px;
 	max-width: 500px !important;
 	border-bottom-left-radius: inherit;
 	border-bottom-right-radius: inherit;
@@ -688,48 +790,49 @@ div.left img {
 
 /* dynasty headers */
 .dynastylist h3 {
-	color: #1a1a1a;
+	color: var(--fc2);
 	padding-top: 5px;
 }
 
 .dynastylist h3:hover,
 .dynastylist h3:focus {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* links in the pills beneath dynasty stuff */
 a div.left {
-	color: #1a1a1a;
+	color: var(--fc2);
 }
 
 a div.left:hover,
 a div.left:focus {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* Branch */
 .item {
-	background: #c3b0a2;
-	border: none;
+	background: var(--sc3);
+	border: 1px solid var(--borderColor);
 	border-radius: 5px;
 }
 
 .item-header {
-	background: #b9a292;
-	color: #000000;
+	background: var(--sc2);
+	color: var(--fc1);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
 
 .item-footer {
-	background: #b9a292;
-	color: #000000;
+	background: var(--sc2);
+	color: var(--fc1);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
 
 /* Buttons */
 /* all */
+a.button,
 .select-control,
 button.button,
 input[type="button"],
@@ -754,30 +857,32 @@ input[type="reset"].bad:hover {
 }
 
 /* regular button */
+a.button,
 .select-control,
 button.button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-	background: #dee9ed;
-	background: linear-gradient(to bottom, #dee9ed 5%, #bdd3db 5%, #bdd3db 95%, #9cbdc9 95%);
-	color: #000000;
-	border: 1px solid #9cbdc9;
-	text-shadow: 1px 1px 0px #dee9ed;
-	font-family: 'Source Sans 3', Verdana, 'Geneva', Tahoma, sans-serif;
+	background: var(--button6);
+	background: linear-gradient(to bottom, var(--button6) 5%, var(--button4) 5%, var(--button4) 95%, var(--button2) 95%);
+	color: var(--buttonText);
+	border: 1px solid var(--button2);
+	text-shadow: 1px 1px 0px var(--button6);
+	font-family: var(--mainFont);
 }
 
 /* regular button hover */
+a.button:hover,
 .select-control:hover,
 button.button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-	background: #cedee4;
-	background: linear-gradient(to bottom, #cedee4 5%, #adc8d2 5%, #adc8d2 95%, #8cb2c0 95%);
-	color: #000000;
-	border: 1px solid #8cb2c0;
-	text-shadow: 1px 1px 0px #cedee4;
+	background: var(--button5);
+	background: linear-gradient(to bottom, var(--button5) 5%, var(--button3) 5%, var(--button3) 95%, var(--button1) 95%);
+	color: var(--buttonText);
+	border: 1px solid var(--button1);
+	text-shadow: 1px 1px 0px var(--button5);
 }
 
 /* red button */
@@ -786,11 +891,11 @@ button.button.bad,
 input[type="button"].bad,
 input[type="submit"].bad,
 input[type="reset"].bad {
-	background: #498349;
-	background: linear-gradient(to bottom, #498349 5%, #376237 5%, #376237 49%, #376237 95%, #254125 95%);
-	color: #ffffff;
-	border: 1px solid #122112;
-	text-shadow: 1px 1px 0px #254125;
+	background: var(--redButton6);
+	background: linear-gradient(to bottom, var(--redButton6) 5%, var(--redButton4) 5%, var(--redButton4) 49%, var(--redButton4) 95%, var(--redButton2) 95%);
+	color: var(--redButtonText);
+	border: 1px solid var(--redButton2);
+	text-shadow: 1px 1px 0px var(--redButton2);
 }
 
 /* red button hover */
@@ -799,26 +904,44 @@ button.button.bad:hover,
 input[type="button"].bad:hover,
 input[type="submit"].bad:hover,
 input[type="reset"].bad:hover {
-	background: #407240;
-	background: linear-gradient(to bottom, #407240 5%, #2e522e 5%, #2e522e 49%, #2e522e 95%, #1c311c 95%);
-	color: #ffffff;
-	border: 1px solid #091009;
-	text-shadow: 1px 1px 0px #1c311c;
+	background: var(--redButton5);
+	background: linear-gradient(to bottom, var(--redButton5) 5%, var(--redButton3) 5%, var(--redButton3) 49%, var(--redButton3) 95%, var(--redButton1) 95%);
+	color: var(--redButtonText);
+	border: 1px solid var(--redButton1);
+	text-shadow: 1px 1px 0px var(--redButton1);
 }
 
 /* Event Flavor Text */
 /* has to go at the bottom since it likes to be mean to me otherwise trust me best left here lol */
 center>div.center.b,
 center>b>span {
-	color: #243a42 !important;
-	text-shadow: 0 0 3px #fff;
+	color: var(--eventText) !important;
+	text-shadow: 1px 1px #fff;
+}
+
+/* december table fix for dark layouts */
+.table .table,
+.table .table b {
+	color: #000 !important;
 }
 
 /* Footer */
+.footer {
+	background: var(--bgColor);
+	border-radius: 0;
+	border: 1px solid var(--borderColor);
+	box-shadow: none;
+	padding-top: 1em;
+}
+
+img[src*='hand_text.svg'] {
+	opacity: 1 !important;
+	filter: brightness(0%);
+}
+
 /* technically applies to all "white" text on the site but mainly applies to the footer text */
 .white {
-	color: #fff;
-	text-shadow: 0 0 5px #000;
+	color: var(--fc1);
 }
 
 /* bottom links container size to prevent weird stacking issues */
@@ -835,7 +958,7 @@ ul.bottomlinks {
 .footer a:link,
 .footer a:active,
 .footer a:visited {
-	color: #f2f2f2;
+	color: var(--fc2);
 	border-bottom: none;
 }
 
@@ -843,13 +966,13 @@ ul.bottomlinks {
 .bottomlinks li a:focus,
 .footer a:hover,
 footer a:focus {
-	color: #fff;
+	color: var(--fc1);
 }
 
 /*#region Chat */
 /* main container */
 #chatMessageContainer {
-	border: 1px solid #fff;
+	border: 1px solid var(--borderColor);
 }
 
 /* chat buttons */
@@ -862,34 +985,33 @@ footer a:focus {
 /* menu dropbox */
 .channelMenu>button,
 .channelMenu>div {
-	background: #af9583 !important;
-	border-color: #fff !important;
-	box-shadow: none !important;
-	color: #1a1a1a !important;
+	background: var(--pc1) !important;
+	border-color: var(--borderColor) !important;
+	color: var(--fc2) !important;
 	box-shadow: none !important;
 }
 
 /* message text */
 .s-chat-message {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* even messages */
 .s-chat-message:nth-child(even) {
-	background: #cdbdb1;
+	background: var(--pc4);
 }
 
 /* odd messages */
 .s-chat-message:nth-child(odd) {
-	background: #c3b0a2;
+	background: var(--pc3);
 }
 
 /* mention */
 #chatMessageList[data-pings="enabled"] .s-chat-message_mention,
 .s-chat-message.hasContext {
-	background: #cdbdb1 !important;
-	border-color: #af9583 !important;
-	color: #000000 !important;
+	background: var(--sc4) !important;
+	border-color: var(--sc1) !important;
+	color: var(--fc1) !important;
 	padding-left: 10px;
 }
 
@@ -899,35 +1021,19 @@ footer a:focus {
 }
 
 #chatMessageList[data-pings="enabled"] .s-chat-message_mention a {
-	color: #1a1a1a !important;
+	color: var(--fc2) !important;
 }
 
 #chatMessageList[data-pings="enabled"] .s-chat-message_mention a:hover,
 #chatMessageList[data-pings="enabled"] .s-chat-message_mention a:focus {
-	color: #000000 !important;
-}
-
-/* scrollbar */
-#chatMessageList::-webkit-scrollbar {
-	width: 8px;
-	background: #fff;
-}
-
-/* scrollbar button */
-#chatMessageList::-webkit-scrollbar-thumb {
-	background: #b9a292;
-	border-radius: 0;
-}
-
-#chatMessageList::-webkit-scrollbar-thumb:hover {
-	background: #af9583;
+	color: var(--fc1) !important;
 }
 
 /* claim badge */
 .s-chat-message_claim {
-	background: #b9a292;
+	background: var(--pc2);
 	border-bottom: none;
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* claim popout box stuff */
@@ -937,39 +1043,39 @@ footer a:focus {
 
 /* main inner bit */
 #modalClaimList {
-	background: #cdbdb1;
-	color: #000000;
-	border: none;
+	background: var(--pc4);
+	color: var(--fc1);
+	border: 1px solid var(--borderColor);
 }
 
 #modalClaimList a,
 #modalClaimList a:active,
 #modalClaimList a:visited,
 #modalClaimList a:link {
-	color: #1a1a1a;
+	color: var(--fc2);
 }
 
 #modalClaimList a:hover,
 #modalClaimList a:focus {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* header */
 #modalClaimList h3 {
-	background: #b9a292;
-	color: #000000;
+	background: var(--pc2);
+	color: var(--fc1);
 }
 
 /* close button */
 #modalClaimList button.close {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* pinned message */
 #chatMessagePinned,
 #chatMessagePinned.s-chat-message__pinned {
-	background: #af9583;
-	color: #000000 !important;
+	background: var(--pc1);
+	color: var(--fc1) !important;
 	border: none !important;
 }
 
@@ -979,7 +1085,7 @@ footer a:focus {
 
 /* timestamp */
 .s-chat-message_timestamp {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* mod message text (best left at #000) */
@@ -990,18 +1096,18 @@ footer a:focus {
 }
 
 #fra_chatContainer .channelMenu .channelSwitcher {
-	color: #000000;
+	color: var(--fc1);
 }
 
 #fra_chatContainer .channelMenu .channelSwitcher:hover,
 #fra_chatContainer .channelMenu .channelSwitcher:focus {
-	background: #b9a292;
-	color: #000000;
+	background: var(--pc2);
+	color: var(--fc1);
 }
 
 #fra_chatContainer .channelMenu .channelSwitcher.active {
-	background: #c3b0a2;
-	color: #000000;
+	background: var(--pc3);
+	color: var(--fc1);
 }
 
 /* settings text (DO NOT CHANGE OR IT WILL BREAK) */
@@ -1011,13 +1117,13 @@ footer a:focus {
 
 /* char count */
 #lblCharacterCounter {
-	color: #000000 !important;
+	color: var(--fc1) !important;
 }
 
 /* code of conduct & chat room link */
 a[href$='./code.php'],
 a[href$='./chat.php'] {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /*#endregion */
@@ -1031,7 +1137,7 @@ a[href$='./chat.php'] {
 
 @media (max-width: 768px) {
 	body {
-		background-position-y: top;
+		background-position-y: center;
 		background-position-x: center;
 		/* DON'T CHANGE BELOW */
 		background-repeat: no-repeat;

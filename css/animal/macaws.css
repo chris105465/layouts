@@ -832,6 +832,7 @@ a div.left:focus {
 
 /* Buttons */
 /* all */
+a.button,
 .select-control,
 button.button,
 input[type="button"],
@@ -856,6 +857,7 @@ input[type="reset"].bad:hover {
 }
 
 /* regular button */
+a.button,
 .select-control,
 button.button,
 input[type="button"],
@@ -870,6 +872,7 @@ input[type="reset"] {
 }
 
 /* regular button hover */
+a.button:hover,
 .select-control:hover,
 button.button:hover,
 input[type="button"]:hover,

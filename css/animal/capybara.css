@@ -863,6 +863,7 @@ input[type="reset"].bad:hover {
 }
 
 /* regular button */
+a.button,
 .select-control,
 button.button,
 input[type="button"],
@@ -877,6 +878,7 @@ input[type="reset"] {
 }
 
 /* regular button hover */
+a.button,
 .select-control:hover,
 button.button:hover,
 input[type="button"]:hover,
@@ -890,6 +892,7 @@ input[type="reset"]:hover {
 }
 
 /* red button */
+a.button:hover,
 .select-control.bad,
 button.button.bad,
 input[type="button"].bad,

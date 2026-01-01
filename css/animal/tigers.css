@@ -1,6 +1,7 @@
 /*
-    Layout Made by Chris (#105465)
-    Please do not edit or copy any of this code without permission. If you have any questions regarding my work, please message me.
+    Layout Made by Chris (#105465) for free use
+    All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
+    https://www.lioden.com/topic.php?id=304429491963
     */
 
 /* font import */
@@ -831,6 +832,7 @@ a div.left:focus {
 
 /* Buttons */
 /* all */
+a.button,
 .select-control,
 button.button,
 input[type="button"],
@@ -855,6 +857,7 @@ input[type="reset"].bad:hover {
 }
 
 /* regular button */
+a.button,
 .select-control,
 button.button,
 input[type="button"],
@@ -869,6 +872,7 @@ input[type="reset"] {
 }
 
 /* regular button hover */
+a.button:hover,
 .select-control:hover,
 button.button:hover,
 input[type="button"]:hover,
