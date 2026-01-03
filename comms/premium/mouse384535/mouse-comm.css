@@ -979,6 +979,7 @@ a div.left:focus {
 /* Buttons */
 /* all */
 a.button,
+a.button:hover,
 .select-control,
 button.button,
 input[type="button"],
