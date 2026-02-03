@@ -1229,6 +1229,16 @@ a[href$='./chat.php'] {
         border: solid var(--borderColor);
         border-width: 1px 0;
     }
+
+    .artbox .scrollBox::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+@media (max-width:1799px) {
+    .artbox .scrollBox {
+        height: auto !important;
+    }
 }
 
 @media (max-width: 993px) {
