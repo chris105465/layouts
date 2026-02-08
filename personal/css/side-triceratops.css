@@ -553,6 +553,40 @@ input::placeholder {
     color: #00000080;
 }
 
+.member-online:before {
+    content: "OwO";
+    color: var(--fc1);
+    text-shadow: 0 0 5px var(--fc3);
+    font-size: 14px;
+    position: relative;
+    left: -50px !important;
+    top: -11px;
+}
+
+.member-offline:before {
+    content: "UwU";
+    color: var(--pc1);
+    font-size: 14px;
+    position: relative;
+    left: -50px !important;
+    top: -11px;
+    /* font-style: italic; */
+}
+
+.member-online {
+    position: relative;
+    background: var(--eventText);
+    top: 8px;
+    left: -8px;
+}
+
+.member-offline {
+    position: relative;
+    background: var(--pc1);
+    top: 8px;
+    left: -8px;
+}
+
 /* CLAN STUFF */
 .page-description {
     border: 1px solid var(--borderColor);
