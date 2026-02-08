@@ -11,10 +11,10 @@ Please do not edit or copy any of this code without permission. If you have any 
     --fc1: #ffffff;
     --fc2: #e8ebe0;
     --fc3: #d1d7c1;
-    --eventText: #bfff00;
+    --eventText: #ff00bf;
     --mainFont: 'Nunito Sans', Verdana, 'Geneva', Tahoma, sans-serif;
     --headFont: 'Alkatra', 'Times New Roman', Times, serif;
-    --bgColor: #1c1f14b3;
+    --bgColor: #1c1f1499;
     --pc1: #1c1f14;
     --pc2: #2a2f1e;
     --pc3: #383e28;
@@ -53,7 +53,7 @@ Please do not edit or copy any of this code without permission. If you have any 
 body {
     font-family: var(--mainFont);
     background: #1c1f14 url('../img/triceratops-edited.jpg') fixed;
-    background-position-y: center;
+    background-position-y: 60%;
     background-position-x: center;
     /* DON'T CHANGE BELOW */
     background-repeat: no-repeat;
@@ -390,13 +390,31 @@ a:focus {
 #commentBox {
     border: 1px solid var(--borderColor) !important;
     border-radius: 5px !important;
-    height: 200px !important;
+    height: 34px !important;
     background: var(--pc4);
     box-shadow: var(--bodyShadow);
+    transition: 1.5s;
+}
+
+#commentBox:hover {
+    height: 250px !important;
 }
 
 .comment:nth-child(even) {
     background: var(--pc3) !important;
+}
+
+#commentBox::before {
+    content: "No roleplay, gimmick, or 'x was here' comments. Please respect my boundaries.";
+    background-color: var(--pc1);
+    background-image: url('../img/black-scales.png');
+    color: #fff;
+    font-style: italic;
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    display: block;
+    padding: 8px !important;
 }
 
 /* tables */
@@ -569,17 +587,23 @@ input::placeholder {
 /* cave and mound customization */
 /* all caves */
 .cave-grid>img {
-    content: url('https://static.lioden.com/images/dynamic/backgrounds/legacy_marshland.png');
-    height: 120px;
+    background-image: url('https://static.lioden.com/images/dynamic/backgrounds/legacy_marshland.png');
+    background-size: cover;
+    background-position: center 30%;
+    content: url('https://static.lioden.com/images/decors/teenfemale//below/spino2.png');
+    height: 150px;
     object-fit: cover;
-    object-position: top;
+    object-position: center 30%;
 }
 
 /* pride tabs */
 img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'],
 img[src$='//static.lioden.com/images/layout/nestingbanner.png'],
 img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
-    content: url('https://static.lioden.com/images/dynamic/backgrounds/papyrusBG.png');
+    background-image: url('https://static.lioden.com/images/dynamic/backgrounds/papyrusBG.png');
+    background-size: cover;
+    background-position: top;
+    content: url('https://static.lioden.com/images/decors/male//below/pelagornis.png');
     height: 80px;
     object-fit: cover;
     object-position: top;
@@ -717,11 +741,14 @@ img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
 }
 
 .mound-grid img {
-    content: url('https://static.lioden.com/images/dynamic/backgrounds/MarshlandBG.png');
+    background-image: url('https://static.lioden.com/images/dynamic/backgrounds/MarshlandBG.png');
+    background-size: cover;
+    background-position: top;
+    content: url('https://static.lioden.com/images/decors/cubnewborn/female//over/iguanodon.png');
     height: 100px;
     width: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: bottom;
 }
 
 /* create mound image and empty cave slots */
@@ -832,11 +859,14 @@ div.left {
 
 /* custom dynasty images */
 div.left img {
-    content: url('https://static.lioden.com/images/dynamic/backgrounds/sundarbans.png');
+    background-image: url('https://static.lioden.com/images/dynamic/backgrounds/sundarbans.png');
+    background-size: cover;
+    background-position: top;
+    content: url('https://static.lioden.com/images/decors/female//over/rahonavis.png');
     object-fit: cover;
-    object-position: top;
+    object-position: center 10%;
     padding: 0;
-    height: 60px;
+    height: 80px;
     max-width: 500px !important;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
@@ -1269,6 +1299,15 @@ a[href$='./chat.php'] {
 
     .breadcrumb::after {
         right: 22% !important;
+    }
+
+    #commentBox {
+        height: 200px !important;
+        transition: none;
+    }
+
+    #commentBox:hover {
+        height: 200px !important;
     }
 }
 
