@@ -197,11 +197,10 @@ a:focus {
 }
 
 .breadcrumb::after {
-    content: "CSS by Chris (#105465)";
-    position: absolute;
-    right: 20%;
+    content: " /  Me Grimlock King";
+    position: relative;
     z-index: 100;
-    color: var(--fc1);
+    color: var(--fc3);
 }
 
 .breadcrumb-item.active,
@@ -1329,10 +1328,6 @@ a[href$='./chat.php'] {
 
     #fraProfileContent.hidden-xs {
         display: block !important;
-    }
-
-    .breadcrumb::after {
-        right: 22% !important;
     }
 
     #commentBox {
