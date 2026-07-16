@@ -1,50 +1,64 @@
-/* 
-	Layout Made by Chris (#105465) for free use
-All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
+/*
+    Layout Made by Chris (#105465) for free use
+All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time
 https://www.lioden.com/topic.php?id=304429491963
-*/
+    */
 
-/* Background Image and Font Family */
-/* import link for font below */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Heebo:wght@400;700&display=swap');
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*variables*/
 :root {
 	--fc1: #ffffff;
+	--fc2: #e6e6e6;
+	--fc3: #cccccc;
+	--eventText: #00ff00;
+	--mainFont: 'Roboto', Verdana, 'Geneva', Tahoma, sans-serif;
+	--headFont: 'Baskervville', 'Times New Roman', Times, serif;
+	--bgColor: #0000004d;
+	--pc1: #000000;
+	--pc2: #0d0d0d;
+	--pc3: #1a1a1a;
 	--pc4: #262626;
+	--sc1: #000000;
+	--sc2: #0d0d0d;
+	--sc3: #1a1a1a;
+	--sc4: #262626;
+	--tc: #80000d;
 	--borderColor: #cc0014;
+	--mainShadow: 0 0 10px #b10012;
+	--redAlert: #660000;
+	--redLink: #ffcccc;
+	--greenAlert: #264d00;
+	--greenLink: #e6ffcc;
+	--yellowAlert: #4d3900;
+	--yellowLink: #fff1cc;
+	--button1: #000000;
+	--button2: #0d0d0d;
+	--button3: #1a1a1a;
+	--button4: #262626;
+	--button5: #333333;
+	--button6: #404040;
+	--buttonText: #ffffff;
+	--redButton1: #330000;
+	--redButton2: #4d0000;
+	--redButton3: #660000;
+	--redButton4: #800000;
+	--redButton5: #990000;
+	--redButton6: #b30000;
+	--redButtonText: #ffffff;
 }
 
-@media (min-width: 768px) {
-	body {
-		font-family: 'Heebo', 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
-		background: #000 url('../../img/aesthetic/black-and-red-bg.jpg') fixed;
-		background-position-y: center;
-		background-position-x: center;
-		/* DON'T CHANGE BELOW */
-		background-repeat: no-repeat;
-		background-size: cover;
-		color: #ffffff;
-	}
-}
-
-@media (max-width: 768px) {
-	body {
-		font-family: 'Heebo', 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
-		background: #000 url('../../img/aesthetic/black-and-red-bg.jpg') fixed;
-		background-position-y: center;
-		background-position-x: center;
-		/* DON'T CHANGE BELOW */
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: auto !important;
-		min-width: 600px;
-		color: #ffffff;
-	}
-
-	.main,
-	.topbar {
-		box-shadow: none !important;
-	}
+/* Body */
+body {
+	font-family: var(--mainFont);
+	background: #000000 url('../../img/aesthetic/black-and-red-bg.jpg') fixed;
+	background-position-y: center;
+	background-position-x: center;
+	/* DON'T CHANGE BELOW */
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: var(--fc1);
 }
 
 /* Headers */
@@ -52,69 +66,62 @@ h1,
 h2,
 h3,
 .sidebar h3 {
-	color: #ffffff;
-	font-family: 'Great Vibes', 'Times New Roman', Times, serif;
-	text-shadow: 0 0 10px #ff0019;
+	color: var(--fc1);
+	font-family: var(--headFont);
 }
 
 /* Other Text */
 p,
 b,
 #fraProfileContent {
-	color: #ffffff;
+	color: var(--fc1);
 }
 
 small {
-	color: #ffffff !important;
+	color: var(--fc1) !important;
 }
 
 /* Links */
 a:link,
 a:visited,
 a:active {
-	color: #f2f2f2;
+	color: var(--fc2);
 }
 
 a:hover,
 a:focus {
-	color: #ffffff;
+	color: var(--fc1);
 }
 
 /* Topbar */
 .topbar a:link,
 .topbar a:visited,
 .topbar a:active {
-	color: #f2f2f2;
+	color: var(--fc2);
 }
 
 .topbar a:hover,
 .topbar a:focus {
-	color: #ffffff;
+	color: var(--fc1);
 }
 
 .topbar {
-	background: #000;
-	border: 1px solid #cc0014;
+	background: var(--pc1);
+	border: 1px solid var(--borderColor);
 	border-top: none;
-	/* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
-	color: #ffffff;
-	box-shadow: 0 0 20px #B10012;
+	color: var(--fc1);
+	box-shadow: var(--mainShadow);
 }
 
 /* Navbar */
 .navbar {
-	background: #0d0d0d;
-	/* border-bottom: 1px solid #ebebeb; */
-	/* border-top-right-radius: 10px;
-	border-top-left-radius: 10px; */
-	font-family: 'Great Vibes', 'Times New Roman', Times, serif;
-	text-shadow: 0 0 10px #ff0019;
+	background: var(--pc2);
+	border-bottom: none;
+	font-family: var(--headFont);
 }
 
-/* logo if applicable */
+/* logo */
 .navbar-brand img {
-	/* content: url('LINK'); */
 	filter: grayscale() brightness(80%);
 }
 
@@ -124,14 +131,13 @@ a:focus {
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-	color: #f2f2f2;
+	color: var(--fc2);
 }
 
 .navbar-default .navbar-nav>li>a {
-	color: #f2f2f2;
-	font-weight: 400;
+	color: var(--fc2);
+	font-weight: bold;
 	text-transform: capitalize;
-	font-size: 24px;
 }
 
 /* mobile toggle box */
@@ -142,18 +148,18 @@ a:focus {
 /* make different from navbar */
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-	background: #1a1a1a;
+	background: var(--pc3);
 }
 
 /* bars in navbar icon */
 .navbar-default .navbar-toggle .icon-bar {
-	background: #ffffff;
+	background: var(--fc1);
 }
 
 /* collapsed navbar */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-	border-color: #000;
+	border-color: var(--pc1);
 	box-shadow: none;
 }
 
@@ -166,29 +172,16 @@ a:focus {
 .navbar .active a:visited,
 .navbar .active a:active,
 .navbar .active a:focus {
-	background: #1a1a1a;
-	color: #ffffff;
-	/* border-radius: 10px; */
+	background: var(--pc3);
+	color: var(--fc1);
 }
 
-/* Main and Divs */
+/* main */
 .main {
-	background: none;
-	border-radius: none;
-	border: 1px solid #cc0014;
-	box-shadow: 0 0 20px #B10012;
-}
-
-@media (max-width: 768px) {
-	.breadcrumb::after {
-		right: 22% !important;
-	}
-}
-
-@media (max-width: 993px) {
-	.dynastylist {
-		margin-bottom: 15px;
-	}
+	background: var(--bgColor);
+	border-radius: 0;
+	border: 1px solid var(--borderColor);
+	box-shadow: var(--mainShadow);
 }
 
 /* territory box */
@@ -198,9 +191,8 @@ a:focus {
 
 /* Breadcrumb */
 .breadcrumb {
-	background: #262626;
+	background: var(--pc3);
 	border: none;
-	/* border-radius: 10px; */
 }
 
 .breadcrumb::after {
@@ -208,12 +200,12 @@ a:focus {
 	position: absolute;
 	right: 20%;
 	z-index: 100;
-	color: #ffffff;
+	color: var(--fc1);
 }
 
 .breadcrumb-item.active,
 .breadcrumb-item::before {
-	color: #e6e6e6 !important;
+	color: var(--fc3) !important;
 }
 
 /* Side Bar */
@@ -225,315 +217,147 @@ a:focus {
 /* sidebar inner boxes */
 .col-md-3 .panel {
 	border: none;
-	/* border-radius: 10px; */
-	background: #262626;
+	background: var(--pc3);
 	box-shadow: none;
-	color: #ffffff;
+	color: var(--fc1);
 }
 
 /* dotted line above chat on smaller screen sizes */
 .clear {
-	border-color: #ffffff !important;
+	border-color: var(--fc1) !important;
 }
 
 /* Progress Bars */
 /* background container */
 .progress {
-	background: #1a1a1a;
-	border-radius: 20px;
+	background: var(--pc2);
+	/* border-radius: 20px; */
+	border: 1px solid var(--pc1);
 }
 
 /* default and impression */
 .progress-bar {
-	background: #80000d;
+	background: var(--tc);
 }
 
+/* if you want all to match comment out the next three classes */
+/* exp, hunger, energy, and thirst respectively */
+/* .progress-bar-success {
+    background: #ffc680;
+    }
+    .progress-bar-danger {
+    background: #ffba66;
+    }
+    .progress-bar-warning {
+    background: #ffaf4d;
+    }
+    .progress-bar-info {
+    background: #ffaf4d;
+    } */
 /* text inside the progress bars */
 .progress div {
 	color: #fff;
-	font-family: 'Heebo', 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+	font-family: var(--mainFont);
 }
 
-/*#region Chat */
-/* main container */
-#chatMessageContainer {
-	border: none;
-}
-
-/* message text */
-.s-chat-message {
-	color: #ffffff;
-}
-
-/* even messages */
-.s-chat-message:nth-child(even) {
-	background: #262626;
-}
-
-/* odd messages */
-.s-chat-message:nth-child(odd) {
-	background: #1a1a1a;
-}
-
-/* mention */
-#chatMessageList[data-pings="enabled"] .s-chat-message_mention,
-.s-chat-message.hasContext {
-	background: #262626 !important;
-	border-color: #000 !important;
-	color: #ffffff !important;
-	padding-left: 10px;
-}
-
-.s-chat-message.hasContext .s-chat-message_timestamp,
-.s-chat-message_mention.s-chat-message_timestamp {
-	padding-left: 10px;
-}
-
-#chatMessageList[data-pings="enabled"] .s-chat-message_mention a {
-	color: #f2f2f2 !important;
-}
-
-#chatMessageList[data-pings="enabled"] .s-chat-message_mention a:hover,
-#chatMessageList[data-pings="enabled"] .s-chat-message_mention a:focus {
-	color: #ffffff !important;
-}
-
-/* chat buttons */
-#btnChatSettings,
-#btnLoadNewMessages,
-.s-chat-message_menu {
-	filter: grayscale() brightness(500%);
-}
-
-/* scrollbar */
-#chatMessageList::-webkit-scrollbar {
-	width: 8px;
-	background: #fff;
-}
-
-/* scrollbar button */
-#chatMessageList::-webkit-scrollbar-thumb {
-	background: #404040;
-	border-radius: 0;
-}
-
-#chatMessageList::-webkit-scrollbar-thumb:hover {
-	background: #333333;
-}
-
-/* claim badge */
-.s-chat-message_claim {
-	background: #0d0d0d;
-	border-bottom: none;
-	color: #ffffff;
-}
-
-/* claim popout box stuff */
-#modalClaimBG {
-	background: rgba(0, 0, 0, 0.5);
-}
-
-/* main inner bit */
-#modalClaimList {
-	background: #262626;
-	color: #ffffff;
-	border: none;
-}
-
-#modalClaimList a,
-#modalClaimList a:active,
-#modalClaimList a:visited,
-#modalClaimList a:link {
-	color: #f2f2f2;
-}
-
-#modalClaimList a:hover,
-#modalClaimList a:focus {
-	color: #ffffff;
-}
-
-/* header */
-#modalClaimList h3 {
-	background: #0d0d0d;
-	color: #ffffff;
-}
-
-/* close button */
-#modalClaimList button.close {
-	color: #ffffff;
-}
-
-/* pinned message */
-#chatMessagePinned,
-#chatMessagePinned.s-chat-message__pinned {
-	background: #000;
-	color: #ffffff !important;
-	border: none !important;
-}
-
-.s-chat-sidebar #chatMessagePinned.s-chat-message__pinned {
-	text-indent: 4px;
-}
-
-/* timestamp */
-.s-chat-message_timestamp {
-	color: #ffffff;
-}
-
-/* mod message text (best left at #000) */
-.s-chat-message__mod,
-.s-chat-message__mod .s-chat-message_content,
-.s-chat-message__mod .s-chat-message_timestamp {
-	color: #000;
-}
-
-/* menu dropbox */
-.channelMenu>button,
-.channelMenu>div {
-	background: #000 !important;
-	border-color: transparent !important;
-	box-shadow: none !important;
-	color: #f2f2f2 !important;
-}
-
-#fra_chatContainer .channelMenu .channelSwitcher {
-	color: #ffffff;
-}
-
-#fra_chatContainer .channelMenu .channelSwitcher:hover,
-#fra_chatContainer .channelMenu .channelSwitcher:focus {
-	background: #0d0d0d;
-	color: #ffffff;
-}
-
-#fra_chatContainer .channelMenu .channelSwitcher.active {
-	background: #1a1a1a;
-	color: #ffffff;
-}
-
-/* settings text (DO NOT CHANGE OR IT WILL BREAK) */
-#fra_chatContainer label {
-	color: #000;
-}
-
-/* char count */
-#lblCharacterCounter {
-	color: #ffffff !important;
-}
-
-/* code of conduct */
-a[href$='./code.php'] {
-	color: #ffffff;
-}
-
-/* chat room link */
-a[href$='./chat.php'] {
-	color: #ffffff;
-}
-
-/*#endregion */
-
-/*#region Alerts */
+/* alerts */
 /* all */
 .alert-danger,
 .alert-success,
-.alert-warning {
-	border: none;
-	/* border-radius: 10px; */
-	background: #000;
-	color: #fff;
+.alert-warning,
+.alert {
+	color: var(--fc1);
+	background: var(--greenAlert);
+	border: none !important;
 }
 
 /* red notifications */
+.alert-danger {
+	color: var(--fc1) !important;
+	background: var(--redAlert);
+}
+
 .alert-danger>a,
 .alert-danger>a:link,
 .alert-danger>a:active,
 .alert-danger>a:visited {
-	color: #ff0019;
+	color: var(--redLink);
 }
 
 .alert-danger>a:hover,
 .alert-danger>a:focus,
 .alert-danger b {
-	color: #ff2c41;
+	color: var(--fc1);
 }
 
 /* green notifications */
+.alert-success {
+	color: var(--fc1);
+	background: var(--greenAlert);
+}
+
 .alert-success>a,
 .alert-success>a:link,
 .alert-success>a:active,
 .alert-success>a:visited {
-	color: #00cc00;
+	color: var(--greenLink);
 }
 
 .alert-success>a:hover,
 .alert-success>a:focus,
 .alert-success b {
-	color: #00ff00;
+	color: var(--fc1);
 }
 
 /* yellow notifications */
+.alert-warning {
+	color: var(--fc1);
+	background: var(--yellowAlert);
+}
+
 .alert-warning>a,
 .alert-warning>a:link,
 .alert-warning>a:active,
 .alert-warning>a:visited {
-	color: #cc9900;
+	color: var(--yellowLink);
 }
 
 .alert-warning>a:hover,
 .alert-warning>a:focus,
 .alert-warning b {
-	color: #ffbf00;
+	color: var(--fc1);
 }
 
-/*#endregion */
-
 /* HTML Boxes if applicable */
-
-
+.bigBox,
+.smallBox,
+.bottomBox {
+	background-color: var(--pc3) !important;
+	border: none;
+	color: var(--fc1) !important;
+	border-radius: 3px !important;
+}
 
 /* comment box */
 #commentBox {
 	border: none !important;
 	border-radius: 5px !important;
 	height: 200px !important;
-	background: #262626;
+	background: var(--pc4);
 }
 
 .comment:nth-child(even) {
-	background: #1a1a1a !important;
+	background: var(--pc3) !important;
 }
 
-/* scrollbar */
-#commentBox::-webkit-scrollbar {
-	height: 0;
-	width: 8px;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	background: #fff;
-}
-
-/* scrollbar button */
-#commentBox::-webkit-scrollbar-thumb {
-	background: #404040;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-}
-
-#commentBox::-webkit-scrollbar-thumb:hover {
-	background: #333333;
-}
-
-/*#region Tables */
+/* tables */
 /* table headers */
 .table .top,
 .table th {
-	background: #000;
-	color: #ffffff;
-	/* font-family: 'Great Vibes', 'Times New Roman', Times, serif; */
+	background: var(--sc1);
+	color: var(--fc1);
+	font-family: var(--headFont);
 	font-weight: bold;
-	/* border-top-right-radius: 10px; */
-	/* border-top-left-radius: 10px; */
 }
 
 /* lion title and name */
@@ -541,15 +365,17 @@ a[href$='./chat.php'] {
 	font-weight: bold;
 }
 
-/* lion image if applicable */
+/* lion image */
+#lion_image>div {
+	border-radius: 10px;
+	border: none;
+}
 
 /* table body */
 .table {
-	background: #262626;
+	background: var(--sc4);
 	border: none;
-	color: #ffffff;
-	/* border-collapse: separate; */
-	/* border-radius: 10px; */
+	color: var(--fc1);
 }
 
 /* table links */
@@ -559,21 +385,22 @@ a[href$='./chat.php'] {
 .table th a:link,
 .table th a:active,
 .table th a:visited {
-	color: #f2f2f2;
+	color: var(--fc2);
 	font-weight: bold;
+	border-bottom: none;
 }
 
 .table .top a:hover,
 .table th a:hover,
 .table .top a:focus,
 .table th a:focus {
-	color: #ffffff;
+	color: var(--fc1);
 	font-weight: bold;
 }
 
 /* left side of stats on king and status bars in caves */
 .table .left {
-	background: #0d0d0d;
+	background: var(--sc2);
 }
 
 /* left side of stats on king */
@@ -586,34 +413,27 @@ a[href$='./chat.php'] {
 .inner-table .right {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-	background: #1a1a1a;
+	background: var(--sc3);
 }
 
 /* every other lion in caves */
 .table .right_odd {
-	background: #1a1a1a;
+	background: var(--sc3);
 }
 
 /* table footers */
 .table .innerHeader,
 .table .bottom,
 #player>tbody>tr {
-	background: #000;
-	color: #ffffff;
-	/* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
+	background: var(--sc1);
+	color: var(--fc1);
 }
 
 /* player table footer adjustments for rounded corners */
 #player .right_odd {
 	background: none;
-	/* border-bottom-right-radius: 10px; */
 }
 
-/* #player .right_odd:first-child {
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 0;
-} */
 #player tr.right {
 	background: none;
 }
@@ -622,13 +442,13 @@ a[href$='./chat.php'] {
 .table .bottom a:link,
 .table .bottom a:visited,
 .table .bottom a:active {
-	color: #f2f2f2;
+	color: var(--fc2);
 	text-decoration: none;
 }
 
 .table .bottom a:hover,
 .table .bottom a:focus {
-	color: #ffffff;
+	color: var(--fc1);
 	text-decoration: underline;
 }
 
@@ -646,8 +466,9 @@ a[href$='./chat.php'] {
 
 /* days left until heat badge */
 .badge {
-	background: #4d0008;
-	color: #ffffff;
+	background: var(--tc);
+	color: var(--fc1);
+	border: none;
 }
 
 /* inputs for typing in text in territory description etc. */
@@ -655,30 +476,34 @@ textarea,
 input,
 select,
 #fra_chatContainer #txtChatInput {
-	color: #ffffff;
-	background: #000;
-	border: 1px solid #4d0008;
-	border-radius: 5px;
+	color: #000000;
+	background: #ffffff;
+	border: 1px solid var(--sc1);
 }
 
 input::placeholder {
-	color: #ffffff80;
+	color: #00000080;
 }
 
-#player .center.auto {
-	max-width: max-content !important;
+/* CLAN STUFF */
+.page-description {
+	border: none;
+	background: var(--pc4);
+	padding: 20px;
 }
 
-/*#endregion */
+.page-description>div {
+	padding: 0 !important;
+	margin: 0 !important;
+}
 
 /* Caves and Mounds Main */
 /* main overrides */
 .mound-grid,
 .cave-grid {
-	background: #4d0008;
+	background: var(--tc);
 	border: none;
-	/* border-radius: 10px; */
-	color: #f2f2f2;
+	color: var(--fc2);
 }
 
 /* cave and mound link hover */
@@ -686,10 +511,10 @@ input::placeholder {
 .center>a:focus>.cave-grid,
 .center>a:hover>.mound-grid,
 .center>a:focus>.mound-grid {
-	color: #ffffff;
+	color: var(--fc1);
 }
 
-/* cave and mound customization if applicable */
+/* cave and mound customization */
 /* all caves */
 .cave-grid>img {
 	content: url('https://static.lioden.com/images/dynamic/backgrounds/garnetcave.png');
@@ -702,10 +527,136 @@ input::placeholder {
 img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'],
 img[src$='//static.lioden.com/images/layout/nestingbanner.png'],
 img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
-	content: url('//static.lioden.com/images/dynamic/backgrounds/superbloodmoon.png');
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/superbloodmoon.png');
 	height: 80px;
 	object-fit: cover;
 	object-position: top;
+}
+
+/* unsorted lions */
+/* img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'] {
+    content: url('LINK');
+    object-position: top;
+    } */
+/* pregnant lionesses */
+/* img[src$='//static.lioden.com/images/layout/nestingbanner.png'] {
+    content: url('LINK');
+    object-position: top;
+    } */
+/* pride overview */
+/* img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
+    content: url('LINK');
+    object-position: top;
+    } */
+/* all mounds */
+/* .mound-grid img {
+    content: url('LINK');
+    padding: 5px;
+    } */
+/* pride tab text overlay code by Chris (#105465) (credit must remain intact for any use of this code and I do not permit it to be used for comms or free css without explicit permission from me.) */
+/* mobile section */
+@media (max-width: 768px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		position: absolute;
+		top: 0.6rem;
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: bold;
+		z-index: 1;
+		display: block;
+		max-width: 260px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 1rem;
+		text-shadow: 1px 1px #0000001a, 1px -1px #0000001a, -1px 1px #0000001a, -1px -1px #0000001a, 0 1px #0000001a, 0 -1px #0000001a, -1px 0 #0000001a, 1px 0 #0000001a, 0 0 3px #000000;
+	}
+
+	a[href*='unsorted.php']>.cave-grid::before {
+		content: 'Unsorted';
+		text-align: left;
+	}
+
+	a[href*='lionoverview.php']>.cave-grid::before {
+		content: 'Pride Overview';
+		text-align: right;
+	}
+
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+		content: 'Nesting';
+		text-align: left;
+	}
+}
+
+@media (max-width: 629px) {
+	a[href*='lionoverview.php']>.cave-grid::before {
+		padding-right: 1.7rem;
+	}
+}
+
+/* tablet and desktop section */
+@media (min-width: 769px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		position: absolute;
+		top: 0.6rem;
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: bold;
+		z-index: 1;
+		text-shadow: 1px 1px #0000001a, 1px -1px #0000001a, -1px 1px #0000001a, -1px -1px #0000001a, 0 1px #0000001a, 0 -1px #0000001a, -1px 0 #0000001a, 1px 0 #0000001a, 0 0 3px #000000;
+	}
+
+	a[href*='unsorted.php']>.cave-grid::before {
+		content: 'Unsorted';
+		left: 6rem;
+	}
+
+	a[href*='lionoverview.php']>.cave-grid::before {
+		content: 'Pride Overview';
+		right: 6rem;
+	}
+
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+		content: 'Nesting';
+		left: 6rem;
+	}
+}
+
+@media (min-width: 993px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		font-size: 1.6rem;
+	}
+
+	a[href*='unsorted.php']>.cave-grid::before {
+		left: 2.6rem;
+	}
+
+	a[href*='lionoverview.php']>.cave-grid::before {
+		right: 2.6rem;
+	}
+
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+		left: 2.6rem;
+	}
+}
+
+@media (min-width: 1201px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		font-size: 2rem;
+	}
 }
 
 /* all mounds but like a cave */
@@ -718,7 +669,7 @@ img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
 	height: 100px;
 	width: 100%;
 	object-fit: cover;
-	object-position: center;
+	object-position: top;
 }
 
 /* create mound image and empty cave slots */
@@ -727,94 +678,69 @@ img[src$='//static.lioden.com/images/layout/caveunused.jpg'] {
 	filter: saturate(50%);
 }
 
-/*#region Inner Caves */
 /* featured lion section */
 .featured-lion {
-	background: #000;
-	color: #ffffff;
+	background: var(--sc1);
+	color: var(--fc1);
 	margin-bottom: 20px;
-	/* border-radius: 10px; */
 }
 
-/* .featured-lion img {
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
-} */
 /* featured lion background image */
 .featured-lion img[src$='//static.lioden.com/images/cave/default.png'] {
-	content: url('//static.lioden.com/images/dynamic/backgrounds/BloodyEclipse.png') !important;
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/BloodyEclipse.png') !important;
 	/* filter: none; */
 }
 
-/* very important if you want it to not look ugly anymore lol don't change the padding here or the media queries */
+/* very important if you want it to not look ugly anymore lol don't change the padding here or the media queries at the bottom */
 .featured-lion .b {
 	padding-top: 8px;
 }
 
-@media (max-width: 684px) {
-	div.lionImage.featured-lion>div {
-		height: 475px !important;
-	}
-}
-
-@media (max-width: 620px) {
-	div.lionImage.featured-lion>div {
-		height: 450px !important;
-	}
+.featured-lion a:hover,
+.featured-lion a:focus {
+	color: var(--fc1);
 }
 
 .featured-lion a:link,
 .featured-lion a:active,
 .featured-lion a:visited {
-	color: #f2f2f2;
-}
-
-.featured-lion a:hover,
-.featured-lion a:focus {
-	color: #ffffff;
+	color: var(--fc2);
 }
 
 /* owned by text */
-h1.center>small {
-	color: #ffffff !important;
+h1.center>small,
+h1.center>small a:hover,
+h1.center>small a:focus {
+	color: var(--fc1) !important;
 }
 
 h1.center>small a,
 h1.center>small a:link,
 h1.center>small a:visited,
 h1.center>small a:active {
-	color: #f2f2f2 !important;
+	color: var(--fc2) !important;
 }
 
-h1.center>small a:hover,
-h1.center>small a:focus {
-	color: #ffffff !important;
-}
-
-/* dropdown */
+/* dropdown text */
 .table .bottom select {
-	color: #ffffff;
+	color: #000;
 }
 
 /* Inner Mounds */
 /* menu bg */
 .sub_menu {
-	background: #000;
+	background: var(--sc1);
 	border: none;
-	/* border-radius: 10px; */
 }
 
 .sub_sub_menu {
 	display: none;
 }
 
-/*#endregion */
-
 /* Feature Styling (like feed all play all etc.) */
 div.feature {
-	/* border-radius: 10px; */
 	border: none;
-	background: #262626;
+	background: var(--sc4);
 	padding: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -827,25 +753,24 @@ div.feature select {
 
 /* header */
 div.feature h3 {
-	color: #ffffff;
+	color: var(--fc1);
 }
 
 .feature-footer {
-	background: #262626;
+	background: var(--sc4);
 }
 
 /* inner text */
 .feature .xsmall {
-	color: #ffffff;
+	color: var(--fc1);
 }
 
 /* Dynasty Pills */
 /* dynasty main */
 div.left {
-	background: #4d0008;
-	/* border-radius: 10px; */
+	background: var(--tc);
 	border: none;
-	color: #ffffff;
+	color: var(--fc1);
 }
 
 /* custom dynasty images */
@@ -866,74 +791,99 @@ div.left img {
 
 /* dynasty headers */
 .dynastylist h3 {
-	color: #f2f2f2;
+	color: var(--fc2);
 	padding-top: 5px;
 }
 
 .dynastylist h3:hover,
 .dynastylist h3:focus {
-	color: #ffffff;
+	color: var(--fc1);
 }
 
 /* links in the pills beneath dynasty stuff */
 a div.left {
-	color: #f2f2f2;
+	color: var(--fc2);
 }
 
 a div.left:hover,
 a div.left:focus {
-	color: #ffffff;
+	color: var(--fc1);
 }
 
 /* Branch */
 .item {
-	background: #1a1a1a;
+	background: var(--sc3);
 	border: none;
 	border-radius: 5px;
 }
 
 .item-header {
-	background: #0d0d0d;
-	color: #ffffff;
+	background: var(--sc2);
+	color: var(--fc1);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
 
 .item-footer {
-	background: #0d0d0d;
-	color: #ffffff;
+	background: var(--sc2);
+	color: var(--fc1);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
 
 /* Buttons */
+/* all */
+a.button,
+.select-control,
+button.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.select-control:hover,
+button.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.select-control.bad,
+button.button.bad,
+input[type="button"].bad,
+input[type="submit"].bad,
+input[type="reset"].bad,
+.select-control.bad:hover,
+button.button.bad:hover,
+input[type="button"].bad:hover,
+input[type="submit"].bad:hover,
+input[type="reset"].bad:hover {
+	border-radius: 3px;
+}
+
 /* regular button */
+a.button,
 .select-control,
 button.button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-	background: #b30012;
-	box-shadow: inset 0 -1px 2px #00000080, inset 0 1px 2px #ffffff80;
-	color: #fff;
-	border: 1px solid #80000d;
-	text-shadow: 1px 1px 0px #e60017;
-	border-radius: 3px;
-	font-family: 'Heebo', 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+	background: var(--button6);
+	background: linear-gradient(to bottom, var(--button6) 5%, var(--button4) 5%, var(--button4) 95%, var(--button2) 95%);
+	color: var(--buttonText);
+	border: 1px solid var(--button2);
+	text-shadow: 1px 1px 0px var(--button2);
+	font-family: var(--mainFont);
 }
 
 /* regular button hover */
+a.button:hover,
 .select-control:hover,
 button.button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-	background: #99000f;
-	box-shadow: inset 1px 1px 2px #00000080, inset -1px -1px 2px #ffffff80;
-	color: #f2f2f2;
-	border: 1px solid #66000a;
-	text-shadow: 1px 1px 0px #80000d;
-	border-radius: 3px;
+	background: var(--button5);
+	background: linear-gradient(to bottom, var(--button5) 5%, var(--button3) 5%, var(--button3) 95%, var(--button1) 95%);
+	color: var(--buttonText);
+	border: 1px solid var(--button1);
+	text-shadow: 1px 1px 0px var(--button1);
 }
 
 /* red button */
@@ -942,7 +892,11 @@ button.button.bad,
 input[type="button"].bad,
 input[type="submit"].bad,
 input[type="reset"].bad {
-	box-shadow: none;
+	background: var(--redButton6);
+	background: linear-gradient(to bottom, var(--redButton6) 5%, var(--redButton4) 5%, var(--redButton4) 49%, var(--redButton4) 95%, var(--redButton2) 95%);
+	color: var(--redButtonText);
+	border: 1px solid var(--redButton2);
+	text-shadow: 1px 1px 0px var(--redButton2);
 }
 
 /* red button hover */
@@ -951,21 +905,44 @@ button.button.bad:hover,
 input[type="button"].bad:hover,
 input[type="submit"].bad:hover,
 input[type="reset"].bad:hover {
-	box-shadow: none;
+	background: var(--redButton5);
+	background: linear-gradient(to bottom, var(--redButton5) 5%, var(--redButton3) 5%, var(--redButton3) 49%, var(--redButton3) 95%, var(--redButton1) 95%);
+	color: var(--redButtonText);
+	border: 1px solid var(--redButton1);
+	text-shadow: 1px 1px 0px var(--redButton1);
 }
 
 /* Event Flavor Text */
 /* has to go at the bottom since it likes to be mean to me otherwise trust me best left here lol */
+center>div.center.b,
+center>b>span {
+	color: var(--eventText) !important;
+}
 
-center>div.center.b {
-	color: #ff0019 !important;
+/* december table fix for dark layouts */
+.table .table,
+.table .table b {
+	color: #000 !important;
 }
 
 /* Footer */
+.footer {
+	background: var(--bgColor);
+	border-radius: 0;
+	border: 1px solid var(--borderColor);
+	box-shadow: var(--mainShadow);
+	padding-top: 1em;
+}
+
+img[src*='hand_text.svg'] {
+	opacity: 1 !important;
+	filter: brightness(1000%);
+}
+
 /* technically applies to all "white" text on the site but mainly applies to the footer text */
 .white {
-	color: #ffffff;
-	text-shadow: 0 0 10px #ff0019;
+	color: var(--fc1);
+	text-shadow: 0 0 5px #000;
 }
 
 /* bottom links container size to prevent weird stacking issues */
@@ -982,23 +959,216 @@ ul.bottomlinks {
 .footer a:link,
 .footer a:active,
 .footer a:visited {
-	color: #f2f2f2;
+	color: var(--fc2);
+	border-bottom: none;
 }
 
 .bottomlinks li a:hover,
 .bottomlinks li a:focus,
 .footer a:hover,
 footer a:focus {
-	color: #ffffff;
+	color: var(--fc1);
 }
 
-.page-description {
+/*#region Chat */
+/* main container */
+#chatMessageContainer {
 	border: none;
-	background: #000;
-	padding: 20px;
 }
 
-.page-description>div {
-	padding: 0;
-	margin: 0;
+/* chat buttons */
+#btnChatSettings,
+#btnLoadNewMessages,
+.s-chat-message_menu {
+	filter: grayscale() brightness(500%);
+}
+
+/* menu dropbox */
+.channelMenu>button,
+.channelMenu>div {
+	background: var(--pc1) !important;
+	border-color: transparent !important;
+	color: var(--fc2) !important;
+	box-shadow: none !important;
+}
+
+/* message text */
+.s-chat-message {
+	color: var(--fc1);
+}
+
+/* even messages */
+.s-chat-message:nth-child(even) {
+	background: var(--pc4);
+}
+
+/* odd messages */
+.s-chat-message:nth-child(odd) {
+	background: var(--pc3);
+}
+
+/* mention */
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention,
+.s-chat-message.hasContext {
+	background: var(--sc4) !important;
+	border-color: var(--sc1) !important;
+	color: var(--fc1) !important;
+	padding-left: 10px;
+}
+
+.s-chat-message.hasContext .s-chat-message_timestamp,
+.s-chat-message_mention.s-chat-message_timestamp {
+	padding-left: 10px;
+}
+
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention a {
+	color: var(--fc2) !important;
+}
+
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention a:hover,
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention a:focus {
+	color: var(--fc1) !important;
+}
+
+/* claim badge */
+.s-chat-message_claim {
+	background: var(--pc2);
+	border-bottom: none;
+	color: var(--fc1);
+}
+
+/* claim popout box stuff */
+#modalClaimBG {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+/* main inner bit */
+#modalClaimList {
+	background: var(--pc4);
+	color: var(--fc1);
+	border: none;
+}
+
+#modalClaimList a,
+#modalClaimList a:active,
+#modalClaimList a:visited,
+#modalClaimList a:link {
+	color: var(--fc2);
+}
+
+#modalClaimList a:hover,
+#modalClaimList a:focus {
+	color: var(--fc1);
+}
+
+/* header */
+#modalClaimList h3 {
+	background: var(--pc2);
+	color: var(--fc1);
+}
+
+/* close button */
+#modalClaimList button.close {
+	color: var(--fc1);
+}
+
+/* pinned message */
+#chatMessagePinned,
+#chatMessagePinned.s-chat-message__pinned {
+	background: var(--pc1);
+	color: var(--fc1) !important;
+	border: none !important;
+}
+
+.s-chat-sidebar #chatMessagePinned.s-chat-message__pinned {
+	text-indent: 4px;
+}
+
+/* timestamp */
+.s-chat-message_timestamp {
+	color: var(--fc1);
+}
+
+/* mod message text (best left at #000) */
+.s-chat-message__mod,
+.s-chat-message__mod .s-chat-message_content,
+.s-chat-message__mod .s-chat-message_timestamp {
+	color: #000;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher {
+	color: var(--fc1);
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher:hover,
+#fra_chatContainer .channelMenu .channelSwitcher:focus {
+	background: var(--pc2);
+	color: var(--fc1);
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+	background: var(--pc3);
+	color: var(--fc1);
+}
+
+/* settings text (DO NOT CHANGE OR IT WILL BREAK) */
+#fra_chatContainer label {
+	color: #000;
+}
+
+/* char count */
+#lblCharacterCounter {
+	color: var(--fc1) !important;
+}
+
+/* code of conduct & chat room link */
+a[href$='./code.php'],
+a[href$='./chat.php'] {
+	color: var(--fc1);
+}
+
+/*#endregion */
+
+/* Media Query Adjustments */
+@media (max-width: 993px) {
+	.dynastylist {
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		background-position-y: center;
+		background-position-x: center;
+		/* DON'T CHANGE BELOW */
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: auto !important;
+		min-width: 600px;
+	}
+
+	.main,
+	.topbar {
+		box-shadow: none !important;
+	}
+
+	#fraProfileContent.hidden-xs {
+		display: block !important;
+	}
+
+	.breadcrumb::after {
+		right: 22% !important;
+	}
+}
+
+@media (max-width: 684px) {
+	div.lionImage.featured-lion>div {
+		height: 475px !important;
+	}
+}
+
+@media (max-width: 620px) {
+	div.lionImage.featured-lion>div {
+		height: 450px !important;
+	}
 }

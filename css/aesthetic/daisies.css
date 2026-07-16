@@ -1,28 +1,65 @@
-/* 
-        Layout Made by Chris (#105465) for free use
-        All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
-        https://www.lioden.com/topic.php?id=304429491963
-*/
+/*
+    Layout Made by Chris (#105465) for free use
+All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time
+https://www.lioden.com/topic.php?id=304429491963
+    */
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&display=swap');
 
+/*variables*/
 :root {
 	--fc1: #000000;
+	--fc2: #1a1a1a;
+	--fc3: #333333;
+	--eventText: #0000cc;
+	--mainFont: 'Aleo', 'Times New Roman', Times, serif;
+	--headFont: 'Merienda', 'Times New Roman', Times, serif;
+	--bgColor: #ffffffcc;
+	--pc1: #d9d9d9;
+	--pc2: #e6e6e6;
+	--pc3: #f2f2f2;
 	--pc4: #ffffff;
-	--borderColor: #000000;
+	--sc1: #d9d9d9;
+	--sc2: #e6e6e6;
+	--sc3: #f2f2f2;
+	--sc4: #ffffff;
+	--tc: #fcbe03;
+	--borderColor: transparent;
+	--mainShadow: 0 0 10px #000000;
+	--bodyShadow: 1px 1px 3px #808080;
+	--redAlert: #ffb3b3;
+	--redLink: #330000;
+	--greenAlert: #99ff99;
+	--greenLink: #003300;
+	--yellowAlert: #ffe699;
+	--yellowLink: #332600;
+	--button1: #fcbe03;
+	--button2: #fdc41c;
+	--button3: #fdcb35;
+	--button4: #fdd14e;
+	--button5: #fdd868;
+	--button6: #fede81;
+	--buttonText: #000000;
+	--redButton1: #330000;
+	--redButton2: #4d0000;
+	--redButton3: #660000;
+	--redButton4: #800000;
+	--redButton5: #990000;
+	--redButton6: #b30000;
+	--redButtonText: #ffffff;
 }
 
 /* Body */
 body {
-	font-family: 'Aleo', 'Times New Roman', Times, serif;
-	background: #000 url('../../img/aesthetic/daisies.jpg') fixed;
+	font-family: var(--mainFont);
+	background: #ffffff url('../../img/aesthetic/daisies.jpg') fixed;
 	background-position-y: center;
 	background-position-x: center;
 	/* DON'T CHANGE BELOW */
 	background-repeat: no-repeat;
 	background-size: cover;
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* Headers */
@@ -30,67 +67,63 @@ h1,
 h2,
 h3,
 .sidebar h3 {
-	color: #000000;
-	font-family: 'Merienda', 'Times New Roman', Times, serif;
+	color: var(--fc1);
+	font-family: var(--headFont);
 }
 
 /* Other Text */
 p,
 b,
 #fraProfileContent {
-	color: #000000;
+	color: var(--fc1);
 }
 
 small {
-	color: #000000 !important;
+	color: var(--fc1) !important;
 }
 
 /* Links */
 a:link,
 a:visited,
 a:active {
-	color: #1a1a1a;
+	color: var(--fc2);
 }
 
 a:hover,
 a:focus {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* Topbar */
 .topbar a:link,
 .topbar a:visited,
 .topbar a:active {
-	color: #1a1a1a;
+	color: var(--fc2);
 }
 
 .topbar a:hover,
 .topbar a:focus {
-	color: #000000;
+	color: var(--fc1);
 }
 
 .topbar {
-	background: #d9d9d9;
-	border: 1px solid #000;
+	background: var(--pc1);
+	border: none;
 	border-top: none;
-	/* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
-	color: #000000;
+	color: var(--fc1);
+	box-shadow: var(--mainShadow);
 }
 
 /* Navbar */
 .navbar {
-	background: #e6e6e6;
-	/* border-bottom: 1px solid #000; */
-	/* border-top-right-radius: 10px;
-	border-top-left-radius: 10px; */
-	font-family: 'Merienda', 'Times New Roman', Times, serif;
+	background: var(--pc2);
+	border-bottom: none;
+	font-family: var(--headFont);
 }
 
 /* logo */
 .navbar-brand img {
-	/* content: url('LINK'); */
-	filter: hue-rotate(30deg) brightness(140%);
+	filter: hue-rotate(30deg) brightness(140%) contrast(120%);
 }
 
 /* navbar defaults */
@@ -99,11 +132,11 @@ a:focus {
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-	color: #1a1a1a;
+	color: var(--fc2);
 }
 
 .navbar-default .navbar-nav>li>a {
-	color: #1a1a1a;
+	color: var(--fc2);
 	font-weight: bold;
 }
 
@@ -115,18 +148,18 @@ a:focus {
 /* make different from navbar */
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-	background: #f2f2f2;
+	background: var(--pc3);
 }
 
 /* bars in navbar icon */
 .navbar-default .navbar-toggle .icon-bar {
-	background: #000000;
+	background: var(--fc1);
 }
 
 /* collapsed navbar */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-	border-color: #d9d9d9;
+	border-color: var(--pc1);
 	box-shadow: none;
 }
 
@@ -139,17 +172,16 @@ a:focus {
 .navbar .active a:visited,
 .navbar .active a:active,
 .navbar .active a:focus {
-	background: #f2f2f2;
-	color: #000000;
-	/* border-radius: 10px; */
+	background: var(--pc3);
+	color: var(--fc1);
 }
 
 /* main */
 .main {
-	background: #ffffffcc;
-	border-radius: none;
-	border: 1px solid #000;
-	box-shadow: none;
+	background: var(--bgColor);
+	border-radius: 0;
+	border: none;
+	box-shadow: var(--mainShadow);
 }
 
 /* territory box */
@@ -159,10 +191,9 @@ a:focus {
 
 /* Breadcrumb */
 .breadcrumb {
-	background: #f2f2f2;
+	background: var(--pc3);
 	border: none;
-	/* border-radius: 10px; */
-	box-shadow: 1px 1px 3px #808080;
+	box-shadow: var(--bodyShadow);
 }
 
 .breadcrumb::after {
@@ -170,12 +201,12 @@ a:focus {
 	position: absolute;
 	right: 20%;
 	z-index: 100;
-	color: #000000;
+	color: var(--fc1);
 }
 
 .breadcrumb-item.active,
 .breadcrumb-item::before {
-	color: #333333 !important;
+	color: var(--fc3) !important;
 }
 
 /* Side Bar */
@@ -187,15 +218,14 @@ a:focus {
 /* sidebar inner boxes */
 .col-md-3 .panel {
 	border: none;
-	/* border-radius: 10px; */
-	background: #f2f2f2;
-	box-shadow: 1px 1px 3px #808080;
-	color: #000000;
+	background: var(--pc3);
+	box-shadow: var(--bodyShadow);
+	color: var(--fc1);
 }
 
 /* dotted line above chat on smaller screen sizes */
 .clear {
-	border-color: #000000 !important;
+	border-color: var(--fc1) !important;
 }
 
 /* Progress Bars */
@@ -203,144 +233,135 @@ a:focus {
 .progress {
 	background: #fff;
 	/* border-radius: 20px; */
-	border: 1px solid #d9d9d9;
+	border: 1px solid #fff;
 }
 
 /* default and impression */
 .progress-bar {
-	background: #fcbe03;
+	background: var(--tc);
 }
 
 /* if you want all to match comment out the next three classes */
-/* exp, hunger, and energy */
+/* exp, hunger, energy, and thirst respectively */
 /* .progress-bar-success {
-	background: #ffc680;
-}
-.progress-bar-danger {
-	background: #ffba66;
-}
-.progress-bar-warning {
-	background: #ffaf4d;
-} */
+    background: #ffc680;
+    }
+    .progress-bar-danger {
+    background: #ffba66;
+    }
+    .progress-bar-warning {
+    background: #ffaf4d;
+    }
+    .progress-bar-info {
+    background: #ffaf4d;
+    } */
 /* text inside the progress bars */
 .progress div {
 	color: #000;
-	font-family: 'Aleo', 'Times New Roman', Times, serif;
+	font-family: var(--mainFont);
 }
 
 /* alerts */
 /* all */
 .alert-danger,
 .alert-success,
-.alert-warning {
-	border: none;
-	/* border-radius: 10px; */
-	box-shadow: 1px 1px 3px #808080;
+.alert-warning,
+.alert {
+	color: var(--fc1);
+	background: var(--greenAlert);
+	border: none !important;
+	box-shadow: var(--bodyShadow);
 }
 
 /* red notifications */
 .alert-danger {
-	color: #000000;
-	background: #fdd868;
+	color: var(--fc1) !important;
+	background: var(--redAlert);
 }
 
 .alert-danger>a,
 .alert-danger>a:link,
 .alert-danger>a:active,
 .alert-danger>a:visited {
-	color: #322601;
+	color: var(--redLink);
 }
 
 .alert-danger>a:hover,
 .alert-danger>a:focus,
 .alert-danger b {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* green notifications */
 .alert-success {
-	color: #000000;
-	background: #e6e6e6;
+	color: var(--fc1);
+	background: var(--greenAlert);
 }
 
 .alert-success>a,
 .alert-success>a:link,
 .alert-success>a:active,
 .alert-success>a:visited {
-	color: #1a1a1a;
+	color: var(--greenLink);
 }
 
 .alert-success>a:hover,
 .alert-success>a:focus,
 .alert-success b {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* yellow notifications */
 .alert-warning {
-	color: #000000;
-	background: #d9d9d9;
+	color: var(--fc1);
+	background: var(--yellowAlert);
 }
 
 .alert-warning>a,
 .alert-warning>a:link,
 .alert-warning>a:active,
 .alert-warning>a:visited {
-	color: #1a1a1a;
+	color: var(--yellowLink);
 }
 
 .alert-warning>a:hover,
 .alert-warning>a:focus,
 .alert-warning b {
-	color: #000000;
+	color: var(--fc1);
 }
 
-/* HTML boxes if applicable */
-
+/* HTML Boxes if applicable */
+.bigBox,
+.smallBox,
+.bottomBox {
+	background-color: var(--pc3) !important;
+	border: none;
+	color: var(--fc1) !important;
+	border-radius: 3px !important;
+	box-shadow: var(--bodyShadow);
+}
 
 /* comment box */
 #commentBox {
 	border: none !important;
 	border-radius: 5px !important;
 	height: 200px !important;
-	background: #ffffff;
-	box-shadow: 1px 1px 3px #808080;
+	background: var(--pc4);
+	box-shadow: var(--bodyShadow);
 }
 
 .comment:nth-child(even) {
-	background: #f2f2f2 !important;
-}
-
-/* scrollbar */
-#commentBox::-webkit-scrollbar {
-	height: 0;
-	width: 8px;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	background: #fff;
-}
-
-/* scrollbar button */
-#commentBox::-webkit-scrollbar-thumb {
-	background: #e6e6e6;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-}
-
-#commentBox::-webkit-scrollbar-thumb:hover {
-	background: #d9d9d9;
+	background: var(--pc3) !important;
 }
 
 /* tables */
 /* table headers */
 .table .top,
 .table th {
-	background: #d9d9d9;
-	color: #000000;
-	font-family: 'Merienda', 'Times New Roman', Times, serif;
+	background: var(--sc1);
+	color: var(--fc1);
+	font-family: var(--headFont);
 	font-weight: bold;
-	/* border-top-right-radius: 10px;
-	border-top-left-radius: 10px; */
 }
 
 /* lion title and name */
@@ -350,22 +371,16 @@ a:focus {
 
 /* lion image */
 #lion_image>div {
-	transition: 1s;
 	border-radius: 10px;
 	border: none;
 }
 
-/* a:hover > #lion_image > div, a:focus > #lion_image > div {
-	border-radius: 10px;
-} */
 /* table body */
 .table {
-	background: #ffffff;
+	background: var(--sc4);
 	border: none;
-	color: #000000;
-	/* border-collapse: separate; */
-	/* border-radius: 10px; */
-	box-shadow: 1px 1px 3px #808080;
+	color: var(--fc1);
+	box-shadow: var(--bodyShadow);
 }
 
 /* table links */
@@ -375,7 +390,7 @@ a:focus {
 .table th a:link,
 .table th a:active,
 .table th a:visited {
-	color: #1a1a1a;
+	color: var(--fc2);
 	font-weight: bold;
 	border-bottom: none;
 }
@@ -384,13 +399,13 @@ a:focus {
 .table th a:hover,
 .table .top a:focus,
 .table th a:focus {
-	color: #000000;
+	color: var(--fc1);
 	font-weight: bold;
 }
 
 /* left side of stats on king and status bars in caves */
 .table .left {
-	background: #e6e6e6;
+	background: var(--sc2);
 }
 
 /* left side of stats on king */
@@ -403,34 +418,27 @@ a:focus {
 .inner-table .right {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-	background: #f2f2f2;
+	background: var(--sc3);
 }
 
 /* every other lion in caves */
 .table .right_odd {
-	background: #f2f2f2;
+	background: var(--sc3);
 }
 
 /* table footers */
 .table .innerHeader,
 .table .bottom,
 #player>tbody>tr {
-	background: #d9d9d9;
-	color: #000000;
-	/* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
+	background: var(--sc1);
+	color: var(--fc1);
 }
 
 /* player table footer adjustments for rounded corners */
 #player .right_odd {
 	background: none;
-	/* border-bottom-right-radius: 10px; */
 }
 
-/* #player .right_odd:first-child {
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 0;
-} */
 #player tr.right {
 	background: none;
 }
@@ -439,13 +447,13 @@ a:focus {
 .table .bottom a:link,
 .table .bottom a:visited,
 .table .bottom a:active {
-	color: #1a1a1a;
+	color: var(--fc2);
 	text-decoration: none;
 }
 
 .table .bottom a:hover,
 .table .bottom a:focus {
-	color: #000000;
+	color: var(--fc1);
 	text-decoration: underline;
 }
 
@@ -463,8 +471,9 @@ a:focus {
 
 /* days left until heat badge */
 .badge {
-	background: #fcbe03;
-	color: #000000;
+	background: var(--tc);
+	color: var(--fc1);
+	border: none;
 }
 
 /* inputs for typing in text in territory description etc. */
@@ -474,22 +483,34 @@ select,
 #fra_chatContainer #txtChatInput {
 	color: #000000;
 	background: #ffffff;
-	border: 1px solid #d9d9d9;
+	border: 1px solid var(--sc1);
 }
 
 input::placeholder {
 	color: #00000080;
 }
 
+/* CLAN STUFF */
+.page-description {
+	border: none;
+	background: var(--pc4);
+	padding: 20px;
+	box-shadow: var(--bodyShadow);
+}
+
+.page-description>div {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
 /* Caves and Mounds Main */
 /* main overrides */
 .mound-grid,
 .cave-grid {
-	background: #fcbe03;
+	background: var(--tc);
 	border: none;
-	/* border-radius: 10px; */
-	color: #1a1a1a;
-	box-shadow: 1px 1px 3px #808080;
+	color: var(--fc2);
+	box-shadow: var(--bodyShadow);
 }
 
 /* cave and mound link hover */
@@ -497,7 +518,7 @@ input::placeholder {
 .center>a:focus>.cave-grid,
 .center>a:hover>.mound-grid,
 .center>a:focus>.mound-grid {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* cave and mound customization */
@@ -513,7 +534,7 @@ input::placeholder {
 img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'],
 img[src$='//static.lioden.com/images/layout/nestingbanner.png'],
 img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
-	content: url('//static.lioden.com/images/dynamic/backgrounds/ubhubhubhucr.png');
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/ubhubhubhucr.png');
 	height: 80px;
 	object-fit: cover;
 	object-position: top;
@@ -521,24 +542,130 @@ img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
 
 /* unsorted lions */
 /* img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'] {
-	content: url('LINK');
-	object-position: top;
-} */
+    content: url('LINK');
+    object-position: top;
+    } */
 /* pregnant lionesses */
 /* img[src$='//static.lioden.com/images/layout/nestingbanner.png'] {
-	content: url('LINK');
-	object-position: top;
-} */
+    content: url('LINK');
+    object-position: top;
+    } */
 /* pride overview */
 /* img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
-	content: url('LINK');
-	object-position: top;
-} */
+    content: url('LINK');
+    object-position: top;
+    } */
 /* all mounds */
 /* .mound-grid img {
-	content: url('LINK');
-	padding: 5px;
-} */
+    content: url('LINK');
+    padding: 5px;
+    } */
+/* pride tab text overlay code by Chris (#105465) (credit must remain intact for any use of this code and I do not permit it to be used for comms or free css without explicit permission from me.) */
+/* mobile section */
+@media (max-width: 768px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		position: absolute;
+		top: 0.6rem;
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: bold;
+		z-index: 1;
+		display: block;
+		max-width: 260px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 1rem;
+		text-shadow: 1px 1px #0000001a, 1px -1px #0000001a, -1px 1px #0000001a, -1px -1px #0000001a, 0 1px #0000001a, 0 -1px #0000001a, -1px 0 #0000001a, 1px 0 #0000001a, 0 0 3px #000000;
+	}
+
+	a[href*='unsorted.php']>.cave-grid::before {
+		content: 'Unsorted';
+		text-align: left;
+	}
+
+	a[href*='lionoverview.php']>.cave-grid::before {
+		content: 'Pride Overview';
+		text-align: right;
+	}
+
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+		content: 'Nesting';
+		text-align: left;
+	}
+}
+
+@media (max-width: 629px) {
+	a[href*='lionoverview.php']>.cave-grid::before {
+		padding-right: 1.7rem;
+	}
+}
+
+/* tablet and desktop section */
+@media (min-width: 769px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		position: absolute;
+		top: 0.6rem;
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: bold;
+		z-index: 1;
+		text-shadow: 1px 1px #0000001a, 1px -1px #0000001a, -1px 1px #0000001a, -1px -1px #0000001a, 0 1px #0000001a, 0 -1px #0000001a, -1px 0 #0000001a, 1px 0 #0000001a, 0 0 3px #000000;
+	}
+
+	a[href*='unsorted.php']>.cave-grid::before {
+		content: 'Unsorted';
+		left: 6rem;
+	}
+
+	a[href*='lionoverview.php']>.cave-grid::before {
+		content: 'Pride Overview';
+		right: 6rem;
+	}
+
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+		content: 'Nesting';
+		left: 6rem;
+	}
+}
+
+@media (min-width: 993px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		font-size: 1.6rem;
+	}
+
+	a[href*='unsorted.php']>.cave-grid::before {
+		left: 2.6rem;
+	}
+
+	a[href*='lionoverview.php']>.cave-grid::before {
+		right: 2.6rem;
+	}
+
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+		left: 2.6rem;
+	}
+}
+
+@media (min-width: 1201px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		font-size: 2rem;
+	}
+}
+
 /* all mounds but like a cave */
 .mound-grid {
 	padding: 0 0 5px 0;
@@ -549,7 +676,7 @@ img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
 	height: 100px;
 	width: 100%;
 	object-fit: cover;
-	object-position: center;
+	object-position: top;
 }
 
 /* create mound image and empty cave slots */
@@ -560,20 +687,16 @@ img[src$='//static.lioden.com/images/layout/caveunused.jpg'] {
 
 /* featured lion section */
 .featured-lion {
-	background: #d9d9d9;
-	color: #000000;
+	background: var(--sc1);
+	color: var(--fc1);
 	margin-bottom: 20px;
-	/* border-radius: 10px; */
-	box-shadow: 1px 1px 3px #808080;
+	box-shadow: var(--bodyShadow);
+
 }
 
-/* .featured-lion img {
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
-} */
 /* featured lion background image */
 .featured-lion img[src$='//static.lioden.com/images/cave/default.png'] {
-	content: url('//static.lioden.com/images/dynamic/backgrounds/kwazulunatal.png') !important;
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/kwazulunatal.png') !important;
 	/* filter: none; */
 }
 
@@ -584,27 +707,27 @@ img[src$='//static.lioden.com/images/layout/caveunused.jpg'] {
 
 .featured-lion a:hover,
 .featured-lion a:focus {
-	color: #000000;
+	color: var(--fc1);
 }
 
 .featured-lion a:link,
 .featured-lion a:active,
 .featured-lion a:visited {
-	color: #1a1a1a;
+	color: var(--fc2);
 }
 
 /* owned by text */
 h1.center>small,
 h1.center>small a:hover,
 h1.center>small a:focus {
-	color: #000000 !important;
+	color: var(--fc1) !important;
 }
 
 h1.center>small a,
 h1.center>small a:link,
 h1.center>small a:visited,
 h1.center>small a:active {
-	color: #1a1a1a !important;
+	color: var(--fc2) !important;
 }
 
 /* dropdown text */
@@ -615,10 +738,9 @@ h1.center>small a:active {
 /* Inner Mounds */
 /* menu bg */
 .sub_menu {
-	background: #d9d9d9;
+	background: var(--sc1);
 	border: none;
-	/* border-radius: 10px; */
-	box-shadow: 1px 1px 3px #808080;
+	box-shadow: var(--bodyShadow);
 }
 
 .sub_sub_menu {
@@ -627,13 +749,12 @@ h1.center>small a:active {
 
 /* Feature Styling (like feed all play all etc.) */
 div.feature {
-	/* border-radius: 10px; */
 	border: none;
-	background: #ffffff;
+	background: var(--sc4);
 	padding: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	box-shadow: 1px 1px 3px #808080;
+	box-shadow: var(--bodyShadow);
 }
 
 /* dropdown width (acts funny on smaller screens at the default 200px sometimes) */
@@ -643,26 +764,25 @@ div.feature select {
 
 /* header */
 div.feature h3 {
-	color: #000000;
+	color: var(--fc1);
 }
 
 .feature-footer {
-	background: #ffffff;
+	background: var(--sc4);
 }
 
 /* inner text */
 .feature .xsmall {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* Dynasty Pills */
 /* dynasty main */
 div.left {
-	background: #fcbe03;
-	/* border-radius: 10px; */
+	background: var(--tc);
 	border: none;
-	color: #000000;
-	box-shadow: 1px 1px 3px #808080;
+	color: var(--fc1);
+	box-shadow: var(--bodyShadow);
 }
 
 /* custom dynasty images */
@@ -683,48 +803,49 @@ div.left img {
 
 /* dynasty headers */
 .dynastylist h3 {
-	color: #1a1a1a;
+	color: var(--fc2);
 	padding-top: 5px;
 }
 
 .dynastylist h3:hover,
 .dynastylist h3:focus {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* links in the pills beneath dynasty stuff */
 a div.left {
-	color: #1a1a1a;
+	color: var(--fc2);
 }
 
 a div.left:hover,
 a div.left:focus {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* Branch */
 .item {
-	background: #f2f2f2;
+	background: var(--sc3);
 	border: none;
 	border-radius: 5px;
 }
 
 .item-header {
-	background: #e6e6e6;
-	color: #000000;
+	background: var(--sc2);
+	color: var(--fc1);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
 
 .item-footer {
-	background: #e6e6e6;
-	color: #000000;
+	background: var(--sc2);
+	color: var(--fc1);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
 
 /* Buttons */
 /* all */
+a.button,
 .select-control,
 button.button,
 input[type="button"],
@@ -749,30 +870,32 @@ input[type="reset"].bad:hover {
 }
 
 /* regular button */
+a.button,
 .select-control,
 button.button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-	background: #fede81;
-	background: linear-gradient(to bottom, #fede81 5%, #fdd14e 5%, #fdd14e 95%, #fdc41c 95%);
-	color: #000000;
-	border: 1px solid #fdc41c;
-	text-shadow: 1px 1px 0px #fede81;
-	font-family: 'Aleo', 'Times New Roman', Times, serif;
+	background: var(--button6);
+	background: linear-gradient(to bottom, var(--button6) 5%, var(--button4) 5%, var(--button4) 95%, var(--button2) 95%);
+	color: var(--buttonText);
+	border: 1px solid var(--button2);
+	text-shadow: 1px 1px 0px var(--button6);
+	font-family: var(--mainFont);
 }
 
 /* regular button hover */
+a.button:hover,
 .select-control:hover,
 button.button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-	background: #fdd868;
-	background: linear-gradient(to bottom, #fdd868 5%, #fdcb35 5%, #fdcb35 95%, #fcbe03 95%);
-	color: #000000;
-	border: 1px solid #fcbe03;
-	text-shadow: 1px 1px 0px #fdd868;
+	background: var(--button5);
+	background: linear-gradient(to bottom, var(--button5) 5%, var(--button3) 5%, var(--button3) 95%, var(--button1) 95%);
+	color: var(--buttonText);
+	border: 1px solid var(--button1);
+	text-shadow: 1px 1px 0px var(--button5);
 }
 
 /* red button */
@@ -781,11 +904,11 @@ button.button.bad,
 input[type="button"].bad,
 input[type="submit"].bad,
 input[type="reset"].bad {
-	background: #595959;
-	background: linear-gradient(to bottom, #595959 5%, #404040 5%, #404040 49%, #404040 95%, #262626 95%);
-	color: #ffffff;
-	border: 1px solid #0d0d0d;
-	text-shadow: 1px 1px 0px #262626;
+	background: var(--redButton6);
+	background: linear-gradient(to bottom, var(--redButton6) 5%, var(--redButton4) 5%, var(--redButton4) 49%, var(--redButton4) 95%, var(--redButton2) 95%);
+	color: var(--redButtonText);
+	border: 1px solid var(--redButton2);
+	text-shadow: 1px 1px 0px var(--redButton2);
 }
 
 /* red button hover */
@@ -794,31 +917,43 @@ button.button.bad:hover,
 input[type="button"].bad:hover,
 input[type="submit"].bad:hover,
 input[type="reset"].bad:hover {
-	background: #4d4d4d;
-	background: linear-gradient(to bottom, #4d4d4d 5%, #333333 5%, #333333 49%, #333333 95%, #1a1a1a 95%);
-	color: #ffffff;
-	border: 1px solid #000000;
-	text-shadow: 1px 1px 0px #1a1a1a;
+	background: var(--redButton5);
+	background: linear-gradient(to bottom, var(--redButton5) 5%, var(--redButton3) 5%, var(--redButton3) 49%, var(--redButton3) 95%, var(--redButton1) 95%);
+	color: var(--redButtonText);
+	border: 1px solid var(--redButton1);
+	text-shadow: 1px 1px 0px var(--redButton1);
 }
 
 /* Event Flavor Text */
 /* has to go at the bottom since it likes to be mean to me otherwise trust me best left here lol */
 center>div.center.b,
 center>b>span {
-	color: #7e5f01 !important;
+	color: var(--eventText) !important;
+}
+
+/* december table fix for dark layouts */
+.table .table,
+.table .table b {
+	color: #000 !important;
 }
 
 /* Footer */
-/* technically applies to all "white" text on the site but mainly applies to the footer text */
-.white {
-	color: #000;
+.footer {
+	background: var(--bgColor);
+	border-radius: 0;
+	border: none;
+	box-shadow: var(--mainShadow);
+	padding-top: 1em;
 }
 
-.footer {
-	background: #ffffffcc;
-	padding: 1em;
-	border: 1px solid #000;
-	margin-top: 2em;
+img[src*='hand_text.svg'] {
+	opacity: 1 !important;
+	filter: brightness(0%);
+}
+
+/* technically applies to all "white" text on the site but mainly applies to the footer text */
+.white {
+	color: var(--fc1);
 }
 
 /* bottom links container size to prevent weird stacking issues */
@@ -835,7 +970,7 @@ ul.bottomlinks {
 .footer a:link,
 .footer a:active,
 .footer a:visited {
-	color: #1a1a1a;
+	color: var(--fc2);
 	border-bottom: none;
 }
 
@@ -843,20 +978,7 @@ ul.bottomlinks {
 .bottomlinks li a:focus,
 .footer a:hover,
 footer a:focus {
-	color: #000;
-}
-
-/* CLAN STUFF */
-.page-description {
-	border: none;
-	background: #ffffff;
-	padding: 20px;
-	box-shadow: 1px 1px 3px #808080;
-}
-
-.page-description>div {
-	padding: 0;
-	margin: 0;
+	color: var(--fc1);
 }
 
 /*#region Chat */
@@ -875,34 +997,33 @@ footer a:focus {
 /* menu dropbox */
 .channelMenu>button,
 .channelMenu>div {
-	background: #d9d9d9 !important;
+	background: var(--pc1) !important;
 	border-color: transparent !important;
-	box-shadow: none !important;
-	color: #1a1a1a !important;
+	color: var(--fc2) !important;
 	box-shadow: none !important;
 }
 
 /* message text */
 .s-chat-message {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* even messages */
 .s-chat-message:nth-child(even) {
-	background: #ffffff;
+	background: var(--pc4);
 }
 
 /* odd messages */
 .s-chat-message:nth-child(odd) {
-	background: #f2f2f2;
+	background: var(--pc3);
 }
 
 /* mention */
 #chatMessageList[data-pings="enabled"] .s-chat-message_mention,
 .s-chat-message.hasContext {
-	background: #ffffff !important;
-	border-color: #d9d9d9 !important;
-	color: #000000 !important;
+	background: var(--sc4) !important;
+	border-color: var(--sc1) !important;
+	color: var(--fc1) !important;
 	padding-left: 10px;
 }
 
@@ -912,35 +1033,19 @@ footer a:focus {
 }
 
 #chatMessageList[data-pings="enabled"] .s-chat-message_mention a {
-	color: #1a1a1a !important;
+	color: var(--fc2) !important;
 }
 
 #chatMessageList[data-pings="enabled"] .s-chat-message_mention a:hover,
 #chatMessageList[data-pings="enabled"] .s-chat-message_mention a:focus {
-	color: #000000 !important;
-}
-
-/* scrollbar */
-#chatMessageList::-webkit-scrollbar {
-	width: 8px;
-	background: #fff;
-}
-
-/* scrollbar button */
-#chatMessageList::-webkit-scrollbar-thumb {
-	background: #e6e6e6;
-	border-radius: 0;
-}
-
-#chatMessageList::-webkit-scrollbar-thumb:hover {
-	background: #d9d9d9;
+	color: var(--fc1) !important;
 }
 
 /* claim badge */
 .s-chat-message_claim {
-	background: #e6e6e6;
+	background: var(--pc2);
 	border-bottom: none;
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* claim popout box stuff */
@@ -950,8 +1055,8 @@ footer a:focus {
 
 /* main inner bit */
 #modalClaimList {
-	background: #ffffff;
-	color: #000000;
+	background: var(--pc4);
+	color: var(--fc1);
 	border: none;
 }
 
@@ -959,30 +1064,30 @@ footer a:focus {
 #modalClaimList a:active,
 #modalClaimList a:visited,
 #modalClaimList a:link {
-	color: #1a1a1a;
+	color: var(--fc2);
 }
 
 #modalClaimList a:hover,
 #modalClaimList a:focus {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* header */
 #modalClaimList h3 {
-	background: #e6e6e6;
-	color: #000000;
+	background: var(--pc2);
+	color: var(--fc1);
 }
 
 /* close button */
 #modalClaimList button.close {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* pinned message */
 #chatMessagePinned,
 #chatMessagePinned.s-chat-message__pinned {
-	background: #d9d9d9;
-	color: #000000 !important;
+	background: var(--pc1);
+	color: var(--fc1) !important;
 	border: none !important;
 }
 
@@ -992,7 +1097,7 @@ footer a:focus {
 
 /* timestamp */
 .s-chat-message_timestamp {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /* mod message text (best left at #000) */
@@ -1003,18 +1108,18 @@ footer a:focus {
 }
 
 #fra_chatContainer .channelMenu .channelSwitcher {
-	color: #000000;
+	color: var(--fc1);
 }
 
 #fra_chatContainer .channelMenu .channelSwitcher:hover,
 #fra_chatContainer .channelMenu .channelSwitcher:focus {
-	background: #e6e6e6;
-	color: #000000;
+	background: var(--pc2);
+	color: var(--fc1);
 }
 
 #fra_chatContainer .channelMenu .channelSwitcher.active {
-	background: #f2f2f2;
-	color: #000000;
+	background: var(--pc3);
+	color: var(--fc1);
 }
 
 /* settings text (DO NOT CHANGE OR IT WILL BREAK) */
@@ -1024,13 +1129,13 @@ footer a:focus {
 
 /* char count */
 #lblCharacterCounter {
-	color: #000000 !important;
+	color: var(--fc1) !important;
 }
 
 /* code of conduct & chat room link */
 a[href$='./code.php'],
 a[href$='./chat.php'] {
-	color: #000000;
+	color: var(--fc1);
 }
 
 /*#endregion */

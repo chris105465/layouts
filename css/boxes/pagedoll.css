@@ -1,0 +1,19 @@
+.page-doll {
+    width: 300px;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    z-index: 1;
+}
+
+@media (max-width: 993px) {
+    .page-doll {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-doll {
+        width: 150px;
+    }
+}

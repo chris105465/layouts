@@ -292,8 +292,14 @@ a:focus {
 }
 
 /* HTML Boxes if applicable */
-
-
+.bigBox,
+.smallBox,
+.bottomBox {
+	background-color: #ffd480 !important;
+	border: none;
+	color: #000000 !important;
+	border-radius: 3px !important;
+}
 
 /* comment box */
 
@@ -306,26 +312,6 @@ a:focus {
 
 .comment:nth-child(even) {
 	background: #ffe6b3 !important;
-}
-
-/* scrollbar */
-#commentBox::-webkit-scrollbar {
-	height: 0;
-	width: 8px;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	background: #fff;
-}
-
-/* scrollbar button */
-#commentBox::-webkit-scrollbar-thumb {
-	background: #ffbb33;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-}
-
-#commentBox::-webkit-scrollbar-thumb:hover {
-	background: #ffc34d;
 }
 
 /* Tables */
@@ -493,14 +479,241 @@ input::placeholder {
 	color: #1a1100;
 }
 
-/* cave and mound customization if applicable */
+/* cave and mound customization */
+/* all caves */
+.cave-grid>img {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/haloween_03.png');
+	height: 120px;
+	object-fit: cover;
+	object-position: top;
+}
 
+/* pride tabs */
+img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'],
+img[src$='//static.lioden.com/images/layout/nestingbanner.png'],
+img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/VastSavanna.png');
+	height: 80px;
+	object-fit: cover;
+	object-position: center 70%;
+}
+
+/* unsorted lions */
+/* img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'] {
+    content: url('LINK');
+    object-position: top;
+    } */
+/* pregnant lionesses */
+/* img[src$='//static.lioden.com/images/layout/nestingbanner.png'] {
+    content: url('LINK');
+    object-position: top;
+    } */
+/* pride overview */
+/* img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
+    content: url('LINK');
+    object-position: top;
+    } */
+/* all mounds */
+/* .mound-grid img {
+    content: url('LINK');
+    padding: 5px;
+    } */
+/* pride tab text overlay code by Chris (#105465) (credit must remain intact for any use of this code and I do not permit it to be used for comms or free css without direct permission.) */
+
+/* mobile section */
+
+@media (max-width: 768px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		position: absolute;
+		top: 0.6rem;
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: bold;
+		z-index: 1;
+		display: block;
+		max-width: 260px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 1rem;
+		text-shadow: 1px 1px #0000001a, 1px -1px #0000001a, -1px 1px #0000001a, -1px -1px #0000001a, 0 1px #0000001a, 0 -1px #0000001a, -1px 0 #0000001a, 1px 0 #0000001a, 0 0 3px #000000;
+	}
+
+	a[href*='unsorted.php']>.cave-grid::before {
+		content: 'Unsorted';
+		text-align: left;
+	}
+
+	a[href*='lionoverview.php']>.cave-grid::before {
+		content: 'Pride Overview';
+		text-align: right;
+	}
+
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+		content: 'Nesting';
+		text-align: left;
+	}
+}
+
+
+
+@media (max-width: 629px) {
+	a[href*='lionoverview.php']>.cave-grid::before {
+		padding-right: 1.7rem;
+	}
+}
+
+/* tablet and desktop section */
+
+@media (min-width: 769px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		position: absolute;
+		top: 0.6rem;
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: bold;
+		z-index: 1;
+		text-shadow: 1px 1px #0000001a, 1px -1px #0000001a, -1px 1px #0000001a, -1px -1px #0000001a, 0 1px #0000001a, 0 -1px #0000001a, -1px 0 #0000001a, 1px 0 #0000001a, 0 0 3px #000000;
+	}
+
+	a[href*='unsorted.php']>.cave-grid::before {
+		content: 'Unsorted';
+		left: 6rem;
+	}
+
+	a[href*='lionoverview.php']>.cave-grid::before {
+		content: 'Pride Overview';
+		right: 6rem;
+	}
+
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+		content: 'Nesting';
+		left: 6rem;
+	}
+}
+
+
+
+@media (min-width: 993px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		font-size: 1.6rem;
+	}
+
+	a[href*='unsorted.php']>.cave-grid::before {
+		left: 2.6rem;
+	}
+
+	a[href*='lionoverview.php']>.cave-grid::before {
+		right: 2.6rem;
+	}
+
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+		left: 2.6rem;
+	}
+}
+
+@media (min-width: 1201px) {
+
+	a[href*='unsorted.php']>.cave-grid::before,
+	#fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+	a[href*='lionoverview.php']>.cave-grid::before {
+		font-size: 2rem;
+	}
+}
+
+/* all mounds but like a cave */
+.mound-grid {
+	padding: 0 0 5px 0;
+}
+
+.mound-grid img {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/floweringfynbos.png');
+	height: 100px;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+/* create mound image and empty cave slots */
+img[src$='//static.lioden.com/images/layout/addbeetlemound.png'],
+img[src$='//static.lioden.com/images/layout/caveunused.jpg'] {
+	filter: saturate(50%);
+}
+
+/* featured lion section */
+.featured-lion {
+	background: #ffd480;
+	color: #000000;
+	margin-bottom: 20px;
+	box-shadow: 0 0 0 1px var(--borderColor);
+
+}
+
+/* featured lion background image */
+.featured-lion img[src$='//static.lioden.com/images/cave/default.png'] {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/haloween_03.png') !important;
+	/* filter: none; */
+}
+
+/* very important if you want it to not look ugly anymore lol don't change the padding here or the media queries at the bottom */
+.featured-lion .b {
+	padding-top: 8px;
+}
+
+.featured-lion a:hover,
+.featured-lion a:focus {
+	color: #000000;
+}
+
+.featured-lion a:link,
+.featured-lion a:active,
+.featured-lion a:visited {
+	color: #1a1100;
+}
+
+/* owned by text */
+h1.center>small,
+h1.center>small a:hover,
+h1.center>small a:focus {
+	color: #000000 !important;
+}
+
+h1.center>small a,
+h1.center>small a:link,
+h1.center>small a:visited,
+h1.center>small a:active {
+	color: #1a1100 !important;
+}
+
+/* dropdown text */
+.table .bottom select {
+	color: #000;
+}
+
+/* Inner Mounds */
+/* menu bg */
+.sub_menu {
+	background: #ffd480;
+	border: 1px solid var(--borderColor);
+}
+
+.sub_sub_menu {
+	display: none;
+}
 
 /* Feature Styling (like feed all play all etc.) */
-
 div.feature {
-	/* border-radius: 10px; */
-	border: none;
+	border: 1px solid var(--borderColor);
 	background: #ffeecc;
 	padding: 20px;
 	padding-top: 10px;
@@ -514,7 +727,7 @@ div.feature select {
 
 /* header */
 div.feature h3 {
-	color: #1a1100;
+	color: #000000;
 }
 
 .feature-footer {
@@ -523,44 +736,52 @@ div.feature h3 {
 
 /* inner text */
 .feature .xsmall {
-	color: #1a1100;
+	color: #000000;
 }
 
 /* Dynasty Pills */
-
 /* dynasty main */
 div.left {
 	background: #ffbb33;
-	/* border-radius: 10px; */
 	border: none;
-	color: #1a1100;
+	color: #000000;
 }
 
-/* dynasty images */
+/* custom dynasty images */
 div.left img {
-	padding: 10px;
-	padding-top: 0;
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/defaultbg.png');
+	object-fit: cover;
+	object-position: top;
+	padding: 0;
+	height: 60px;
+	max-width: 500px !important;
+	border-bottom-left-radius: inherit;
+	border-bottom-right-radius: inherit;
+}
+
+.dynastylist .left {
+	padding: 5px 0 0 0;
 }
 
 /* dynasty headers */
 .dynastylist h3 {
-	color: #332200;
+	color: #1a1100;
 	padding-top: 5px;
 }
 
 .dynastylist h3:hover,
 .dynastylist h3:focus {
-	color: #1a1100;
+	color: #000000;
 }
 
 /* links in the pills beneath dynasty stuff */
 a div.left {
-	color: #332200;
+	color: #1a1100;
 }
 
 a div.left:hover,
 a div.left:focus {
-	color: #1a1100;
+	color: #000000;
 }
 
 /* Side Bar */
@@ -590,6 +811,7 @@ a div.left:focus {
 .progress {
 	background: #fff;
 	/* border-radius: 20px; */
+	border: 1px solid #fff;
 }
 
 /* default and impression */
@@ -659,22 +881,6 @@ a div.left:focus {
 #btnLoadNewMessages,
 .s-chat-message_menu {
 	filter: grayscale() brightness(0%);
-}
-
-/* scrollbar */
-#chatMessageList::-webkit-scrollbar {
-	width: 8px;
-	background: #fff;
-}
-
-/* scrollbar button */
-#chatMessageList::-webkit-scrollbar-thumb {
-	background: #ffbb33;
-	border-radius: 0;
-}
-
-#chatMessageList::-webkit-scrollbar-thumb:hover {
-	background: #ffc34d;
 }
 
 /* claim badge */
@@ -937,9 +1143,9 @@ input[type="reset"]:hover {
 /* Event Flavor Text */
 /* has to go at the bottom since it likes to be mean to me otherwise trust me best left here lol */
 
-/* center > div.center.b {
-	color: #efefef !important;
-} */
+center>div.center.b {
+	color: #990000 !important;
+}
 
 /* Footer */
 
