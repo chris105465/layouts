@@ -1197,6 +1197,7 @@ footer a:focus {
 
 .s-chat-sidebar #chatMessagePinned.s-chat-message__pinned {
     text-indent: 4px;
+    background-position: 0 0;
 }
 
 /* timestamp */
