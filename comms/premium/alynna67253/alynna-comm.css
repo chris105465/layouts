@@ -124,7 +124,7 @@ a:focus {
 
 /* logo */
 .navbar-brand img {
-    filter: hue-rotate(150deg) saturate(80%) brightness(80%) contrast(120%);
+    filter: saturate(5%) brightness(140%) contrast(120%);
 }
 
 /* navbar defaults */
