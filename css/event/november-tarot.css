@@ -230,7 +230,7 @@ a:focus {
 .progress {
     background: #fff;
     border-radius: 20px;
-    border: 1px solid var(--borderColor)
+    border: 1px solid #fff;
 }
 
 /* default and impression */

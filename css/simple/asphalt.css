@@ -225,7 +225,7 @@ a:focus {
 .progress {
     background: var(--pc2);
     /* border-radius: 20px; */
-    /* border: 1px solid var(--pc1) */
+    border: 1px solid var(--pc1);
 }
 
 /* default and impression */
