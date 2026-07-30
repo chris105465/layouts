@@ -23,6 +23,8 @@ Please do not edit or copy any of this code without permission. If you have any 
     --sc2: #e8cad8;
     --sc3: #efdce5;
     --sc4: #f7edf2;
+    --gc1: #ebadc9;
+    --gc2: #f0c1d6;
     --tc: #e0cfe2;
     --borderColor: #ffffff;
     --redAlert: #e4cece;
@@ -104,7 +106,7 @@ a:focus {
 }
 
 .topbar {
-    background: var(--pc1);
+    background: linear-gradient(var(--gc1), var(--pc1));
     border: 1px solid var(--borderColor);
     border-top: none;
     border-bottom-left-radius: 10px;
@@ -114,7 +116,7 @@ a:focus {
 
 /* Navbar */
 .navbar {
-    background: var(--pc2);
+    background: linear-gradient(var(--gc2), var(--pc2));
     border-bottom: 1px solid var(--borderColor);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -358,7 +360,7 @@ a:focus {
 /* table headers */
 .table .top,
 .table th {
-    background: var(--sc1);
+    background: linear-gradient(var(--gc1), var(--sc1));
     color: var(--fc1);
     font-family: var(--headFont);
     font-weight: bold;
@@ -429,7 +431,7 @@ a:focus {
 .table .innerHeader,
 .table .bottom,
 #player>tbody>tr {
-    background: var(--sc1);
+    background: linear-gradient(var(--sc1), var(--gc1));
     color: var(--fc1);
 }
 
