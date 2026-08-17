@@ -1,0 +1,1650 @@
+/*
+    Layout Made by Chris (#105465) for my bestie's side acc (#14851)
+    Do not edit or copy any of this code for any reason. If you have any questions regarding my work, please message me.
+*/
+
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*variables*/
+:root {
+    /* font colors */
+    --fc1: #ffffff;
+    --fc2: #e8e2e9;
+    --fc3: #d1c5d3;
+    --eventText: #00ffcc;
+    /* font families */
+    --mainFont: 'Nunito', Verdana, 'Geneva', Tahoma, sans-serif;
+    --headFont: 'Gelasio', 'Times New Roman', Times, serif;
+    /* big bg colors */
+    --bgColor: #0e0b0fb3;
+    --bgColor2: #000000b3;
+    --bgColorOpaque: #000000;
+    /* main color pallet */
+    --pc1: #0e0b0f;
+    --pc2: #1c161d;
+    --pc3: #2a212c;
+    --pc4: #382c3a;
+    --pc5: #463749;
+    --pc6: #544257;
+    /* borders */
+    --borderColor: #463749;
+    --borderColor2: #382c3a;
+    /* box shadows */
+    --mainShadow: 0 0 0 1px #1c161d;
+    --bodyShadow: 1px 1px 3px #000000;
+    /* alerts */
+    --redAlert: #2c2121;
+    --redAlert2: #493737;
+    --redBorder: #493737;
+    --redLink: #e9e2e2;
+    --greenAlert: #212c21;
+    --greenAlert2: #374937;
+    --greenBorder: #374937;
+    --greenLink: #e2e9e2;
+    --yellowAlert: #2c2921;
+    --yellowAlert2: #494437;
+    --yellowBorder: #494437;
+    --yellowLink: #e9e8e2;
+    --blueAlert: #212c2c;
+    --blueAlert2: #374949;
+    --blueBorder: #374949;
+    --blueLink: #e2e9e9;
+    /* regular buttons/accent color pallet */
+    --button1: #14191f;
+    --button2: #1e252f;
+    --button3: #28323e;
+    --button4: #323e4e;
+    --button5: #3c4b5d;
+    --button6: #46576d;
+    /* red buttons */
+    --buttonText: #ffffff;
+    --redButton1: #221111;
+    --redButton2: #331a1a;
+    --redButton3: #442222;
+    --redButton4: #552b2b;
+    --redButton5: #663333;
+    --redButton6: #773c3c;
+    --redButtonText: #ffffff;
+    /* stroke around text (color same as pc3) */
+    --ts: 0 1px #2a212c, 1px 1px #2a212c, 1px 0 #2a212c, 0 -1px #2a212c, -1px 0 #2a212c, -1px -1px #2a212c, 1px -1px #2a212c, -1px 1px #2a212c;
+    /* images */
+    --logo: url('https://static.lioden.com/images/items/Other/app_intergalacticvaliant.png');
+    --overlay: url('../img/stardust-dense.png');
+    /* panel images */
+    --memberPanel: url('https://static.lioden.com/images/dynamic/backgrounds/zaxreflectionpool.png');
+    --statsPanel: url('https://static.lioden.com/images/dynamic/backgrounds/birthgalaxy.png');
+    --bookmarksPanel: url('https://static.lioden.com/images/dynamic/backgrounds/nun_waters.png');
+    /* arrow images */
+    --kingArrow: url('https://static.lioden.com/images/items/Other/app_mane_demiurge.png');
+    --achieveArrow: url('https://static.lioden.com/images/items/Other/app_manedivine.png');
+    --bookmarkArrow: url('https://static.lioden.com/images/items/Other/app_mane_interstellar.png');
+    /* image for about and player tables */
+    --tables: url('https://static.lioden.com/images/dynamic/backgrounds/cosmicdepth.png');
+    /* cave images */
+    --caveDefault: url('https://static.lioden.com/images/dynamic/backgrounds/horseheadnebulae.png');
+    --unsorted: url('https://static.lioden.com/images/dynamic/backgrounds/space_traveller.png');
+    --nesting: url('https://static.lioden.com/images/dynamic/backgrounds/MergingGalaxies.png');
+    --overview: url('https://static.lioden.com/images/dynamic/backgrounds/meteor_shower.png');
+    --cave1: url('https://static.lioden.com/images/dynamic/backgrounds/SwirlingGalaxy.png');
+    --cave2: url('https://static.lioden.com/images/dynamic/backgrounds/InfraredRadiation.png');
+    --cave3: url('https://static.lioden.com/images/dynamic/backgrounds/MilkyWay.png');
+    /* mound images */
+    --mound1: url('https://static.lioden.com/images/dynamic/backgrounds/planetarynebula.png');
+    --mound2: url('https://static.lioden.com/images/dynamic/backgrounds/ionizedveils.png');
+    /* dynasty images */
+    --kingDyn: url('https://static.lioden.com/images/dynamic/backgrounds/LeonidsBG.png');
+    --prideDyn: url('https://static.lioden.com/images/dynamic/backgrounds/DraconidsBG.png');
+    --achievements: url('https://static.lioden.com/images/dynamic/backgrounds/PerseidStormBG.png');
+    --showcase: url('https://static.lioden.com/images/dynamic/backgrounds/fallingstars.png');
+    --beetleBook: url('https://static.lioden.com/images/dynamic/backgrounds/taurids.png');
+    /* featured lion bg */
+    --featuredLion: url('https://static.lioden.com/images/dynamic/backgrounds/LeonidsBG.png');
+    /* immutables */
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* Body */
+body {
+    font-family: var(--mainFont);
+    background: var(--bgColorOpaque) url('../img/pleiadeus-bg.jpg') fixed;
+    background-position-y: bottom;
+    background-position-x: center;
+    /* DON'T CHANGE BELOW */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--fc1);
+}
+
+/* Headers */
+h1,
+h2,
+h3,
+.sidebar h3 {
+    color: var(--fc1);
+    font-family: var(--headFont);
+}
+
+/* Other Text */
+p,
+b,
+#fraProfileContent {
+    color: var(--fc1);
+}
+
+small {
+    color: var(--fc1) !important;
+}
+
+/* Links */
+a:link,
+a:visited,
+a:active {
+    color: var(--fc2);
+}
+
+a:hover,
+a:focus {
+    color: var(--fc1);
+}
+
+/* Topbar */
+.topbar a:link,
+.topbar a:visited,
+.topbar a:active {
+    color: var(--fc2);
+}
+
+.topbar a:hover,
+.topbar a:focus {
+    color: var(--fc1);
+}
+
+.topbar {
+    background: var(--overlay) repeat, linear-gradient(to right, var(--pc1), var(--pc3));
+    border: 2px solid var(--borderColor2);
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--fc1);
+    box-shadow: var(--mainShadow);
+}
+
+img[src*='icon-beetle-gold'] {
+    filter: hue-rotate(240deg) saturate(40%) brightness(80%);
+}
+
+img[src*='icon-beetle-silver'] {
+    filter: saturate(40%) brightness(80%) contrast(140%);
+}
+
+/* Navbar */
+.navbar {
+    background: var(--overlay) repeat, linear-gradient(to left, var(--pc2), var(--pc4));
+    border-bottom: 1px solid var(--borderColor2);
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    font-family: var(--headFont);
+}
+
+/* logo */
+.navbar-brand img {
+    content: var(--logo);
+    filter: none;
+}
+
+/* navbar defaults */
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    color: var(--fc2);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: var(--fc2);
+    font-weight: bold;
+}
+
+/* mobile toggle box */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+/* make different from navbar */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background: var(--pc3);
+}
+
+/* bars in navbar icon */
+.navbar-default .navbar-toggle .icon-bar {
+    background: var(--fc1);
+}
+
+/* collapsed navbar */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: var(--pc1);
+    box-shadow: none;
+}
+
+/* active and hovered links in navbar */
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus,
+.navbar .active a:link,
+.navbar .active a:visited,
+.navbar .active a:active,
+.navbar .active a:focus {
+    background: var(--pc3);
+    color: var(--fc1);
+}
+
+/* main */
+.main {
+    background: linear-gradient(to left, var(--bgColor2), var(--bgColor), var(--bgColor2));
+    border-radius: 10px;
+    border: 2px solid var(--borderColor2);
+    box-shadow: var(--mainShadow);
+}
+
+/* territory box */
+.col-md-9 {
+    background: none;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background: var(--overlay) repeat, linear-gradient(to right, var(--pc3), var(--pc5));
+    border: 1px solid var(--borderColor);
+    border-radius: 10px;
+    box-shadow: var(--bodyShadow);
+    text-shadow: var(--ts);
+}
+
+.breadcrumb::after {
+    content: " /  CSS by Chris (#105465)";
+    position: relative;
+    z-index: 100;
+    color: var(--fc3);
+}
+
+.breadcrumb-item.active,
+.breadcrumb-item::before {
+    color: var(--fc3) !important;
+}
+
+/* Side Bar */
+/* side panel bg */
+.sidebar.col-md-3 {
+    background: none;
+}
+
+/* sidebar inner boxes */
+.col-md-3 .panel {
+    border: 1px solid var(--borderColor);
+    border-radius: 10px;
+    background: var(--overlay) repeat, linear-gradient(to right, var(--pc3), var(--pc5));
+    box-shadow: var(--bodyShadow);
+    color: var(--fc1);
+    filter: drop-shadow(0 0 transparent);
+    text-shadow: var(--ts);
+}
+
+.col-md-3 .panel:nth-child(1) {
+    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc3) var(--memberPanel);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    box-shadow: var(--bodyShadow);
+}
+
+.col-md-3 .col-xs-6 .panel:nth-child(4) {
+    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc3) var(--statsPanel);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    box-shadow: var(--bodyShadow);
+}
+
+.col-md-3 .panel:nth-child(4) {
+    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc3) var(--bookmarksPanel);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    box-shadow: var(--bodyShadow);
+}
+
+.sidebar h3 {
+    filter: drop-shadow(0 0 transparent);
+}
+
+#pageSidebar .col-xs-6 h3 .floatright {
+    content: var(--kingArrow);
+    position: absolute;
+    width: 60px;
+    right: 8px;
+    margin-top: -40px;
+}
+
+#pageSidebar .col-xs-5 a:nth-child(1) h3 .floatright {
+    content: var(--achieveArrow);
+    position: absolute;
+    width: 60px;
+    right: 4px;
+    margin-top: -40px;
+}
+
+#pageSidebar .col-xs-5 a:nth-child(3) h3 .floatright {
+    content: var(--bookmarkArrow);
+    position: absolute;
+    width: 60px;
+    right: 4px;
+    margin-top: -40px;
+}
+
+/* dotted line above chat on smaller screen sizes */
+.clear {
+    border-color: var(--fc1) !important;
+}
+
+/* Progress Bars */
+/* background container */
+.progress {
+    background: linear-gradient(var(--pc1), var(--pc2));
+    border-radius: 20px;
+    border: 1px solid var(--pc1);
+}
+
+/* default and impression */
+.progress-bar {
+    background: repeating-linear-gradient(135deg, var(--button3) 0 25%, var(--button4) 25% 50%);
+    background-size: 20px 20px;
+    box-shadow: inset 0 0 5px var(--button1);
+}
+
+/* if you want all to match comment out the next three classes */
+/* exp, hunger, energy, and thirst respectively */
+/* .progress-bar-success {
+    background: #ffc680;
+    }
+    .progress-bar-danger {
+    background: #ffba66;
+    }
+    .progress-bar-warning {
+    background: #ffaf4d;
+    }
+    .progress-bar-info {
+    background: #ffaf4d;
+    } */
+/* text inside the progress bars */
+.progress div {
+    color: var(--white);
+    font-family: var(--mainFont);
+    font-weight: bold;
+}
+
+/* alerts */
+/* all */
+.alert-danger,
+.alert-success,
+.alert-warning,
+.alert {
+    color: var(--fc1);
+    background: var(--overlay) repeat, linear-gradient(to right, var(--blueAlert), var(--blueAlert2), var(--blueAlert));
+    border: 1px solid var(--blueBorder) !important;
+    border-radius: 10px;
+    box-shadow: var(--bodyShadow);
+}
+
+/* red notifications */
+.alert-danger {
+    color: var(--fc1) !important;
+    background: var(--overlay) repeat, linear-gradient(to right, var(--redAlert), var(--redAlert2), var(--redAlert));
+    border-color: var(--redBorder) !important;
+}
+
+.alert-danger>a,
+.alert-danger>a:link,
+.alert-danger>a:active,
+.alert-danger>a:visited {
+    color: var(--redLink);
+}
+
+.alert-danger>a:hover,
+.alert-danger>a:focus,
+.alert-danger b {
+    color: var(--fc1);
+}
+
+/* green notifications */
+.alert-success {
+    color: var(--fc1);
+    background: var(--overlay) repeat, linear-gradient(to right, var(--greenAlert), var(--greenAlert2), var(--greenAlert));
+    border-color: var(--greenBorder) !important;
+}
+
+.alert-success>a,
+.alert-success>a:link,
+.alert-success>a:active,
+.alert-success>a:visited {
+    color: var(--greenLink);
+}
+
+.alert-success>a:hover,
+.alert-success>a:focus,
+.alert-success b {
+    color: var(--fc1);
+}
+
+/* yellow notifications */
+.alert-warning {
+    color: var(--fc1);
+    background: var(--overlay) repeat, linear-gradient(to right, var(--yellowAlert), var(--yellowAlert2), var(--yellowAlert));
+    border-color: var(--yellowBorder) !important;
+}
+
+.alert-warning>a,
+.alert-warning>a:link,
+.alert-warning>a:active,
+.alert-warning>a:visited {
+    color: var(--yellowLink);
+}
+
+.alert-warning>a:hover,
+.alert-warning>a:focus,
+.alert-warning b {
+    color: var(--fc1);
+}
+
+/* HTML Boxes if applicable */
+.bigBox,
+.smallBox,
+.bottomBox {
+    background-color: var(--pc4) !important;
+    border: 1px solid var(--borderColor);
+    color: var(--fc1) !important;
+    border-radius: 10px !important;
+    box-shadow: var(--bodyShadow);
+}
+
+.bigBox {
+    background: var(--pc4);
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+    color: var(--fc1);
+    overflow: auto;
+    height: 240px;
+    width: 57%;
+    padding: 20px;
+    float: left;
+    margin: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    box-shadow: var(--bodyShadow);
+}
+
+.smallBox {
+    background: var(--pc4);
+    color: var(--fc1);
+    overflow: auto;
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+    height: 240px;
+    width: 37%;
+    padding: 20px;
+    float: right;
+    margin: 10px;
+    text-align: left;
+    box-shadow: var(--bodyShadow);
+}
+
+.scrollSection {
+    margin: 0 auto;
+    width: 100%;
+    height: 270px;
+}
+
+@media (max-width: 715px) {
+    .bigBox {
+        width: 56%;
+    }
+
+    .smallBox {
+        width: 36%;
+    }
+}
+
+.bottomBox {
+    background: var(--pc4);
+    color: var(--fc1);
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+    margin: 0 10px 0 10px;
+    padding: 20px;
+    height: 240px;
+    overflow: auto;
+    box-shadow: var(--bodyShadow);
+}
+
+.bigBox h1,
+.bigBox h2,
+.bigBox h3,
+.smallBox h1,
+.smallBox h2,
+.smallBox h3,
+.bottomBox h1,
+.bottomBox h2,
+.bottomBox h3 {
+    margin: 0;
+    color: var(--fc1);
+}
+
+.profileTab {
+    background: var(--pc4);
+    color: var(--fc1);
+    border: 1px solid var(--borderColor);
+    border-bottom: none;
+    padding: 20px;
+    position: fixed;
+    left: 5px;
+    bottom: 0;
+    height: 46px;
+    width: 250px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: 2s;
+    z-index: 100;
+    overflow: scroll;
+}
+
+.profileTab:hover,
+.profileTab:focus {
+    height: 300px;
+}
+
+.profileTab h1,
+.profileTab h2,
+.profileTab h3 {
+    margin: 0;
+    color: var(--fc1);
+}
+
+.profileTab::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.bigBox h3,
+.smallBox h3,
+.bottomBox h3,
+.profileTab h3 {
+    background: var(--overlay) repeat, linear-gradient(to left, var(--pc2), var(--pc4));
+    margin: -20px;
+    padding: 0.6em 1em;
+    margin-bottom: -5px;
+    border-bottom: 1px solid var(--borderColor);
+}
+
+/* comment box */
+#commentBox {
+    border: 1px solid var(--borderColor) !important;
+    border-radius: 5px !important;
+    height: 34px !important;
+    background: var(--pc4);
+    box-shadow: var(--bodyShadow);
+    transition: 1.5s;
+}
+
+#commentBox:hover {
+    height: 250px !important;
+}
+
+.comment:nth-child(even) {
+    background: var(--pc3) !important;
+}
+
+#commentBox::before {
+    content: "This account does not roll every day. Online indicator may not align with actual rolls.";
+    background: var(--overlay) repeat, linear-gradient(to right, var(--pc1), var(--pc3));
+    color: var(--fc1);
+    font-style: italic;
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    display: block;
+    padding: 8px !important;
+}
+
+/* tables */
+/* table headers */
+.table .top,
+.table th {
+    background: var(--overlay) repeat, linear-gradient(to left, var(--pc1), var(--pc3));
+    color: var(--fc1);
+    font-family: var(--headFont);
+    font-weight: bold;
+    text-shadow: 1px 1px var(--pc1);
+}
+
+#pride th {
+    background: var(--pc1);
+}
+
+/* lion title and name */
+.xlarge.b {
+    font-weight: bold;
+}
+
+/* lion image */
+#lion_image>div {
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+}
+
+/* table body */
+.table {
+    background: var(--pc4);
+    border: 1px solid var(--borderColor);
+    color: var(--fc1);
+    box-shadow: var(--bodyShadow);
+    text-shadow: none;
+}
+
+#about,
+#player {
+    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc4) var(--tables);
+    background-size: cover;
+    background-position-y: 22%;
+    text-shadow: var(--ts);
+}
+
+/* table links */
+.table .top a:link,
+.table .top a:active,
+.table .top a:visited,
+.table th a:link,
+.table th a:active,
+.table th a:visited {
+    color: var(--fc2);
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.table .top a:hover,
+.table th a:hover,
+.table .top a:focus,
+.table th a:focus {
+    color: var(--fc1);
+    font-weight: bold;
+}
+
+/* left side of stats on king and status bars in caves */
+.table .left {
+    background: var(--pc2);
+    text-shadow: none;
+}
+
+/* left side of stats on king */
+.inner-table .left {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid var(--borderColor);
+    border-right: none;
+}
+
+/* right side of king stats */
+.inner-table .right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: var(--pc3);
+    border: 1px solid var(--borderColor);
+    border-left: none;
+}
+
+/* every other lion in caves */
+.table .right_odd {
+    background: var(--pc3);
+}
+
+/* table footers */
+.table .innerHeader,
+.table .bottom,
+#player>tbody>tr {
+    background: var(--overlay) repeat, linear-gradient(to right, var(--pc1), var(--pc3));
+    color: var(--fc1);
+}
+
+.table .innerHeader,
+.table .bottom {
+    text-shadow: none;
+}
+
+/* player table footer adjustments for rounded corners */
+#player .right_odd {
+    background: none;
+    text-shadow: none;
+}
+
+#player tr.right {
+    background: none;
+}
+
+/* quick link to mutated lions under king panel */
+.table .bottom a:link,
+.table .bottom a:visited,
+.table .bottom a:active {
+    color: var(--fc2);
+    text-decoration: none;
+}
+
+.table .bottom a:hover,
+.table .bottom a:focus {
+    color: var(--fc1);
+    text-decoration: underline;
+}
+
+/* hr in player table */
+#player hr {
+    border-color: transparent;
+    margin: 0;
+    margin-top: 1em;
+}
+
+/* little :|: spans in player table */
+#player .text-muted {
+    color: var(--fc3);
+}
+
+/* days left until heat badge */
+.badge {
+    background: var(--button3);
+    color: var(--fc1);
+    border: 1px solid var(--borderColor);
+}
+
+/* inputs for typing in text in territory description etc. */
+textarea,
+input,
+select,
+#fra_chatContainer #txtChatInput {
+    color: var(--black);
+    background: var(--white);
+    border: 1px solid var(--pc1);
+}
+
+input::placeholder {
+    color: #00000080;
+}
+
+.member-online:before {
+    content: "Online";
+    color: var(--fc1);
+    text-shadow: 0 0 5px var(--fc3);
+    font-size: 14px;
+    position: relative;
+    left: -55px !important;
+    top: -11px;
+}
+
+.member-offline:before {
+    content: "Offline";
+    color: var(--pc1);
+    font-size: 14px;
+    position: relative;
+    left: -55px !important;
+    top: -11px;
+    /* font-style: italic; */
+    text-shadow: none;
+}
+
+.member-online {
+    position: relative;
+    background: var(--eventText);
+    top: 8px;
+    left: -6px;
+}
+
+.member-offline {
+    position: relative;
+    background: var(--pc1);
+    top: 8px;
+    left: -6px;
+}
+
+img[src*='donator.png'] {
+    margin-right: 64px;
+    margin-top: -5px;
+    margin-left: -50px;
+}
+
+/* CLAN STUFF */
+.page-description {
+    border: 1px solid var(--borderColor);
+    background: var(--pc4);
+    padding: 20px;
+    box-shadow: var(--bodyShadow);
+}
+
+.page-description>div {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Caves and Mounds Main */
+/* main overrides */
+.mound-grid,
+.cave-grid {
+    background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--caveDefault);
+    background-size: cover;
+    background-position-y: top;
+    border: 1px solid var(--borderColor);
+    border-radius: 10px;
+    color: var(--fc2);
+    box-shadow: var(--bodyShadow);
+    text-shadow: var(--ts);
+}
+
+/* cave and mound link hover */
+.center>a:hover>.cave-grid,
+.center>a:focus>.cave-grid,
+.center>a:hover>.mound-grid,
+.center>a:focus>.mound-grid {
+    color: var(--fc1);
+}
+
+/* cave and mound customization */
+/* all caves */
+.cave-grid>img {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/nothing.png');
+    height: 135px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* pride tabs */
+img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'] {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/nothing.png');
+    height: 80px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+img[src$='//static.lioden.com/images/layout/nestingbanner.png'] {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/nothing.png');
+    height: 80px;
+    object-fit: cover;
+    object-position: top;
+}
+
+img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/nothing.png');
+    height: 80px;
+    object-fit: cover;
+    object-position: top;
+}
+
+#fraOrganizationBlock>div:nth-child(1) .cave-grid {
+    background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--unsorted);
+    background-size: cover;
+    background-position-y: top;
+}
+
+#fraOrganizationBlock>div:nth-child(2) .cave-grid {
+    background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--nesting);
+    background-size: cover;
+    background-position-y: 10%;
+}
+
+#fraOrganizationBlock>div:nth-child(3) .cave-grid {
+    background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--overview);
+    background-size: cover;
+    background-position-y: top;
+}
+
+#fraCaveList>div:nth-child(1) .cave-grid {
+    background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--cave1);
+    background-size: cover;
+    background-position-y: top;
+}
+
+#fraCaveList>div:nth-child(2) .cave-grid {
+    background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--cave2);
+    background-size: cover;
+    background-position-y: top;
+}
+
+#fraCaveList>div:nth-child(3) .cave-grid {
+    background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--cave3);
+    background-size: cover;
+    background-position-y: top;
+}
+
+/* unsorted lions */
+/* img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'] {
+    content: url('LINK');
+    object-position: top;
+    } */
+/* pregnant lionesses */
+/* img[src$='//static.lioden.com/images/layout/nestingbanner.png'] {
+    content: url('LINK');
+    object-position: top;
+    } */
+/* pride overview */
+/* img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
+    content: url('LINK');
+    object-position: top;
+    } */
+/* all mounds */
+/* .mound-grid img {
+    content: url('LINK');
+    padding: 5px;
+    } */
+/* pride tab text overlay code by Chris (#105465) (credit must remain intact for any use of this code and I do not permit it to be used for comms or free css without explicit permission from me.) */
+/* mobile section */
+@media (max-width: 768px) {
+
+    a[href*='unsorted.php']>.cave-grid::before,
+    #fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+    a[href*='lionoverview.php']>.cave-grid::before {
+        position: absolute;
+        top: 0.6rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: var(--fc1);
+        font-weight: bold;
+        z-index: 1;
+        display: block;
+        max-width: 260px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+        text-shadow: 1px 1px #0000001a, 1px -1px #0000001a, -1px 1px #0000001a, -1px -1px #0000001a, 0 1px #0000001a, 0 -1px #0000001a, -1px 0 #0000001a, 1px 0 #0000001a, 0 0 3px #000000;
+    }
+
+    a[href*='unsorted.php']>.cave-grid::before {
+        content: 'Unsorted';
+        text-align: left;
+    }
+
+    a[href*='lionoverview.php']>.cave-grid::before {
+        content: 'Pride Overview';
+        text-align: right;
+    }
+
+    #fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+        content: 'Nesting';
+        text-align: left;
+    }
+}
+
+@media (max-width: 629px) {
+    a[href*='lionoverview.php']>.cave-grid::before {
+        padding-right: 1.7rem;
+    }
+}
+
+/* tablet and desktop section */
+@media (min-width: 769px) {
+
+    a[href*='unsorted.php']>.cave-grid::before,
+    #fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+    a[href*='lionoverview.php']>.cave-grid::before {
+        position: absolute;
+        top: 0.6rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: var(--fc1);
+        font-weight: bold;
+        z-index: 1;
+        text-shadow: 1px 1px #0000001a, 1px -1px #0000001a, -1px 1px #0000001a, -1px -1px #0000001a, 0 1px #0000001a, 0 -1px #0000001a, -1px 0 #0000001a, 1px 0 #0000001a, 0 0 3px #000000;
+    }
+
+    a[href*='unsorted.php']>.cave-grid::before {
+        content: 'Unsorted';
+        left: 6rem;
+    }
+
+    a[href*='lionoverview.php']>.cave-grid::before {
+        content: 'Pride Overview';
+        right: 6rem;
+    }
+
+    #fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+        content: 'Nesting';
+        left: 6rem;
+    }
+}
+
+@media (min-width: 993px) {
+
+    a[href*='unsorted.php']>.cave-grid::before,
+    #fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+    a[href*='lionoverview.php']>.cave-grid::before {
+        font-size: 1.6rem;
+    }
+
+    a[href*='unsorted.php']>.cave-grid::before {
+        left: 2.6rem;
+    }
+
+    a[href*='lionoverview.php']>.cave-grid::before {
+        right: 2.6rem;
+    }
+
+    #fraOrganizationBlock>div:nth-child(2) .cave-grid::before {
+        left: 2.6rem;
+    }
+}
+
+@media (min-width: 1201px) {
+
+    a[href*='unsorted.php']>.cave-grid::before,
+    #fraOrganizationBlock>div:nth-child(2) .cave-grid::before,
+    a[href*='lionoverview.php']>.cave-grid::before {
+        font-size: 2rem;
+    }
+}
+
+/* all mounds but like a cave */
+.mound-grid {
+    padding: 0 0 5px 0;
+}
+
+.mound-grid img {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/nothing.png');
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* create mound image and empty cave slots */
+img[src$='//static.lioden.com/images/layout/addbeetlemound.png'],
+img[src$='//static.lioden.com/images/layout/caveunused.jpg'] {
+    filter: saturate(50%);
+}
+
+#fraMoundList>div:nth-child(1) .mound-grid {
+    background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--mound1);
+    background-size: cover;
+    background-position-y: top;
+}
+
+#fraMoundList>div:nth-child(2) .mound-grid {
+    background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--mound2);
+    background-size: cover;
+    background-position-y: top;
+}
+
+/* featured lion section */
+.featured-lion {
+    background: var(--overlay) repeat, linear-gradient(to left, var(--pc1), var(--pc3));
+    color: var(--fc1);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px var(--borderColor), var(--bodyShadow);
+
+}
+
+/* featured lion background image */
+.featured-lion img[src$='//static.lioden.com/images/cave/default.png'] {
+    content: var(--featuredLion) !important;
+    /* filter: none; */
+}
+
+.featured-lion img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/* very important if you want it to not look ugly anymore lol don't change the padding here or the media queries at the bottom */
+.featured-lion .b {
+    padding-top: 8px;
+}
+
+.featured-lion a:hover,
+.featured-lion a:focus {
+    color: var(--fc1);
+}
+
+.featured-lion a:link,
+.featured-lion a:active,
+.featured-lion a:visited {
+    color: var(--fc2);
+}
+
+/* owned by text */
+h1.center>small,
+h1.center>small a:hover,
+h1.center>small a:focus {
+    color: var(--fc1) !important;
+}
+
+h1.center>small a,
+h1.center>small a:link,
+h1.center>small a:visited,
+h1.center>small a:active {
+    color: var(--fc2) !important;
+}
+
+/* dropdown text */
+.table .bottom select {
+    color: var(--black);
+}
+
+/* Inner Mounds */
+/* menu bg */
+.sub_menu {
+    background: var(--overlay) repeat, linear-gradient(to left, var(--pc3), var(--pc5));
+    border: 1px solid var(--borderColor);
+    border-radius: 10px;
+    box-shadow: var(--bodyShadow);
+    text-shadow: var(--ts);
+}
+
+.sub_sub_menu {
+    display: none;
+}
+
+/* Feature Styling (like feed all play all etc.) */
+div.feature {
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: var(--bodyShadow);
+    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc4) var(--tables);
+    background-size: cover;
+    background-position-y: 22%;
+    text-shadow: var(--ts);
+}
+
+/* dropdown width (acts funny on smaller screens at the default 200px sometimes) */
+div.feature select {
+    width: 180px !important;
+}
+
+/* header */
+div.feature h3 {
+    color: var(--fc1);
+}
+
+.feature-footer {
+    background: var(--pc4);
+}
+
+/* inner text */
+.feature .xsmall {
+    color: var(--fc1);
+}
+
+/* Dynasty Pills */
+/* dynasty main */
+div.left {
+    background: var(--overlay) repeat, linear-gradient(to right, var(--pc3), var(--pc5));
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+    color: var(--fc1);
+    box-shadow: var(--bodyShadow);
+    text-shadow: var(--ts);
+}
+
+/* custom dynasty images */
+div.left img {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/nothing.png');
+    object-fit: cover;
+    object-position: top;
+    padding: 0;
+    height: 60px;
+    max-width: 500px !important;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.dynastylist .left {
+    padding: 5px 0 0 0;
+}
+
+/* dynasty headers */
+.dynastylist h3 {
+    color: var(--fc2);
+    padding-top: 5px;
+}
+
+.dynastylist h3:hover,
+.dynastylist h3:focus {
+    color: var(--fc1);
+}
+
+.dynastylist:nth-child(1) .left {
+    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc4) var(--kingDyn);
+    background-size: cover;
+    background-position-y: top;
+}
+
+.dynastylist:nth-child(2) .left {
+    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc4) var(--prideDyn);
+    background-size: cover;
+    background-position-y: top;
+}
+
+.dynastylist:nth-child(3) .left {
+    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc4) var(--achievements);
+    background-size: cover;
+    background-position-y: top;
+}
+
+.dynastylist:nth-child(4) .left {
+    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc4) var(--showcase);
+    background-size: cover;
+    background-position-y: top;
+}
+
+.dynastylist:nth-child(5) .left {
+    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc4) var(--beetleBook);
+    background-size: cover;
+    background-position-y: top;
+}
+
+/* links in the pills beneath dynasty stuff */
+a div.left {
+    color: var(--fc2);
+}
+
+a div.left:hover,
+a div.left:focus {
+    color: var(--fc1);
+}
+
+/* Branch */
+.item {
+    background: var(--pc3);
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+}
+
+.item-header {
+    background: var(--pc2);
+    color: var(--fc1);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.item-footer {
+    background: var(--pc2);
+    color: var(--fc1);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Buttons */
+/* all */
+a.button,
+.select-control,
+button.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.select-control:hover,
+button.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.select-control.bad,
+button.button.bad,
+input[type="button"].bad,
+input[type="submit"].bad,
+input[type="reset"].bad,
+.select-control.bad:hover,
+button.button.bad:hover,
+input[type="button"].bad:hover,
+input[type="submit"].bad:hover,
+input[type="reset"].bad:hover {
+    border-radius: 5px;
+}
+
+/* regular button */
+a.button,
+.select-control,
+button.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    background: var(--button6);
+    background: linear-gradient(to bottom, var(--button6) 5%, var(--button4) 5%, var(--button4) 95%, var(--button2) 95%);
+    color: var(--buttonText);
+    border: 1px solid var(--button2);
+    text-shadow: 1px 1px 0px var(--button2);
+    font-family: var(--mainFont);
+}
+
+/* regular button hover */
+a.button:hover,
+.select-control:hover,
+button.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: var(--button5);
+    background: linear-gradient(to bottom, var(--button5) 5%, var(--button3) 5%, var(--button3) 95%, var(--button1) 95%);
+    color: var(--buttonText);
+    border: 1px solid var(--button1);
+    text-shadow: 1px 1px 0px var(--button1);
+}
+
+/* red button */
+.select-control.bad,
+button.button.bad,
+input[type="button"].bad,
+input[type="submit"].bad,
+input[type="reset"].bad {
+    background: var(--redButton6);
+    background: linear-gradient(to bottom, var(--redButton6) 5%, var(--redButton4) 5%, var(--redButton4) 49%, var(--redButton4) 95%, var(--redButton2) 95%);
+    color: var(--redButtonText);
+    border: 1px solid var(--redButton2);
+    text-shadow: 1px 1px 0px var(--redButton2);
+}
+
+/* red button hover */
+.select-control.bad:hover,
+button.button.bad:hover,
+input[type="button"].bad:hover,
+input[type="submit"].bad:hover,
+input[type="reset"].bad:hover {
+    background: var(--redButton5);
+    background: linear-gradient(to bottom, var(--redButton5) 5%, var(--redButton3) 5%, var(--redButton3) 49%, var(--redButton3) 95%, var(--redButton1) 95%);
+    color: var(--redButtonText);
+    border: 1px solid var(--redButton1);
+    text-shadow: 1px 1px 0px var(--redButton1);
+}
+
+/* Event Flavor Text */
+/* has to go at the bottom since it likes to be mean to me otherwise trust me best left here lol */
+center>div.center.b,
+center>b>span {
+    color: var(--eventText) !important;
+    text-shadow: 1px 1px var(--black);
+}
+
+/* december table fix for dark layouts */
+.table .table,
+.table .table b {
+    color: var(--black) !important;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(to left, var(--bgColor2), var(--bgColor), var(--bgColor2));
+    border-radius: 10px;
+    border: 2px solid var(--borderColor2);
+    box-shadow: var(--mainShadow);
+    padding-top: 1em;
+}
+
+img[src*='hand_text.svg'] {
+    opacity: 1 !important;
+    filter: brightness(1000%);
+}
+
+/* technically applies to all "white" text on the site but mainly applies to the footer text */
+.white {
+    color: var(--fc1);
+    text-shadow: 0 0 5px var(--black);
+}
+
+/* bottom links container size to prevent weird stacking issues */
+ul.bottomlinks {
+    width: max-content !important;
+}
+
+/* bottoms links */
+.bottomlinks li a,
+.bottomlinks li a:link,
+.bottomlinks li a:active,
+.bottomlinks li a:visited,
+.footer a,
+.footer a:link,
+.footer a:active,
+.footer a:visited {
+    color: var(--fc2);
+    border-bottom: none;
+}
+
+.bottomlinks li a:hover,
+.bottomlinks li a:focus,
+.footer a:hover,
+footer a:focus {
+    color: var(--fc1);
+}
+
+/*#region Chat */
+/* main container */
+#chatMessageContainer {
+    border: 1px solid var(--borderColor);
+}
+
+/* chat buttons */
+#btnChatSettings,
+#btnLoadNewMessages,
+.s-chat-message_menu {
+    filter: grayscale() brightness(500%);
+}
+
+/* menu dropbox */
+.channelMenu>button,
+.channelMenu>div {
+    background: var(--overlay) repeat, linear-gradient(to left, var(--pc1), var(--pc3)) !important;
+    border-color: var(--borderColor) !important;
+    color: var(--fc2) !important;
+    box-shadow: none !important;
+}
+
+/* message text */
+.s-chat-message {
+    color: var(--fc1);
+}
+
+/* even messages */
+.s-chat-message:nth-child(even) {
+    background: var(--pc4);
+}
+
+/* odd messages */
+.s-chat-message:nth-child(odd) {
+    background: var(--pc3);
+}
+
+/* mention */
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention,
+.s-chat-message.hasContext {
+    background: var(--button3) !important;
+    border-color: var(--button1) !important;
+    color: var(--fc1) !important;
+    padding-left: 10px;
+}
+
+.s-chat-message.hasContext .s-chat-message_timestamp,
+.s-chat-message_mention.s-chat-message_timestamp {
+    padding-left: 10px;
+}
+
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention a {
+    color: var(--fc2) !important;
+}
+
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention a:hover,
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention a:focus {
+    color: var(--fc1) !important;
+}
+
+/* claim badge */
+.s-chat-message_claim {
+    background: var(--pc2);
+    border-bottom: none;
+    color: var(--fc1);
+}
+
+/* claim popout box stuff */
+#modalClaimBG {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* main inner bit */
+#modalClaimList {
+    background: var(--pc4);
+    color: var(--fc1);
+    border: 1px solid var(--borderColor);
+}
+
+#modalClaimList a,
+#modalClaimList a:active,
+#modalClaimList a:visited,
+#modalClaimList a:link {
+    color: var(--fc2);
+}
+
+#modalClaimList a:hover,
+#modalClaimList a:focus {
+    color: var(--fc1);
+}
+
+/* header */
+#modalClaimList h3 {
+    background: var(--pc2);
+    color: var(--fc1);
+}
+
+/* close button */
+#modalClaimList button.close {
+    color: var(--fc1);
+}
+
+/* pinned message */
+#chatMessagePinned,
+#chatMessagePinned.s-chat-message__pinned {
+    background: var(--overlay) repeat, linear-gradient(to right, var(--pc1), var(--pc3));
+    color: var(--fc1) !important;
+    border: none !important;
+}
+
+.s-chat-sidebar #chatMessagePinned.s-chat-message__pinned {
+    text-indent: 4px;
+    background-position: 0;
+}
+
+/* timestamp */
+.s-chat-message_timestamp {
+    color: var(--fc1);
+}
+
+/* mod message text (best left at #000) */
+.s-chat-message__mod,
+.s-chat-message__mod .s-chat-message_content,
+.s-chat-message__mod .s-chat-message_timestamp {
+    color: var(--black);
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher {
+    color: var(--fc1);
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher:hover,
+#fra_chatContainer .channelMenu .channelSwitcher:focus {
+    background: var(--pc2);
+    color: var(--fc1);
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+    background: var(--pc3);
+    color: var(--fc1);
+}
+
+/* settings text (DO NOT CHANGE OR IT WILL BREAK) */
+#fra_chatContainer label {
+    color: var(--black);
+}
+
+/* char count */
+#lblCharacterCounter {
+    color: var(--fc1) !important;
+}
+
+/* code of conduct & chat room link */
+a[href$='./code.php'],
+a[href$='./chat.php'] {
+    color: var(--fc1);
+}
+
+/*#endregion */
+
+/* Media Query Adjustments */
+
+@media (max-width: 1200px) and (min-width: 993px) {
+
+    #pageSidebar .col-xs-6 h3 .floatright,
+    #pageSidebar .col-xs-5 a:nth-child(1) h3 .floatright,
+    #pageSidebar .col-xs-5 a:nth-child(3) h3 .floatright {
+        width: 40px;
+        margin-top: -32px;
+    }
+}
+
+@media (max-width: 993px) {
+    .dynastylist {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+    .navbar-default .navbar-nav>li>a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-position-y: center;
+        background-position-x: center;
+        /* DON'T CHANGE BELOW */
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto !important;
+        min-width: 600px;
+    }
+
+    .main,
+    .topbar {
+        box-shadow: none !important;
+    }
+
+    #fraProfileContent.hidden-xs {
+        display: block !important;
+    }
+
+    #commentBox {
+        height: 200px !important;
+        transition: none;
+    }
+
+    #commentBox:hover {
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 684px) {
+    div.lionImage.featured-lion>div {
+        height: 475px !important;
+    }
+}
+
+@media (max-width: 620px) {
+    div.lionImage.featured-lion>div {
+        height: 450px !important;
+    }
+}
