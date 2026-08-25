@@ -968,7 +968,7 @@ center>b>span {
     background: var(--bgColor);
     border-radius: 10px;
     border: 1px solid var(--borderColor);
-    box-shadow: 0 0 1px #ffffff;
+    box-shadow: 0 0 10px #ffffff;
     padding-top: 1em;
 }
 
