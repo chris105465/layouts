@@ -183,8 +183,8 @@ img[src*='icon-beetle-silver'] {
 .navbar {
     background: var(--overlay) repeat, linear-gradient(to left, var(--pc2), var(--pc4));
     border-bottom: 1px solid var(--borderColor2);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     font-family: var(--headFont);
 }
 
