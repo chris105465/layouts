@@ -960,7 +960,7 @@ img[src*='hand_text.svg'] {
 
 /* technically applies to all "white" text on the site but mainly applies to the footer text */
 .white {
-    color: #ffffff;
+    color: var(--fc1);
 }
 
 /* bottom links container size to prevent weird stacking issues */
@@ -977,7 +977,7 @@ ul.bottomlinks {
 .footer a:link,
 .footer a:active,
 .footer a:visited {
-    color: #f2f2f2;
+    color: var(--fc2);
     border-bottom: none;
 }
 
@@ -985,7 +985,7 @@ ul.bottomlinks {
 .bottomlinks li a:focus,
 .footer a:hover,
 footer a:focus {
-    color: #ffffff;
+    color: var(--fc1);
 }
 
 /*#region Chat */
