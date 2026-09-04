@@ -703,7 +703,7 @@ img[src$='//static.lioden.com/images/layout/caveunused.jpg'] {
 /* featured lion background image */
 .featured-lion img[src$='//static.lioden.com/images/cave/default.png'] {
     content: url('https://static.lioden.com/images/dynamic/backgrounds/amethystcave.png') !important;
-    /* filter: none; */
+    filter: hue-rotate(60deg) saturate(80%);
 }
 
 /* very important if you want it to not look ugly anymore lol don't change the padding here or the media queries at the bottom */
