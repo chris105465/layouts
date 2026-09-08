@@ -141,6 +141,7 @@ a:focus {
 .navbar-default .navbar-nav>li>a {
     color: var(--fc2);
     font-weight: bold;
+    text-transform: capitalize;
 }
 
 /* mobile toggle box */
