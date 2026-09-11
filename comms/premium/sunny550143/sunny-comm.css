@@ -15,28 +15,28 @@ Please do not edit or copy any of this code without permission. If you have any 
     --mainFont: 'Open Sans', Verdana, 'Geneva', Tahoma, sans-serif;
     --headFont: 'Open Sans', Verdana, 'Geneva', Tahoma, sans-serif;
     --bgColor: #110b08b3;
-    --pc1: #231610;
-    --pc2: #342118;
-    --pc3: #462c20;
-    --pc4: #573728;
-    --sc1: #231610;
-    --sc2: #342118;
-    --sc3: #462c20;
-    --sc4: #573728;
-    --tc: #663819;
+    --pc1: #110b08;
+    --pc2: #231610;
+    --pc3: #342118;
+    --pc4: #462c20;
+    --sc1: #110b08;
+    --sc2: #231610;
+    --sc3: #342118;
+    --sc4: #462c20;
+    --tc: #522d14;
     --borderColor: #c5986d;
-    --redAlert: #462020;
+    --redAlert: #341818;
     --redLink: #efdcdc;
-    --greenAlert: #204620;
+    --greenAlert: #183418;
     --greenLink: #dcefdc;
-    --yellowAlert: #463c20;
+    --yellowAlert: #342d18;
     --yellowLink: #efeadc;
-    --button1: #3e220f;
-    --button2: #522d14;
-    --button3: #673819;
-    --button4: #7b431e;
-    --button5: #904e23;
-    --button6: #a45a28;
+    --button1: #29160a;
+    --button2: #3e220f;
+    --button3: #522d14;
+    --button4: #673819;
+    --button5: #7b431e;
+    --button6: #904e23;
     --buttonText: #ffffff;
     --redButton1: #3e0f0f;
     --redButton2: #521414;
@@ -50,7 +50,7 @@ Please do not edit or copy any of this code without permission. If you have any 
 /* Body */
 body {
     font-family: var(--mainFont);
-    background: #110b08 url('https://static.lioden.com/images/dynamic/backgrounds/sandstorm2.png') fixed;
+    background: #110b08 url('./sunny-bg.jpg') fixed;
     background-position-y: center;
     background-position-x: center;
     /* DON'T CHANGE BELOW */
