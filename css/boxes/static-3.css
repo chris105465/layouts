@@ -8,8 +8,7 @@
     margin: 20px;
     margin-bottom: 0;
     height: 200px;
-    overflow: hidden;
-    transition: 2s;
+    overflow: auto;
 }
 
 .bigBox h1,
@@ -39,7 +38,6 @@
     width: 450px;
     margin: 20px;
     margin-bottom: 0;
-    overflow: hidden;
+    overflow: auto;
     float: left;
-    transition: 2s;
 }
