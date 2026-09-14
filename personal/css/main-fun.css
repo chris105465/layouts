@@ -190,11 +190,11 @@ a:focus {
 }
 
 img[src*='icon-beetle-silver'] {
-    filter: saturate(40%) brightness(80%) contrast(140%);
+    filter: hue-rotate(150deg) saturate(10%) brightness(60%) contrast(140%);
 }
 
 img[src*='icon-beetle-gold'] {
-    filter: hue-rotate(240deg) saturate(40%) brightness(80%);
+    filter: hue-rotate(15deg) saturate(50%) brightness(50%) contrast(140%);
 }
 
 /* Navbar */
@@ -613,6 +613,7 @@ img[src*='icon-beetle-gold'] {
     padding: 0.6em 1em;
     margin-bottom: -5px;
     border-bottom: 1px solid var(--borderColor);
+    text-shadow: 1px 1px var(--pc1);
 }
 
 .buttonBox a {
