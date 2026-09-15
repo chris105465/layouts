@@ -72,36 +72,27 @@
     --logo: url('https://static.lioden.com/images/items/Other/fuschiaflower.png');
     --overlay: url('../img/floral-vines.png');
     /* panel images */
-    --memberPanel: url('https://static.lioden.com/images/dynamic/backgrounds/zanzibarwoodlands.png');
-    --statsPanel: url('https://static.lioden.com/images/dynamic/backgrounds/kwazulunatal.png');
-    --bookmarksPanel: url('https://static.lioden.com/images/dynamic/backgrounds/KwaZulu_flowers.png');
+    --memberPanel: url('../img/main-panels.jpg');
+    --statsPanel: url('../img/main-panels.jpg');
+    --bookmarksPanel: url('../img/main-panels.jpg');
     /* arrow images */
     --kingArrow: url('https://static.lioden.com/images/items/Other/app_mane_demiurge.png');
-    --achieveArrow: url('https://static.lioden.com/images/items/Other/app_markmurk.png');
-    --bookmarkArrow: url('https://static.lioden.com/images/items/Other/app_merlotbase.png');
+    --achieveArrow: url('https://static.lioden.com/images/beetles/homoderusgladiator/male/left/lilac.png');
+    --bookmarkArrow: url('https://static.lioden.com/images/items/Other/applilaclace.png');
     /* image for about and player tables */
-    --tables: url('https://static.lioden.com/images/dynamic/backgrounds/ForestThicket_Day.png');
+    --tables: url('../img/main-table.jpg');
     /* online and offline indicator colors */
     --online: #bfff00;
     --offline: #1c1719;
     /* cave images */
-    --caveDefault: url('https://static.lioden.com/images/dynamic/backgrounds/thicketgorge.png');
-    --unsorted: url('https://static.lioden.com/images/dynamic/backgrounds/srilanka.png');
-    --nesting: url('https://static.lioden.com/images/dynamic/backgrounds/BF_JG.png');
-    --overview: url('https://static.lioden.com/images/dynamic/backgrounds/papyrusBG.png');
-    --cave1: url('https://static.lioden.com/images/dynamic/backgrounds/zaxkingfishergrove.png');
-    --cave2: url('https://static.lioden.com/images/dynamic/backgrounds/FloweringPond.png');
-    --cave3: url('https://static.lioden.com/images/dynamic/backgrounds/herbgrove.png');
+    --caveDefault: url('../img/main-mounds.jpg');
+    --unsorted: url('../img/main-unsorted.jpg');
+    --nesting: url('../img/main-pregnant.jpg');
+    --overview: url('../img/main-pride.jpg');
     /* mound images */
-    --mound1: url('https://static.lioden.com/images/dynamic/backgrounds/rice_filed.png');
-    --mound2: url('https://static.lioden.com/images/dynamic/backgrounds/chocolate_hills.png');
-    --mound3: url('https://static.lioden.com/images/dynamic/backgrounds/finebymyself.png');
+    --moundDefault: url('../img/main-caves.jpg');
     /* dynasty images */
-    --kingDyn: url('https://static.lioden.com/images/dynamic/backgrounds/nutgrasscr.png');
-    --prideDyn: url('https://static.lioden.com/images/dynamic/backgrounds/ubhubhubhucr.png');
-    --achievements: url('https://static.lioden.com/images/dynamic/backgrounds/Mount_Elgon.png');
-    --showcase: url('https://static.lioden.com/images/dynamic/backgrounds/GreenSavannahBG.png');
-    --beetleBook: url('https://static.lioden.com/images/dynamic/backgrounds/MarshlandBG.png');
+    --dynasty: url('../img/main-dynasty.jpg');
     /* featured lion bg */
     --featuredLion: url('https://static.lioden.com/images/dynamic/backgrounds/FloweringPond.png');
     /* immutables */
@@ -322,7 +313,7 @@ img[src*='icon-beetle-gold'] {
     background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc3) var(--memberPanel);
     background-size: cover;
     background-position-x: center;
-    background-position-y: top;
+    background-position-y: 30%;
     box-shadow: var(--bodyShadow);
 }
 
@@ -330,7 +321,7 @@ img[src*='icon-beetle-gold'] {
     background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc3) var(--statsPanel);
     background-size: cover;
     background-position-x: center;
-    background-position-y: 60%;
+    background-position-y: center;
     box-shadow: var(--bodyShadow);
 }
 
@@ -360,7 +351,7 @@ img[src*='icon-beetle-gold'] {
     width: 60px;
     right: 4px;
     margin-top: -40px;
-    filter: hue-rotate(-75deg) saturate(30%);
+    filter: hue-rotate(45deg) saturate(40%);
 }
 
 #pageSidebar .col-xs-5 a:nth-child(3) h3 .floatright {
@@ -369,7 +360,7 @@ img[src*='icon-beetle-gold'] {
     width: 60px;
     right: 4px;
     margin-top: -40px;
-    filter: hue-rotate(-15deg) saturate(30%);
+    filter: brightness(90%);
 }
 
 /* dotted line above chat on smaller screen sizes */
@@ -905,6 +896,12 @@ input::placeholder {
     font-weight: 500;
 }
 
+.mound-grid {
+    background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--moundDefault);
+    background-size: cover;
+    background-position-y: top;
+}
+
 /* cave and mound link hover */
 .center>a:hover>.cave-grid,
 .center>a:focus>.cave-grid,
@@ -949,22 +946,22 @@ img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
 #fraOrganizationBlock>div:nth-child(1) .cave-grid {
     background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--unsorted);
     background-size: cover;
-    background-position-y: top;
+    background-position-y: 30%;
 }
 
 #fraOrganizationBlock>div:nth-child(2) .cave-grid {
     background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--nesting);
     background-size: cover;
-    background-position-y: top;
+    background-position-y: bottom;
 }
 
 #fraOrganizationBlock>div:nth-child(3) .cave-grid {
     background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--overview);
     background-size: cover;
-    background-position-y: top;
+    background-position-y: 70%;
 }
 
-#fraCaveList>div:nth-child(1) .cave-grid {
+/* #fraCaveList>div:nth-child(1) .cave-grid {
     background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--cave1);
     background-size: cover;
     background-position-y: top;
@@ -980,7 +977,7 @@ img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
     background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--cave3);
     background-size: cover;
     background-position-y: top;
-}
+} */
 
 /* unsorted lions */
 /* img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'] {
@@ -1129,7 +1126,7 @@ img[src$='//static.lioden.com/images/layout/caveunused.jpg'] {
     filter: saturate(50%);
 }
 
-#fraMoundList>div:nth-child(1) .mound-grid {
+/* #fraMoundList>div:nth-child(1) .mound-grid {
     background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--mound1);
     background-size: cover;
     background-position-y: top;
@@ -1145,7 +1142,7 @@ img[src$='//static.lioden.com/images/layout/caveunused.jpg'] {
     background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--mound3);
     background-size: cover;
     background-position-y: top;
-}
+} */
 
 /* featured lion section */
 .featured-lion {
@@ -1296,34 +1293,10 @@ div.left img {
     color: var(--fc1);
 }
 
-.dynastylist:nth-child(1) .left {
-    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc4) var(--kingDyn);
+.dynastylist .left {
+    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc4) var(--dynasty);
     background-size: cover;
-    background-position-y: 30%;
-}
-
-.dynastylist:nth-child(2) .left {
-    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc4) var(--prideDyn);
-    background-size: cover;
-    background-position-y: top;
-}
-
-.dynastylist:nth-child(3) .left {
-    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc4) var(--achievements);
-    background-size: cover;
-    background-position-y: 30%;
-}
-
-.dynastylist:nth-child(4) .left {
-    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc4) var(--showcase);
-    background-size: cover;
-    background-position-y: 10%;
-}
-
-.dynastylist:nth-child(5) .left {
-    background: linear-gradient(to right, var(--pc4), transparent, var(--pc4)), var(--pc4) var(--beetleBook);
-    background-size: cover;
-    background-position-y: top;
+    background-position-y: center;
 }
 
 /* links in the pills beneath dynasty stuff */
