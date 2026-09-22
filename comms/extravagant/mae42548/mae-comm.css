@@ -38,17 +38,17 @@
     --redAlert2: #714141;
     --redBorder: #714141;
     --redLink: #e9e2e2;
-    --greenAlert: #2f512f;
-    --greenAlert2: #417141;
-    --greenBorder: #417141;
+    --greenAlert: #254125;
+    --greenAlert2: #386138;
+    --greenBorder: #386138;
     --greenLink: #e2e9e2;
     --yellowAlert: #51482f;
     --yellowAlert2: #716541;
     --yellowBorder: #716541;
     --yellowLink: #e9e8e2;
-    --blueAlert: #2f5151;
-    --blueAlert2: #417171;
-    --blueBorder: #417171;
+    --blueAlert: #254141;
+    --blueAlert2: #386161;
+    --blueBorder: #386161;
     --blueLink: #e2e9e9;
     /* regular buttons/accent color pallet */
     --button1: #231810;
@@ -577,7 +577,7 @@ img[src*='icon-beetle-gold'] {
 }
 
 #commentBox::before {
-    content: "unsolicited ads, 'x was here' and gimmicks are deleted";
+    content: "Unsolicited ads, 'x was here' and gimmicks will be deleted.";
     background: var(--overlay) repeat, linear-gradient(to right, var(--pc1), var(--pc3));
     color: var(--fc1);
     font-style: italic;
