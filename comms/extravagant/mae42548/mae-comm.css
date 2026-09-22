@@ -76,8 +76,8 @@
     --statsPanel: url('https://static.lioden.com/images/dynamic/backgrounds/baobab.png');
     --bookmarksPanel: url('https://static.lioden.com/images/dynamic/backgrounds/Bnzirapridelands.png');
     /* arrow images */
-    --kingArrow: url('https://static.lioden.com/images/items/Amusement/driedferns.png');
-    --achieveArrow: url('https://static.lioden.com/images/items/Amusement/feather_gooseeg.png');
+    --kingArrow: url('https://static.lioden.com/images/items/Amusement/feather_gooseeg.png');
+    --achieveArrow: url('https://static.lioden.com/images/items/Amusement/driedferns.png');
     --bookmarkArrow: url('https://static.lioden.com/images/items/Other/blackmustard.png');
     /* image for about and player tables */
     --tables: url('https://static.lioden.com/images/dynamic/backgrounds/winterchallenge_goodkarma.png');
@@ -86,7 +86,7 @@
     --offline: #31261c;
     /* cave images */
     --caveDefault: url('https://static.lioden.com/images/dynamic/backgrounds/rabbitPeltCave.png');
-    --unsorted: url('https://static.lioden.com/images/dynamic/backgrounds/drysunset.png');
+    --unsorted: url('https://static.lioden.com/images/dynamic/backgrounds/Vfireofkutsiva.png');
     --nesting: url('https://static.lioden.com/images/dynamic/backgrounds/GrassyDen.png');
     --overview: url('https://static.lioden.com/images/dynamic/backgrounds/RE_climbing_tree.png');
     --cave1: url('https://static.lioden.com/images/dynamic/backgrounds/trophycave.png');
@@ -865,7 +865,7 @@ img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
 #fraOrganizationBlock>div:nth-child(1) .cave-grid {
     background: linear-gradient(to right, var(--pc4), transparent 30% 70%, var(--pc4)), var(--pc4) var(--unsorted);
     background-size: cover;
-    background-position-y: 30%;
+    background-position-y: top;
 }
 
 #fraOrganizationBlock>div:nth-child(2) .cave-grid {
