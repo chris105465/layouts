@@ -12,7 +12,7 @@
     --fc1: #ffffff;
     --fc2: #ece5df;
     --fc3: #dacbbe;
-    --eventText: #33ffff;
+    --eventText: #ffd633;
     /* font families */
     --mainFont: 'Cantarell', Verdana, 'Geneva', Tahoma, sans-serif;
     --headFont: 'Eagle Lake', 'Times New Roman', Times, serif;
@@ -34,21 +34,21 @@
     --mainShadow: 0 0 0 1px #413225;
     --bodyShadow: 1px 1px 3px #000000;
     /* alerts */
-    --redAlert: #512f2f;
-    --redAlert2: #714141;
-    --redBorder: #714141;
+    --redAlert: #3b2b2b;
+    --redAlert2: #594040;
+    --redBorder: #594040;
     --redLink: #e9e2e2;
-    --greenAlert: #254125;
-    --greenAlert2: #386138;
-    --greenBorder: #386138;
+    --greenAlert: #202c20;
+    --greenAlert2: #364a36;
+    --greenBorder: #364a36;
     --greenLink: #e2e9e2;
-    --yellowAlert: #51482f;
-    --yellowAlert2: #716541;
-    --yellowBorder: #716541;
+    --yellowAlert: #3b372b;
+    --yellowAlert2: #595340;
+    --yellowBorder: #595340;
     --yellowLink: #e9e8e2;
-    --blueAlert: #254141;
-    --blueAlert2: #386161;
-    --blueBorder: #386161;
+    --blueAlert: #202c2c;
+    --blueAlert2: #364a4a;
+    --blueBorder: #364a4a;
     --blueLink: #e2e9e9;
     /* regular buttons/accent color pallet */
     --button1: #231810;
@@ -82,7 +82,7 @@
     /* image for about and player tables */
     --tables: url('https://static.lioden.com/images/dynamic/backgrounds/winterchallenge_goodkarma.png');
     /* online and offline indicator colors */
-    --online: #33ffff;
+    --online: #ffcc00;
     --offline: #31261c;
     /* cave images */
     --caveDefault: url('https://static.lioden.com/images/dynamic/backgrounds/rabbitPeltCave.png');
