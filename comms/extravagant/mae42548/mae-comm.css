@@ -784,7 +784,7 @@ input::placeholder {
     left: -6px;
 }
 
-img[src*='donator.png'] {
+#player img[src*='donator.png'] {
     margin-right: 40px;
     margin-top: -5px;
     margin-left: -40px;
