@@ -4,7 +4,7 @@
 */
 
 /* font import */
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Modern+Antiqua&display=swap');
 
 /*variables*/
 :root {
@@ -14,8 +14,8 @@
     --fc3: #c5d3c9;
     --eventText: #ccff33;
     /* font families */
-    --mainFont: 'Source Serif 4', 'Times New Roman', Times, serif;
-    --headFont: 'DM Serif Display', 'Times New Roman', Times, serif;
+    --mainFont: 'Modern Antiqua', 'Times New Roman', Times, serif;
+    --headFont: 'Metamorphous', 'Times New Roman', Times, serif;
     /* big bg colors */
     --bgColor: #161d18b3;
     --bgColor2: #0b0f0cb3;
@@ -76,9 +76,9 @@
     --statsPanel: url('https://static.lioden.com/images/dynamic/backgrounds/lakechivero.png');
     --bookmarksPanel: url('https://static.lioden.com/images/dynamic/backgrounds/nyangamountains.png');
     /* arrow images */
-    /* --kingArrow: url('');
-    --achieveArrow: url('');
-    --bookmarkArrow: url(''); */
+    --kingArrow: url('https://static.lioden.com/images/items/Other/ibogaroot.png');
+    --achieveArrow: url('https://static.lioden.com/images/items/Other/uqume.png');
+    --bookmarkArrow: url('https://static.lioden.com/images/items/Other/uzara.png');
     /* image for about and player tables */
     --tables: url('https://static.lioden.com/images/dynamic/backgrounds/LakeKivu.png');
     /* online and offline indicator colors */
@@ -297,7 +297,7 @@ img[src*='icon-beetle-gold'] {
     background: var(--overlay) repeat, linear-gradient(to right, var(--pc3), var(--pc5));
     box-shadow: var(--bodyShadow);
     color: var(--fc1);
-    /* filter: drop-shadow(0 0 transparent); */
+    filter: drop-shadow(0 0 transparent);
     text-shadow: var(--ts);
 }
 
@@ -325,7 +325,7 @@ img[src*='icon-beetle-gold'] {
     box-shadow: var(--bodyShadow);
 }
 
-/* .sidebar h3 {
+.sidebar h3 {
     filter: drop-shadow(0 0 transparent);
 }
 
@@ -351,7 +351,7 @@ img[src*='icon-beetle-gold'] {
     width: 60px;
     right: 4px;
     margin-top: -40px;
-} */
+}
 
 /* dotted line above chat on smaller screen sizes */
 .clear {
@@ -1499,11 +1499,11 @@ a[href$='./chat.php'] {
     }
 }
 
-/* @media (min-width: 768px) and (max-width: 993px) {
+@media (min-width: 768px) and (max-width: 993px) {
     .navbar-default .navbar-nav>li>a {
         font-size: 14px;
     }
-} */
+}
 
 @media (max-width: 768px) {
     body {
