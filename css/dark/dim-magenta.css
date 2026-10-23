@@ -1,5 +1,5 @@
 /*
-    Layout Made by Chris (#105465) for free use
+    Layout Made by Wally (#105465) for free use
     All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
     https://www.lioden.com/topic.php?id=304429491963
     */
@@ -180,7 +180,7 @@ a:focus {
 }
 
 .breadcrumb::after {
-    content: "CSS by Chris (#105465)";
+    content: "CSS by Wally (#105465)";
     position: absolute;
     right: 20%;
     z-index: 100;
