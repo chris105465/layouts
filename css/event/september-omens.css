@@ -1,5 +1,5 @@
 /*
-Layout Made by Chris (#105465) for free use
+Layout Made by Wally (#105465) for free use
 All of my free use layouts are subject to the rules detailed on my free CSS and HTML thread, so please keep that in mind and abide by my rules. I have chosen to make this work freely available and I can change that at any time.
 https://www.lioden.com/topic.php?id=304429491963
 */
@@ -196,7 +196,7 @@ a:focus {
 }
 
 .breadcrumb::after {
-    content: "CSS by Chris (#105465)";
+    content: "CSS by Wally (#105465)";
     position: absolute;
     right: 20%;
     z-index: 100;
@@ -561,7 +561,7 @@ img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
     content: url('LINK');
     padding: 5px;
     } */
-/* pride tab text overlay code by Chris (#105465) (credit must remain intact for any use of this code and I do not permit it to be used for comms or free css without explicit permission from me.) */
+/* pride tab text overlay code by Wally (#105465) (credit must remain intact for any use of this code and I do not permit it to be used for comms or free css without explicit permission from me.) */
 /* mobile section */
 @media (max-width: 768px) {
 
