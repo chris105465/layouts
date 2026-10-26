@@ -1,5 +1,5 @@
 /*
-    Layout Made by Chris (#105465) for Sayu (#563757)
+    Layout Made by Wally (#105465) for Sayu (#563757)
 Please do not edit or copy any of this code without permission. If you have any questions regarding my work, please message me.
     */
 
@@ -197,7 +197,7 @@ a:focus {
 }
 
 .breadcrumb::after {
-    content: "CSS by Chris (#105465)";
+    content: "CSS by Wally (#105465)";
     position: absolute;
     right: 20%;
     z-index: 100;
@@ -561,7 +561,7 @@ img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
     content: url('LINK');
     padding: 5px;
     } */
-/* pride tab text overlay code by Chris (#105465) (credit must remain intact for any use of this code and I do not permit it to be used for comms or free css without explicit permission from me.) */
+/* pride tab text overlay code by Wally (#105465) (credit must remain intact for any use of this code and I do not permit it to be used for comms or free css without explicit permission from me.) */
 /* mobile section */
 @media (max-width: 768px) {
 
